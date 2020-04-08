@@ -1,4 +1,12 @@
 .backtoprev {
     font-family: Biko;
     font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.backicon {
+    width: 20px;
+    height: 20px;
 }
