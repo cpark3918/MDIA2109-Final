@@ -1,0 +1,14 @@
+.card_panel_icon {
+    width: 120px;
+    height: auto;
+}
+
+.card_panel_box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 140px;
+    box-shadow: 1px 1px 5px #929292;
+}
+
