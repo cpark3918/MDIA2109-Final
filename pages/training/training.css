@@ -1,0 +1,23 @@
+.training {
+    display: flex;
+ 
+    flex-direction: column;
+}
+
+.training_commands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.training_socializing{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.training_pagetitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

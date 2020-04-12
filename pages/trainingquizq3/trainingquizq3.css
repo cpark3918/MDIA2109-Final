@@ -1,0 +1,25 @@
+.training_quiz {
+    display: flex;
+ 
+    flex-direction: column;
+}
+
+.training3_answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.training_question3{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainingquiz_pagetitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+.health {
+    display: flex;
+ 
+    flex-direction: column;
+}
+
+.health_vaccines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.health_checkups{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.health_pagetitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

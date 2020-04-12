@@ -1,0 +1,11 @@
+.logo_contain img {
+    width: 28px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.logo_contain {
+    position: fixed;
+    left: 20px;
+    top: 10px;
+}

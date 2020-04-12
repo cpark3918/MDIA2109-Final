@@ -1,9 +1,13 @@
 .custom_button_box {
-    display: inline-flex;
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     padding: 10px;
     font-weight: bold;
     color: #FFF;
     font-family: Baloo;
-    font-size: 40px;
+    margin: 10px;
+    /* font-size: 40px; */
 }
