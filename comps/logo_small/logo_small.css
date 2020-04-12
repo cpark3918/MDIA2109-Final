@@ -3,3 +3,9 @@
     height: 30px;
     object-fit: contain;
 }
+
+.logo_contain {
+    position: fixed;
+    left: 340px;
+    top: 10px;
+}
