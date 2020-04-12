@@ -1,6 +1,6 @@
-.Life_Stage {
+.dog-size {
     display: flex;
- 
+    align-items: center;
     flex-direction: column;
 }
 
@@ -10,25 +10,14 @@
     top: 0;
 } */
 
-.life-stage_puppy {
+.dog-size_small {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.life-stage_adult {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.life-stage_senior {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.life-stage_pagetitle {
+.dog-size_pagetitle {
     display: flex;
     flex-direction: column;
     align-items: center;

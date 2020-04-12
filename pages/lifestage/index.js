@@ -5,7 +5,7 @@ import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
 
-import puppyImgs from '../../cardIcons/puppy.png';
+import puppyImgs from '../../cardIcons/adult.png';
 
 const puppyImg = {
     src: puppyImgs,

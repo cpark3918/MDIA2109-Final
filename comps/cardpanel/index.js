@@ -1,7 +1,7 @@
 import React from 'react';
 import './cardpanel.css';
 
-const puppyImg = require('../../cardIcons/puppy.png');
+const puppyImg = require('../../cardIcons/adult.png');
 
 const CardPanel = ({color, img}) => <div 
 style={{backgroundColor:color}}
