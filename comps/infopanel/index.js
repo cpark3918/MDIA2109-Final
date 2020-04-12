@@ -3,7 +3,9 @@ import './infopanel.css';
 
 const InfoPanel = ({info, title}) => {
     return <div>
-        
+        <div>
+            <p>{info}</p>
+        </div>
     </div>
 }
 
