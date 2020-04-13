@@ -14,10 +14,11 @@
 }
 
 .quizpopup_contain p {
-    font-family: "Biko";
+    font-family: "GmarketSansLight";
     font-size: 20pt;
     text-align: center;
     margin-top: -50px;
+    line-height: 1.5;
 }
 
 .quizpopup_box {
