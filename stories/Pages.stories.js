@@ -14,6 +14,7 @@ import TrainingQuizResults from '../pages/trainingquizresults';
 
 import Home from '../pages/home';
 import About from '../pages/about';
+import Tutorial from '../pages/tutorial';
 
 export default {
     title:"Pages",
@@ -32,3 +33,4 @@ export const MyTrainingQuizQ3 = () => <TrainingQuizQ3 />;
 export const MyTrainingQuizResults = () => <TrainingQuizResults />;
 export const HomePage = () => <Home />;
 export const AboutPage = () => <About />;
+export const TutorialPage = () => <Tutorial />;
