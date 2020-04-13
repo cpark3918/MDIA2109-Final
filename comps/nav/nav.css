@@ -1,13 +1,14 @@
 .nav_contain {
-    width: 275px;
-    height: 812px;
+    width: 300px;
+    height: 853px;
     background-color: #EF9B89;
-    padding: 5px;
+
 }
 
 .nav_box {
     display: inline-flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .nav_box img {
@@ -15,7 +16,7 @@
     height: 25px;
     object-fit: contain;
     position: absolute;
-    left: 250px;
+    left: 265px;
     top: 20px;
 }
 
@@ -27,10 +28,17 @@
     font-family: "GmarketSansLight";
     font-size: 18pt;
     color: #F3F2EF;
-    padding-left: 15px;
-    padding-bottom: 25px;
+    /* padding-left: 15px;
+    padding-bottom: 25px; */
+    padding: 25px;
+    cursor: pointer;
+    margin: 0;
 }
 
 .nav_text {
     border-bottom: 1px solid #F3F2EF;
+}
+
+.nav_menu p:active {
+    background-color: rgb(204, 133, 117);
 }
