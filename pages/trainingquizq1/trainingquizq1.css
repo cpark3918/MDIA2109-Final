@@ -1,0 +1,36 @@
+.training_quiz {
+    display: flex;
+ 
+    flex-direction: column;
+}
+
+.training1_answer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.training1_answer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.training1_answer3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.training_question1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainingquiz_pagetitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
