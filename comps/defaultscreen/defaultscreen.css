@@ -1,5 +1,6 @@
 .defaultscreen {
     width: 480px;
     height: auto;
+    min-height: 812px;
     background-color: #F3F2Ef;
 }

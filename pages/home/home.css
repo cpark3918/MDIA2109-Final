@@ -1,0 +1,31 @@
+.home_contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65px;
+}
+
+.tut_button {
+    font-family: "Baloo";
+    font-size: 14pt;
+    color: #EF9B89;
+    border: 2px solid #EF9B89;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.tut_button:active {
+    background-color: #EF9B89;
+    color: #F3F2EF;
+}
+
+.home_about {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+}

@@ -2,12 +2,10 @@ import React from 'react';
 import './infopanel.css';
 
 const InfoPanel = ({ title, info }) => {
-    return <div className="defaultscreen">
-        <div className="infopanel_contain">
-            <div className="infopanel_box">
-                <h1>{title}</h1>
-                <p>{info}</p>
-            </div>
+    return  <div className="infopanel_contain">
+        <div className="infopanel_box">
+            <h1>{title}</h1>
+            <p>{info}</p>
         </div>
     </div>
 }

@@ -1,5 +1,5 @@
 .backtoprev {
-    font-family: Biko;
+    font-family: 'GmarketSansLight';
     font-size: 18px;
     display: flex;
     flex-direction: row;
@@ -9,4 +9,6 @@
 .backicon {
     width: 20px;
     height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
 }

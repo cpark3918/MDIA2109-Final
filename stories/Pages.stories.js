@@ -12,6 +12,9 @@ import TrainingQuizQ2 from '../pages/trainingquizq2';
 import TrainingQuizQ3 from '../pages/trainingquizq3';
 import TrainingQuizResults from '../pages/trainingquizresults';
 
+import Home from '../pages/home';
+import About from '../pages/about';
+
 export default {
     title:"Pages",
 };
@@ -27,3 +30,5 @@ export const MyTrainingQuizQ1 = () => <TrainingQuizQ1 />;
 export const MyTrainingQuizQ2 = () => <TrainingQuizQ2 />;
 export const MyTrainingQuizQ3 = () => <TrainingQuizQ3 />;
 export const MyTrainingQuizResults = () => <TrainingQuizResults />;
+export const HomePage = () => <Home />;
+export const AboutPage = () => <About />;

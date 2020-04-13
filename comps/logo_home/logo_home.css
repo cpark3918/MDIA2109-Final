@@ -1,11 +1,11 @@
-.home_contain {
+.logo_home_contain {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.home_contain img {
+.logo_home_contain img {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -15,6 +15,8 @@
     font-family: 'Baloo';
     font-size: 45pt;
     color: #EF9B89;
+    margin-bottom: -10px;
+    margin-top: -10px;
 }
 
 .logo_text span {

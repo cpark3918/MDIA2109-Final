@@ -1,0 +1,5 @@
+.dog_image {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}

@@ -2,10 +2,10 @@ import React from 'react';
 import './quizpopup.css';
 import CustomButton from '../custombutton'
 
-const closeWindow = require('../../cardIcons/close_gray.png')
+const closeWindowGray = require('../../cardIcons/close_gray.png')
 
 const QuizPopup = () => <div className="quizpopup_contain">
-    <img src={closeWindow} />
+    <img src={closeWindowGray} />
      <div className="quizpopup_box">
          <h1>Quiz Time!</h1>
          <p>Time to put your <br></br>knowledge to the test!</p>

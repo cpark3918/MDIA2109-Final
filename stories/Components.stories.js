@@ -10,6 +10,7 @@ import LogoSmall from '../comps/logo_small';
 import QuizPopup from '../comps/quizpopup';
 import DefaultScreen from '../comps/defaultscreen';
 import InfoPanel from '../comps/infopanel';
+import Nav from '../comps/nav';
 
 export default {
     title:"components",
@@ -26,3 +27,4 @@ export const MyLogoSmall = () => <LogoSmall />;
 export const MyQuizPopup = () => <QuizPopup />;
 export const MyDefaultScreen = () => <DefaultScreen />;
 export const MyInfoPanel = () => <InfoPanel />;
+export const MyNavigation = () => <Nav />;
