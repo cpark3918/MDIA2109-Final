@@ -17,8 +17,8 @@ const DogSize = ({ backgroundColor }) => <div
             <LogoSmall />
         </div>
         <div className="dog-size_pagetitle">
-            <PageTitle color="#B7CfD2" text="Pick the size" />
-            <PageTitle color="#B7CfD2" text="of the dog" />
+            <PageTitle text="Pick the size" />
+            <PageTitle  text="of the dog" />
         </div>
         <div className="dog-size_panels">
             <div className="dog-size_small">
