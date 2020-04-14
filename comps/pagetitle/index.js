@@ -8,7 +8,7 @@ className="page_title">
 
 PageTitle.defaultProps = {
     text:"Default Title",
-    fontSize: "55pt",
+    fontSize: 55,
     color: "#000000",
 }
 
