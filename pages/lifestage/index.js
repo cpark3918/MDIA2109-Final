@@ -21,9 +21,9 @@ const LifeStages = ({ backgroundColor }) => <div
             <LogoSmall />
         </div>
         <div className="life-stage_pagetitle">
-            <PageTitle color="#B7CfD2" text="At which" />
-            <PageTitle color="#B7CfD2" text="lifestage are" />
-            <PageTitle color="#B7CfD2" text="they in?" />
+            <PageTitle text="At which" />
+            <PageTitle  marginBottom="15px" marginTop="15px" text="lifestage are" />
+            <PageTitle text="they in?" />
         </div>
         <div className="life-stage_panels">
             <div className="life-stage_puppy">

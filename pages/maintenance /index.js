@@ -16,7 +16,7 @@ const Maintenance = ({ backgroundColor}) => <div
             <LogoSmall />
         </div>
         <div className="maintenance_pagetitle">
-            <PageTitle color="#B7CfD2" text="Maintenance" />
+            <PageTitle marginBottom="55px" text="Maintenance" />
         </div>
         <div className="maintenance_panels">
             <div className="maintenance_exercise">

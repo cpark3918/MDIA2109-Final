@@ -1,15 +1,17 @@
 import React from 'react';
 import './pagetitle.css';
 
-const PageTitle = ({text, fontSize, color}) => <div 
+const PageTitle = ({text, fontSize, color, marginTop, marginBottom}) => <div 
 className="page_title">
-    <h1 style={{fontSize:fontSize, color:color}}>{text}</h1>
+    <h1 style={{fontSize:fontSize, color:color, marginTop: marginTop, marginBottom: marginBottom}}>{text}</h1>
 </div> 
 
 PageTitle.defaultProps = {
     text:"Default Title",
     fontSize: 55,
-    color: "#000000",
+    color: "#707070",
+    marginBottom: "35px",
+    marginTop: "35px"
 }
 
 export default PageTitle;

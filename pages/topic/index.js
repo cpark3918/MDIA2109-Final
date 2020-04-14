@@ -18,7 +18,7 @@ const Topic = ({ backgroundColor }) => <div
         </div>
         <div className="topic_pagetitle">
             <PageTitle text="Choose a" />
-            <PageTitle text="topic" />
+            <PageTitle marginTop="15px" text="topic" />
         </div>
         <div className="topic_panels">
             <div className="topic_maintenance">

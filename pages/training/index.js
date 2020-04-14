@@ -16,7 +16,7 @@ const Training = ({ backgroundColor}) => <div
             <LogoSmall />
         </div>
         <div className="training_pagetitle">
-            <PageTitle color="#B7CfD2" text="Training" />
+            <PageTitle marginBottom="55px" text="Training" />
         </div>
         <div className="training_panels">
             <div className="training_commands">

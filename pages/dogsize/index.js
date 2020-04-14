@@ -18,7 +18,7 @@ const DogSize = ({ backgroundColor }) => <div
         </div>
         <div className="dog-size_pagetitle">
             <PageTitle text="Pick the size" />
-            <PageTitle  text="of the dog" />
+            <PageTitle marginTop="15px" text="of the dog" />
         </div>
         <div className="dog-size_panels">
             <div className="dog-size_small">
