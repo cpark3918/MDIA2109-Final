@@ -3,6 +3,7 @@ import './tutorial5.css';
 import LogoSmall from '../../comps/logo_small';
 import Menu from '../../comps/menu'
 import PanelTitle from '../../comps/paneltitle';
+import CustomButton from '../../comps/custombutton';
 
 const happyIcon = require('../../animations/happy-dog.gif');
 const poopIcon = require('../../animations/poop.gif');
@@ -29,6 +30,7 @@ const Tutorial05 = () => {
                 <div className="progress_inactive"></div>
                 <div className="progress_active"></div>
             </div>
+            <CustomButton text="Let's start!" color="#B7D4A0" fontSize="20pt" />
         </div>
     </div>
 };

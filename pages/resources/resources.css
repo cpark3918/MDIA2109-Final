@@ -1,0 +1,31 @@
+.screen_icons {
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    font-family: "GmarketSansLight";
+    color: #EF9B89;
+}
+
+a:active {
+    color: #B0D0D3;
+}
+
+#first_box {
+    margin-top: 80px;
+}
+
+.resources_box {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.resources_content {
+    margin-top: -50px;
+}
+
+.resources_content p {
+    text-align: left;
+    font-size: 12pt;
+}
