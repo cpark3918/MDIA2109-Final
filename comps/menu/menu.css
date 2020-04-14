@@ -1,0 +1,11 @@
+.menu_contain img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.menu_contain {
+    position: absolute;
+    left: 425px;
+    top: 20px;
+}
