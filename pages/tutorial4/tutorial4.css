@@ -1,0 +1,11 @@
+#tut4_box {
+    margin-top: 20px;
+}
+
+#tut4_tap {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+}

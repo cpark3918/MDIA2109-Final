@@ -14,7 +14,11 @@ import TrainingQuizResults from '../pages/trainingquizresults';
 
 import Home from '../pages/home';
 import About from '../pages/about';
-import Tutorial from '../pages/tutorial';
+import Tutorial01 from '../pages/tutorial1';
+import Tutorial02 from '../pages/tutorial2';
+import Tutorial03 from '../pages/tutorial3';
+import Tutorial04 from '../pages/tutorial4';
+import Tutorial05 from '../pages/tutorial5';
 
 export default {
     title:"Pages",
@@ -33,4 +37,8 @@ export const MyTrainingQuizQ3 = () => <TrainingQuizQ3 />;
 export const MyTrainingQuizResults = () => <TrainingQuizResults />;
 export const HomePage = () => <Home />;
 export const AboutPage = () => <About />;
-export const TutorialPage = () => <Tutorial />;
+export const TutorialPage01 = () => <Tutorial01 />;
+export const TutorialPage02 = () => <Tutorial02 />;
+export const TutorialPage03 = () => <Tutorial03 />;
+export const TutorialPage04 = () => <Tutorial04 />;
+export const TutorialPage05 = () => <Tutorial05 />;
