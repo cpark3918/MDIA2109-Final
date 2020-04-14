@@ -16,7 +16,7 @@ const Health = ({ backgroundColor}) => <div
             <LogoSmall />
         </div>
         <div className="health_pagetitle">
-            <PageTitle color="#B7CfD2" text="Health" />
+            <PageTitle marginBottom="55px" text="Health" />
         </div>
         <div className="health_panels">
             <div className="health_checkups">

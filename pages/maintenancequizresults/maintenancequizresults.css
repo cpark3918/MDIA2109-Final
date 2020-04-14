@@ -1,28 +1,28 @@
-.training_results {
+.maintenance_results {
     display: flex;
     flex-direction: column;
 }
 
-.training-results_maintenance {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.training_results_categories {
+.maintenance-results_training {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.training-results_health {
+.maintenance_results_categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintenance-results_health {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.trainingresults_pagetitle {
+.maintenanceresults_pagetitle {
     display: flex;
     flex-direction: column;
     align-items: center;

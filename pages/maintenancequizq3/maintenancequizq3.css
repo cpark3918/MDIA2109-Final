@@ -1,28 +1,22 @@
-.training_results {
+.maintenance_quiz {
     display: flex;
+ 
     flex-direction: column;
 }
 
-.training-results_maintenance {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.training_results_categories {
+.maintenance3_answer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.training-results_health {
+.maintenance_question3{ 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-.trainingresults_pagetitle {
+.maintenancequiz_pagetitle {
     display: flex;
     flex-direction: column;
     align-items: center;

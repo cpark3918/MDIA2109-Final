@@ -14,11 +14,11 @@ const TrainingQuizQ3 = ({ backgroundColor }) => <div
             <LogoSmall />
         </div>
         <div className="trainingquiz_pagetitle">
-            <PageTitle color="#B7CfD2" text="Training Quiz" />
+            <PageTitle text="Training Quiz" />
         </div>
         <div className="training_question3">
             <PanelTitle text="Which is NOT a benefit" />
-            <PanelTitle text="of crate training" />
+            <PanelTitle marginTop="-5px" marginBottom="-5px" text="of crate training" />
             <PanelTitle text="your puppy?" />
         </div>
         <div className="training_answers3">
