@@ -6,3 +6,9 @@
     width: 225px;
     height: 225px;
 }
+
+.custom_button_box {
+    position: absolute;
+    bottom: -100px;
+    left: 155px;
+}
