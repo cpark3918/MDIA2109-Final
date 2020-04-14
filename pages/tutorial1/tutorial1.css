@@ -1,0 +1,58 @@
+.tut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tut_icons {
+    margin-top: 20px;
+}
+
+.tut_box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#tut1_tap {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    bottom: 230px;
+    left: 250px;
+}
+
+p {
+    font-family: "GmarketSansLight";
+    font-size: 14pt;
+    line-height: 1.5;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.progress_box {
+    display: inline-flex;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: -75px;
+}
+
+.progress_inactive {
+    width: 10px;
+    height: 10px;
+    background-color: #707070;
+    border-radius: 50%;
+    opacity: 50%;
+    margin: 10px;
+}
+
+.progress_active {
+    width: 10px;
+    height: 10px;
+    background-color: #EF9B89;
+    opacity: 100%;
+    border-radius: 50%;
+    margin: 10px;
+}

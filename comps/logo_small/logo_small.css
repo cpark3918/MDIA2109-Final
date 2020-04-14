@@ -1,11 +1,11 @@
 .logo_contain img {
-    width: 28px;
-    height: 30px;
+    width: 56px;
+    height: 60px;
     object-fit: contain;
 }
 
 .logo_contain {
-    position: fixed;
+    position: absolute;
     left: 20px;
-    top: 10px;
+    top: 20px;
 }
