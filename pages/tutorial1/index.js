@@ -15,7 +15,7 @@ const Tutorial01 = () => {
                 <PanelTitle text="Tutorial" color="#000" fontSize="35pt"/>
                 <Menu />
             </div>
-            <div className="tut_box">
+            <div className="tut_box" id="tut1_box">
                 <CardPanel />
                 <PanelTitle text="Small" color="#B0D0D3"/>
                 <img id="tut1_tap" src={tapIcon} />

@@ -19,6 +19,7 @@ import Tutorial02 from '../pages/tutorial2';
 import Tutorial03 from '../pages/tutorial3';
 import Tutorial04 from '../pages/tutorial4';
 import Tutorial05 from '../pages/tutorial5';
+import Resources from '../pages/resources';
 
 export default {
     title:"Pages",
@@ -42,3 +43,4 @@ export const TutorialPage02 = () => <Tutorial02 />;
 export const TutorialPage03 = () => <Tutorial03 />;
 export const TutorialPage04 = () => <Tutorial04 />;
 export const TutorialPage05 = () => <Tutorial05 />;
+export const ResourcesPage = () => <Resources />;
