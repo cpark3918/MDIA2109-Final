@@ -2,9 +2,9 @@ import React from 'react';
 import Training from '../training';
 import InfoPanel from '../../comps/infopanel';
 import LogoSmall from '../../comps/logo_small';
-import './commandinfo.css';
+import './commandinfopuppy.css';
 
-const CommandInfo = ({ backgroundColor}) => <div
+const CommandInfoPuppy = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="commandinfo">
     <div className="defaultscreen">
@@ -20,4 +20,4 @@ const CommandInfo = ({ backgroundColor}) => <div
     </div>
 </div>
 
-export default CommandInfo
+export default CommandInfoPuppy
