@@ -17,8 +17,8 @@ const Topic = ({ backgroundColor }) => <div
             <LogoSmall />
         </div>
         <div className="topic_pagetitle">
-            <PageTitle color="#B7CfD2" text="Choose a" />
-            <PageTitle color="#B7CfD2" text="topic" />
+            <PageTitle text="Choose a" />
+            <PageTitle text="topic" />
         </div>
         <div className="topic_panels">
             <div className="topic_maintenance">
