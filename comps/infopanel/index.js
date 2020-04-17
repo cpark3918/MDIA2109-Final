@@ -7,7 +7,7 @@ const close = require('../infopanel/x.png');
 
 const InfoPanel = ({ title, info }) => {
     return  <div className="infopanel_contain">
-        <img src={close} />
+        <img className="info_close" src={close} />
         <div className="infopanel_box">
             <h1>{title}</h1>
             <p>{info}</p>

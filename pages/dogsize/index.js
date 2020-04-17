@@ -5,7 +5,6 @@ import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
 
-
 const smalldogImg = require('../../cardIcons/small dog.png');
 
 

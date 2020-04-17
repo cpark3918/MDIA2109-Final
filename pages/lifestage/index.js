@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import React from 'react';
 import './lifestage.css';
 import LogoSmall from '../../comps/logo_small';
@@ -5,11 +7,13 @@ import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
 
-import puppyImgs from '../../cardIcons/adult.png';
-
-const puppyImg = {
-    src: puppyImgs,
+function clickPuppy() {
+    if (true) {
+    Router.push("/topic");
+    }
 }
+
+const puppyImg = require('../../cardIcons/puppy.png');
 const adultImg = require('../../cardIcons/adult.png');
 const seniorImg = require('../../cardIcons/adult.png');
 
@@ -26,16 +30,16 @@ const LifeStages = ({ backgroundColor }) => <div
             <PageTitle text="they in?" />
         </div>
         <div className="life-stage_panels">
-            <div className="life-stage_puppy">
-                <CardPanel src={puppyImg.src} />
+            <div onClick={clickPuppy} className="life-stage_puppy">
+                <Link href="/topic"><CardPanel src={puppyImg} /></Link>
                 <PanelTitle color="#B7CfD2" text="Puppy" />
             </div>
-            <div className="life-stage_adult">
-                <CardPanel color="#Ef9B89" src={adultImg} />
+            <div onClick={clickPuppy}  className="life-stage_adult">
+            <Link href="/topic"><CardPanel color="#Ef9B89" src={adultImg} /></Link>
                 <PanelTitle color="#Ef9B89" text="Adult" />
             </div>
-            <div className="life-stage_senior">
-                <CardPanel color="#B7D4A0" src={seniorImg} />
+            <div onClick={clickPuppy}  className="life-stage_senior">
+            <Link href="/topic"><CardPanel color="#B7D4A0" src={seniorImg} /></Link>
                 <PanelTitle color="#B7D4A0" text="Senior" />
             </div>
         </div>

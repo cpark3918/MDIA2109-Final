@@ -12,7 +12,7 @@ import CommandInfoSenior from '../pages/commandinfosenior';
 import SocializingInfoPuppy from '../pages/socializinginfopuppy';
 import SocializingInfoAdult from '../pages/socializinginfoadult';
 import SocializingInfoSenior from '../pages/socializinginfosenior';
-import TrainingQuizPopUp from '../pages/quizpopup';
+import TrainingQuizPopUp from '../pages/trainingquizpopup';
 import TrainingQuizQ1 from '../pages/trainingquizq1';
 import TrainingQuizQ2 from '../pages/trainingquizq2';
 import TrainingQuizQ3 from '../pages/trainingquizq3';

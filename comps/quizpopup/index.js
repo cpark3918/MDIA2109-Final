@@ -5,7 +5,7 @@ import CustomButton from '../custombutton'
 const closeWindowGray = require('../../cardIcons/close_gray.png')
 
 const QuizPopup = () => <div className="quizpopup_contain">
-    <img src={closeWindowGray} />
+    <img className="xButton" src={closeWindowGray} />
      <div className="quizpopup_box">
          <h1>Quiz Time!</h1>
          <p>Time to put your <br></br>knowledge to the test!</p>

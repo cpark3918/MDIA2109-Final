@@ -1,9 +1,23 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import React from 'react';
 import './maintenance.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+
+function clickExercise() {
+    if (true) {
+    Router.push("/exerciseinfopuppy");
+    }
+}
+
+function clickFood() {
+    if (true) {
+    Router.push("/foodinfopuppy");
+    }
+}
 
 const exerciseImg = require('../../cardIcons/exercise.png');
 const foodImg = require('../../cardIcons/food.png');
@@ -19,12 +33,12 @@ const Maintenance = ({ backgroundColor}) => <div
             <PageTitle marginBottom="55px" text="Maintenance" />
         </div>
         <div className="maintenance_panels">
-            <div className="maintenance_exercise">
-                <CardPanel src={exerciseImg} />
+            <div onClick={clickExercise} className="maintenance_exercise">
+                <Link href="/exerciseinfopuppy"><CardPanel src={exerciseImg} /></Link>
                 <PanelTitle color="#B7CfD2" text="Exercise" />
             </div>
-            <div className="maintenance_food">
-                <CardPanel color="#Ef9B89" src={foodImg} />
+            <div onClick={clickFood} className="maintenance_food">
+            <Link href="/foodinfopuppy"><CardPanel color="#Ef9B89" src={foodImg} /></Link>
                 <PanelTitle color="#Ef9B89" text="Food" />
             </div>
         </div>

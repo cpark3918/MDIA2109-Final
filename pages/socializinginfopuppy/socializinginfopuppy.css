@@ -1,6 +1,6 @@
 .socializinginfoPanel {
     position: fixed;
-    top: 0px;
-    left: 55px;
+    top: 15px;
+    left: 5px;
     transform: scale(0.8);
 }

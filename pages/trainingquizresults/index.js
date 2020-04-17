@@ -22,7 +22,7 @@ const TrainingQuizResults = ({ backgroundColor }) => <div
             <PageTitle text="Quiz Results" />
             <PageTitle text="2/3" />
         </div>
-        <div className="training_results">
+        <div className="training_results_results">
             <PanelTitle fontSize="20px" text="Good job!" />
             <PanelTitle fontSize="20px"  marginTop="-5px" marginBottom="-5px"  text="Keep up the good work! Check out" />
             <PanelTitle fontSize="20px"  marginBottom="0px"  text="the other categories to learn more" />

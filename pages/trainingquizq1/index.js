@@ -4,6 +4,14 @@ import LogoSmall from '../../comps/logo_small';
 import CustomButton from '../../comps/custombutton';
 import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
+import Link from 'next/link';
+import Router from 'next/router';
+
+function clickAnswer() {
+    if (true) {
+    Router.push("/trainingquizq2");
+    }
+}
 
 
 const TrainingQuizQ1 = ({ backgroundColor }) => <div
@@ -22,14 +30,14 @@ const TrainingQuizQ1 = ({ backgroundColor }) => <div
             <PanelTitle text="them to a dog park?" />
         </div>
         <div className="training_answers1">
-            <div className="training1_answer1">
-                <CustomButton fontSize="30px" color="#B7CfD2" text="7 weeks old" />
+            <div onClick={clickAnswer} className="training1_answer1">
+                <Link href="/trainingquizq2"><CustomButton fontSize="30px" color="#B7CfD2" text="7 weeks old" /></Link>
             </div>
-            <div className="training1_answer2">
-                <CustomButton  fontSize="30px" color="#Ef9B89" text="16 weeks old" />
+            <div  onClick={clickAnswer}  className="training1_answer2">
+            <Link href="/trainingquizq2"><CustomButton  fontSize="30px" color="#Ef9B89" text="16 weeks old" /></Link>
             </div>
-            <div className="training1_answer3">
-                <CustomButton  fontSize="30px" color="#B7D4A0" text="1 year old" />
+            <div  onClick={clickAnswer}  className="training1_answer3">
+            <Link href="/trainingquizq2"><CustomButton  fontSize="30px" color="#B7D4A0" text="1 year old" /></Link>
             </div>
         </div>
     </div>

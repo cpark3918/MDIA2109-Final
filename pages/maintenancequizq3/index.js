@@ -1,9 +1,19 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import React from 'react';
 import './maintenancequizq3.css';
 import LogoSmall from '../../comps/logo_small';
 import CustomButton from '../../comps/custombutton';
 import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
+
+
+function clickResults() {
+    if (true) {
+    Router.push("/maintenancequizresults");
+    }
+}
+
 
 
 const MaintenanceQuizQ3 = ({ backgroundColor }) => <div
@@ -21,14 +31,14 @@ const MaintenanceQuizQ3 = ({ backgroundColor }) => <div
             <PanelTitle marginTop="-5px" marginBottom="55px" text=" should you feed your puppy?" />
         </div>
         <div className="maintenance_answers3">
-            <div className="maintenance3_answer">
-                <CustomButton fontSize="30px" color="#B7CfD2" text="Once an hour" />
+            <div onClick={clickResults} className="maintenance3_answer">
+            <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#B7CfD2" text="Once an hour" /></Link>
             </div>
-            <div className="maintenance3_answer">
-                <CustomButton  fontSize="30px" color="#Ef9B89" text="Whenever I eat" />
+            <div onClick={clickResults} className="maintenance3_answer">
+            <Link href="/maintenancequizresults"><CustomButton  fontSize="30px" color="#Ef9B89" text="Whenever I eat" /></Link>
             </div>
-            <div className="maintenance3_answer">
-                <CustomButton  fontSize="30px" color="#B7D4A0" text="3-4 times a day" />
+            <div onClick={clickResults} className="maintenance3_answer">
+            <Link href="/maintenancequizresults"><CustomButton  fontSize="30px" color="#B7D4A0" text="3-4 times a day" /></Link>
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import InfoPanel from '../../comps/infopanel';
 import LogoSmall from '../../comps/logo_small';
 import './exerciseinfoadult.css';
-import Maintenance from '../maintenance ';
+import Maintenance from '../maintenance';
 
 const ExerciseInfoAdult = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
