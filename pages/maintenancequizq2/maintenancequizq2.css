@@ -1,7 +1,16 @@
 .maintenance_quiz {
     display: flex;
- 
+    position: absolute;
+    top: 40px;
+    left: 30px;
     flex-direction: column;
+}
+
+.maintenance_logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale (0.7);
 }
 
 .maintenance2_answer {

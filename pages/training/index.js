@@ -1,9 +1,24 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import React from 'react';
 import './training.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+
+
+function clickCommands() {
+    if (true) {
+    Router.push("/commandinfopuppy");
+    }
+}
+
+function clickSocializing() {
+    if (true) {
+    Router.push("/socializinginfopuppy");
+    }
+}
 
 const commandsImg = require('../../cardIcons/commands.png');
 const socializingImg = require('../../cardIcons/socializing.png');
@@ -19,12 +34,12 @@ const Training = ({ backgroundColor}) => <div
             <PageTitle marginBottom="55px" text="Training" />
         </div>
         <div className="training_panels">
-            <div className="training_commands">
-                <CardPanel src={commandsImg} />
+            <div onClick={clickCommands} className="training_commands">
+                <Link href="/commandinfopuppy"><CardPanel src={commandsImg} /></Link>
                 <PanelTitle color="#B7CfD2" text="Commands" />
             </div>
-            <div className="training_socializing">
-                <CardPanel color="#Ef9B89" src={socializingImg} />
+            <div onClick={clickSocializing} className="training_socializing">
+            <Link href="/traininginfopuppy"><CardPanel color="#Ef9B89" src={socializingImg} /></Link>
                 <PanelTitle color="#Ef9B89" text="Socializing" />
             </div>
         </div>

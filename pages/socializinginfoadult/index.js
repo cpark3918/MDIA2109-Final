@@ -6,7 +6,7 @@ import './socializinginfoadult.css';
 
 const SocializingInfoAdult = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
-    className="commandinfo">
+    className="socializinginfo">
     <div className="defaultscreen">
         <div className="socializing-info_logo">
             <LogoSmall />

@@ -1,6 +1,8 @@
 .maintenance_quiz {
     display: flex;
- 
+    position: absolute;
+    top: 40px;
+    left: 30px;
     flex-direction: column;
 }
 

@@ -1,7 +1,16 @@
 .training_quiz {
     display: flex;
- 
+    position: absolute;
+    top: 30px;
+    left: 10px;
     flex-direction: column;
+}
+
+.training_logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale (0.7);
 }
 
 .training2_answer {

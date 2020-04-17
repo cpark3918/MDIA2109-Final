@@ -22,7 +22,7 @@ const MaintenanceQuizResults = ({ backgroundColor }) => <div
             <PageTitle text="Quiz Results" />
             <PageTitle text="2/3" />
         </div>
-        <div className="maintenance_results">
+        <div className="maintenance_results_results">
             <PanelTitle fontSize="20px" text="Good job!" />
             <PanelTitle fontSize="20px"  marginTop="-5px" marginBottom="-5px"  text="Keep up the good work! Check out" />
             <PanelTitle fontSize="20px"  marginBottom="0px"  text="the other categories to learn more" />
@@ -33,7 +33,7 @@ const MaintenanceQuizResults = ({ backgroundColor }) => <div
                 <CardPanel src={trainingImg} />
                 <PanelTitle color="#B7CfD2" text="Training" />
             </div>
-            <div className="training-results_health">
+            <div className="maintenance-results_health">
                 <CardPanel color="#B7D4A0" src={healthImg} />
                 <PanelTitle color="#B7D4A0" text="Health" />
             </div>

@@ -1,6 +1,20 @@
 .foodinfoPanel {
-    position: fixed;
-    top: 0px;
-    left: 55px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
     transform: scale(0.8);
+}
+
+.foodinfo {
+    display: flex;
+    margin-left: 500px;
+}
+
+/* .food-info_logo {
+    transform: scale(0.7);
+} */
+
+.food-info_page {
+    position: relative;
+    top: 40px;
 }

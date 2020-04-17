@@ -2,15 +2,15 @@ import React from 'react';
 import InfoPanel from '../../comps/infopanel';
 import LogoSmall from '../../comps/logo_small';
 import './foodinfoadult.css';
-import Maintenance from '../maintenance ';
+import Maintenance from '../maintenance';
 
 const FoodInfoAdult = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="foodinfo">
     <div className="defaultscreen">
-        <div className="food-info_logo">
+        {/* <div className="food-info_logo">
             <LogoSmall />
-        </div>
+        </div> */}
         <div className="food-info_page">
             <Maintenance />
         </div>

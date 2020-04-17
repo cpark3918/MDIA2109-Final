@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import React from 'react';
 import './trainingquizq2.css';
 import LogoSmall from '../../comps/logo_small';
@@ -5,6 +7,11 @@ import CustomButton from '../../comps/custombutton';
 import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
 
+function clickAnswer() {
+    if (true) {
+    Router.push("/trainingquizq3");
+    }
+}
 
 const TrainingQuizQ2 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
@@ -22,14 +29,14 @@ const TrainingQuizQ2 = ({ backgroundColor }) => <div
             <PanelTitle text="to know?" />
         </div>
         <div className="training_answers1">
-            <div className="training2_answer">
-                <CustomButton fontSize="30px" color="#B7CfD2" text="Sit" />
+            <div onClick={clickAnswer}  className="training2_answer">
+            <Link href="/trainingquizq3"><CustomButton fontSize="30px" color="#B7CfD2" text="Sit" /></Link>
             </div>
-            <div className="training2_answer">
-                <CustomButton  fontSize="30px" color="#Ef9B89" text="Hand Stand" />
+            <div onClick={clickAnswer}  className="training2_answer">
+            <Link href="/trainingquizq3"><CustomButton  fontSize="30px" color="#Ef9B89" text="Hand Stand" /></Link>
             </div>
-            <div className="training2_answer">
-                <CustomButton  fontSize="30px" color="#B7D4A0" text="Play Dead" />
+            <div  onClick={clickAnswer} className="training2_answer">
+            <Link href="/trainingquizq3"><CustomButton  fontSize="30px" color="#B7D4A0" text="Play Dead" /></Link>
             </div>
         </div>
     </div>
