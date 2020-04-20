@@ -3,7 +3,7 @@ import React from 'react';
 import LifeStages from '../pages/lifestage';
 import DogSize from '../pages/dogsize';
 import Topic from '../pages/topic';
-import Maintenance from '../pages/maintenance ';
+import Maintenance from '../pages/maintenance';
 import Health from '../pages/health';
 import Training from '../pages/training';
 import CommandInfoPuppy from '../pages/commandinfopuppy';
