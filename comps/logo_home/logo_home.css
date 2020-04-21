@@ -6,8 +6,8 @@
 }
 
 .logo_home_contain img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: auto;
     object-fit: cover;
 }
 

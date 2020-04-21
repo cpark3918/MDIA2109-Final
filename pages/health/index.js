@@ -25,7 +25,7 @@ const Health = ({ backgroundColor}) => <div
             </div>
             <div className="health_vaccines">
                 <CardPanel color="#Ef9B89" src={vaccinesImg} />
-                <PanelTitle color="#Ef9B89" text="Vaccines" />
+                <PanelTitle color="#Ef9B89" text="Medical Care" />
             </div>
         </div>
     </div>

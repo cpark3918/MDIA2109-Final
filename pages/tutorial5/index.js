@@ -30,7 +30,9 @@ const Tutorial05 = () => {
                 <div className="progress_inactive"></div>
                 <div className="progress_active"></div>
             </div>
-            <CustomButton text="Let's start!" color="#B7D4A0" fontSize="20pt" />
+            <div className="tut_start">
+                <CustomButton text="Let's start!" color="#B7D4A0" fontSize="20pt" />
+            </div>
         </div>
     </div>
 };
