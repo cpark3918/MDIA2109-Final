@@ -1,7 +1,7 @@
 import React from 'react';
 
 import LifeStages from '../pages/lifestage';
-import DogSize from '../pages/dogsize';
+// import DogSize from '../pages/dogsize';
 import Topic from '../pages/topic';
 import Maintenance from '../pages/maintenance';
 import Health from '../pages/health';
@@ -53,7 +53,7 @@ export default {
 };
 
 export const MyLifeStages = () => <LifeStages />;
-export const MyDogSize = () => <DogSize />;
+// export const MyDogSize = () => <DogSize />;
 export const MyTopic = () => <Topic />;
 export const MyMaintenance = () => <Maintenance />;
 export const MyExerciseInfoPuppy = () => <ExerciseInfoPuppy />;

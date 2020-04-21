@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import React from 'react';
 import './health.css';
 import LogoSmall from '../../comps/logo_small';
@@ -6,6 +8,18 @@ import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
 import Menu from '../../comps/menu';
 
+function clickCheckups() {
+    if (true) {
+        Router.push("/checkups_puppy");
+    }
+}
+
+function clickMedical() {
+    if (true) {
+        Router.push("/medical_puppy");
+    }
+}
+
 const checkupsImg = require('../../cardIcons/checkups.png');
 const vaccinesImg = require('../../cardIcons/vaccines.png');
 
@@ -13,17 +27,19 @@ const Health = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="health">
     <div className="defaultscreen">
+            <div>
             <LogoSmall />
+            </div>
         <Menu />
         <div className="health_pagetitle">
             <PageTitle marginBottom="55px" text="Health" />
         </div>
         <div className="health_panels">
-            <div className="health_checkups">
-                <CardPanel src={checkupsImg} />
+            <div onClick={clickCheckups} className="health_checkups">
+                <Link href="/checkups_puppy"><CardPanel src={checkupsImg} /></Link>
                 <PanelTitle color="#B7CfD2" text="Check-Ups" />
             </div>
-            <div className="health_vaccines">
+            <div onClick={clickMedical} className="health_medical">
                 <CardPanel color="#Ef9B89" src={vaccinesImg} />
                 <PanelTitle color="#Ef9B89" text="Medical Care" />
             </div>

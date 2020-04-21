@@ -6,6 +6,7 @@ import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+import Menu from '../../comps/menu';
 
 function clickMaintenance() {
     if (true) {
@@ -35,9 +36,9 @@ const Topic = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="Topic">
     <div className="defaultscreen">
-        <div className="topic_logo">
+
             <LogoSmall />
-        </div>
+            <Menu />
         <div className="topic_pagetitle">
             <PageTitle text="Choose a" />
             <PageTitle marginTop="15px" text="topic" />

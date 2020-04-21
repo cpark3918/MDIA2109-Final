@@ -5,7 +5,7 @@
 }
 
 .logo_contain {
-    position: absolute;
-    left: 420px;
+    position: relative;
+    left: 250px;
     top: 20px;
 }

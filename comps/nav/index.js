@@ -1,10 +1,17 @@
+import { useEffect } from 'react';
 import React from 'react';
 import './nav.css';
 
 const closeWindow = require('../../cardIcons/close_white.png')
 
 const Nav = () => {
-    return <div className="nav_contain">
+    useEffect(()=>{
+        setTimeout(()=>{
+            document.querySelector('#navigation').style.left = 0;
+        }, 50)
+    }, []);
+    
+    return <div className="nav_contain" id="navigation">
         <div className="nav_box">
             <img src={closeWindow} />
             <div className="nav_menu">

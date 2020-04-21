@@ -10,7 +10,7 @@ PageTitle.defaultProps = {
     text:"Default Title",
     fontSize: 55,
     color: "#707070",
-    marginBottom: "20px",
+    marginBottom: "50px",
     marginTop: "80px"
 }
 

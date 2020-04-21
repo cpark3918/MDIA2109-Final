@@ -24,7 +24,6 @@
     width: 200px;
     height: auto;
     position: absolute;
-    bottom: 230px;
     left: 250px;
 }
 
@@ -39,7 +38,7 @@ p {
 .progress_box {
     display: inline-flex;
     position: absolute;
-    bottom: 0px;
+    bottom: 50px;
     /* margin-bottom: -75px; */
 }
 
