@@ -17,9 +17,7 @@ const MaintenanceQuizQ1 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_quiz">
     <div className="defaultscreen">
-        <div className="maintenance_logo">
             <LogoSmall />
-        </div>
         <div className="maintenancequiz_pagetitle">
             <PageTitle fontSize="40px" text="Maintenance Quiz" />
         </div>

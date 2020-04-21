@@ -10,7 +10,7 @@ import PanelTitle from '../../comps/paneltitle';
 
 function clickResults() {
     if (true) {
-    Router.push("/maintenancequizresults");
+        Router.push("/maintenancequizresults");
     }
 }
 
@@ -20,9 +20,7 @@ const MaintenanceQuizQ3 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_quiz">
     <div className="defaultscreen">
-        <div className="maintenance_logo">
-            <LogoSmall />
-        </div>
+        <LogoSmall />
         <div className="maintenancequiz_pagetitle">
             <PageTitle fontSize="40px" text="Maintenance Quiz" />
         </div>
@@ -32,13 +30,13 @@ const MaintenanceQuizQ3 = ({ backgroundColor }) => <div
         </div>
         <div className="maintenance_answers3">
             <div onClick={clickResults} className="maintenance3_answer">
-            <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#B7CfD2" text="Once an hour" /></Link>
+                <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#B7CfD2" text="Once an hour" /></Link>
             </div>
             <div onClick={clickResults} className="maintenance3_answer">
-            <Link href="/maintenancequizresults"><CustomButton  fontSize="30px" color="#Ef9B89" text="Whenever I eat" /></Link>
+                <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#Ef9B89" text="Whenever I eat" /></Link>
             </div>
             <div onClick={clickResults} className="maintenance3_answer">
-            <Link href="/maintenancequizresults"><CustomButton  fontSize="30px" color="#B7D4A0" text="3-4 times a day" /></Link>
+                <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#B7D4A0" text="3-4 times a day" /></Link>
             </div>
         </div>
     </div>

@@ -15,14 +15,14 @@ const healthImg = require('../../cardIcons/health.png');
 
 function clickTraining() {
     if (true) {
-    Router.push("/training");
+        Router.push("/training");
     }
 }
 
 
 function clickHealth() {
     if (true) {
-    Router.push("/health");
+        Router.push("/health");
     }
 }
 
@@ -32,18 +32,16 @@ const MaintenanceQuizResults = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_results">
     <div className="defaultscreen">
-        <div className="maintenanceresults_logo">
-            <LogoSmall />
-        </div>
+        <LogoSmall />
         <div className="maintenanceresults_pagetitle">
             <PageTitle text="Quiz Results" />
             <PageTitle text="2/3" />
         </div>
         <div className="maintenance_results_results">
             <PanelTitle fontSize="20px" text="Good job!" />
-            <PanelTitle fontSize="20px"  marginTop="-5px" marginBottom="-5px"  text="Keep up the good work! Check out" />
-            <PanelTitle fontSize="20px"  marginBottom="0px"  text="the other categories to learn more" />
-            <PanelTitle fontSize="20px"  text="what it takes to look after a dog!" />
+            <PanelTitle fontSize="20px" marginTop="-5px" marginBottom="-5px" text="Keep up the good work! Check out" />
+            <PanelTitle fontSize="20px" marginBottom="0px" text="the other categories to learn more" />
+            <PanelTitle fontSize="20px" text="what it takes to look after a dog!" />
         </div>
         <div className="maintenance_results_categories">
             <div onClick={clickTraining} className="maintenance-results_training">
@@ -51,7 +49,7 @@ const MaintenanceQuizResults = ({ backgroundColor }) => <div
                 <PanelTitle color="#B7CfD2" text="Training" />
             </div>
             <div onClick={clickHealth} className="maintenance-results_health">
-            <Link href="/health"><CardPanel color="#B7D4A0" src={healthImg} /></Link>
+                <Link href="/health"><CardPanel color="#B7D4A0" src={healthImg} /></Link>
                 <PanelTitle color="#B7D4A0" text="Health" />
             </div>
         </div>
