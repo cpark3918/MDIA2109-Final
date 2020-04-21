@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 60px;
+    left: 120px;
     top: 40px;
 }
 
@@ -30,3 +30,18 @@
     flex-direction: column;
     align-items: center;
 }
+
+.menu_main {
+    position: fixed;
+    left: 0px;
+    top: 10px;
+}
+/* 
+.defaultscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 800px;
+    background-color: #F3F2Ef;
+} */

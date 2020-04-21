@@ -6,6 +6,7 @@ import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+import Menu from '../../comps/menu';
 
 
 function clickCommands() {
@@ -29,6 +30,9 @@ const Training = ({ backgroundColor}) => <div
     <div className="defaultscreen">
         <div className="training_logo">
             <LogoSmall />
+        </div>
+        <div className="menu_main">
+            <Menu />
         </div>
         <div className="training_pagetitle">
             <PageTitle marginBottom="55px" text="Training" />
