@@ -39,6 +39,10 @@ import Resources from '../pages/resources';
 import MedicalPuppy from '../pages/medical_puppy';
 import MedicalAdult from '../pages/medical_adult';
 import MedicalSenior from '../pages/medical_senior';
+import CheckupsPuppy from '../pages/checkups_puppy';
+import CheckupsAdult from '../pages/checkups_adult';
+import CheckupsSenior from '../pages/checkups_senior';
+import HealthQuizPopUp from '../pages/healthquizpopup';
 
 export default {
     title:"Pages",
@@ -80,6 +84,10 @@ export const TutorialPage03 = () => <Tutorial03 />;
 export const TutorialPage04 = () => <Tutorial04 />;
 export const TutorialPage05 = () => <Tutorial05 />;
 export const ResourcesPage = () => <Resources />;
+export const CheckupsPuppyPage= () => <CheckupsPuppy />;
+export const CheckupsAdultPage= () => <CheckupsAdult />;
+export const CheckupsSeniorPage= () => <CheckupsSenior />;
 export const MedicalPuppyPage= () => <MedicalPuppy />;
 export const MedicalAdultPage= () => <MedicalAdult />;
 export const MedicalSeniorPage= () => <MedicalSenior />;
+export const HealthQuizPopUpPage = () => <HealthQuizPopUp />;

@@ -6,12 +6,12 @@
     top: 40px; */
 }
 
-.health_logo {
+/* .health_logo {
     position: fixed;
     top: 0;
     left: 0;
     transform: scale (0.7);
-}
+} */
 
 .health_vaccines {
     display: flex;

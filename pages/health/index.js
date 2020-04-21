@@ -4,6 +4,7 @@ import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+import Menu from '../../comps/menu';
 
 const checkupsImg = require('../../cardIcons/checkups.png');
 const vaccinesImg = require('../../cardIcons/vaccines.png');
@@ -12,9 +13,8 @@ const Health = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="health">
     <div className="defaultscreen">
-        <div className="health_logo">
             <LogoSmall />
-        </div>
+        <Menu />
         <div className="health_pagetitle">
             <PageTitle marginBottom="55px" text="Health" />
         </div>

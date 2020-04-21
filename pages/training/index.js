@@ -28,12 +28,8 @@ const Training = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="training">
     <div className="defaultscreen">
-        <div className="training_logo">
             <LogoSmall />
-        </div>
-        <div className="menu_main">
             <Menu />
-        </div>
         <div className="training_pagetitle">
             <PageTitle marginBottom="55px" text="Training" />
         </div>
