@@ -1,6 +1,24 @@
 .socializinginfoPanel {
     position: fixed;
     top: 15px;
-    left: 5px;
+    left: 55px;
     transform: scale(0.8);
+}
+/* 
+.socializing-info_page {
+    position: fixed;
+    top: 20px;
+    left: 50px;
+} */
+
+#mainappinfoscreen {
+    background-color: #F3F2Ef;
+    width: 480px;
+    height: 800px;
+}
+
+.transparencyScreen {
+    background-color: rgba(97, 97, 97, 0.5);
+    width: 480px;
+    height: 800px;
 }

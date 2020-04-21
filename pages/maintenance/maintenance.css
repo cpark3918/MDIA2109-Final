@@ -30,3 +30,9 @@
     flex-direction: column;
     align-items: center;
 }
+
+.menu_main {
+    position: fixed;
+    left: 0px;
+    top: 10px;
+}
