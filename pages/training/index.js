@@ -29,7 +29,10 @@ const Training = ({ backgroundColor}) => <div
     className="training">
     <div className="defaultscreen">
             <LogoSmall />
+        </div>
+//         <div className="menu_main">
             <Menu />
+//         </div>
         <div className="training_pagetitle">
             <PageTitle marginBottom="55px" text="Training" />
         </div>
