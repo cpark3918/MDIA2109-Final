@@ -4,6 +4,7 @@ import './tutorial4.css';
 import LogoSmall from '../../comps/logo_small';
 import Menu from '../../comps/menu'
 import PanelTitle from '../../comps/paneltitle';
+import PageTitle from '../../comps/pagetitle';
 
 const tapIcon = require('../../animations/tap.gif')
 
@@ -18,7 +19,7 @@ const Tutorial04 = () => {
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />
-                <PanelTitle text="Tutorial" color="#000" fontSize="35pt"/>
+                <PageTitle text="Tutorial" color="#000" fontSize="35pt"/>
                 <Menu />
             </div>
             <div className="tut_box" id="tut4_box">

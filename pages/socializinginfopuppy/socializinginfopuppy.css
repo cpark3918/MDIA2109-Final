@@ -13,12 +13,12 @@
 
 #mainappinfoscreen {
     background-color: #F3F2Ef;
-    width: 480px;
-    height: 800px;
+    max-width: 480px;
+    min-height: 800px;
 }
 
 .transparencyScreen {
     background-color: rgba(97, 97, 97, 0.5);
-    width: 480px;
-    height: 800px;
+    max-width: 480px;
+    min-height: 800px;
 }
