@@ -15,14 +15,14 @@ const healthImg = require('../../cardIcons/health.png');
 
 function clickTraining() {
     if (true) {
-        Router.push("/training");
+    Router.push("/training");
     }
 }
 
 
 function clickHealth() {
     if (true) {
-        Router.push("/health");
+    Router.push("/health");
     }
 }
 
@@ -49,7 +49,7 @@ const MaintenanceQuizResults = ({ backgroundColor }) => <div
                 <PanelTitle color="#B7CfD2" text="Training" />
             </div>
             <div onClick={clickHealth} className="maintenance-results_health">
-                <Link href="/health"><CardPanel color="#B7D4A0" src={healthImg} /></Link>
+            <Link href="/health"><CardPanel color="#B7D4A0" src={healthImg} /></Link>
                 <PanelTitle color="#B7D4A0" text="Health" />
             </div>
         </div>
