@@ -11,6 +11,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #FFF;
 }
 
 #maint {
@@ -29,6 +30,7 @@ h2 {
     width: 200px;
     height: auto;
     position: absolute;
-    bottom: 130px;
+    /* bottom: 130px; */
     left: 250px;
+    top: 400px;
 }

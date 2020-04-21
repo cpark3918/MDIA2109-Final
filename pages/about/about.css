@@ -1,5 +1,36 @@
+.aboutpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #F3F2EF; */
+    padding-top: 20px;
+    min-height: 853px;
+}
+
 .dog_image {
-    width: 300px;
+    width: 380px;
     height: auto;
     object-fit: contain;
+    /* padding: 10px; */
+    border: 10px solid #B7D4A0;
+    border-radius: 5px;
+}
+
+p {
+    font-family: "GmarketSansLight";
+    line-height: 1.25;
+}
+
+.aboutpage_description {
+    max-width: 480px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* padding: 10px;
+    border: 1px solid #B7D4A0;
+    border-radius: 5px; */
+}
+
+.aboutpage_backhome {
+    margin-top: 180px;
 }

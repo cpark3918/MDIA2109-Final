@@ -6,6 +6,7 @@
     width: 200px;
     height: auto;
     position: absolute;
-    bottom: 100px;
+    /* bottom: 100px; */
     left: 250px;
+    top: 450px;
 }

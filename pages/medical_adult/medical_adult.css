@@ -1,0 +1,6 @@
+.medical_infopanel_adult {
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    transform: scale(0.8);
+}

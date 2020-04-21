@@ -15,18 +15,16 @@ const TrainingQuizResults = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="training_results">
     <div className="defaultscreen">
-        <div className="trainingresults_logo">
-            <LogoSmall />
-        </div>
+        <LogoSmall />
         <div className="trainingresults_pagetitle">
             <PageTitle text="Quiz Results" />
             <PageTitle text="2/3" />
         </div>
         <div className="training_results_results">
             <PanelTitle fontSize="20px" text="Good job!" />
-            <PanelTitle fontSize="20px"  marginTop="-5px" marginBottom="-5px"  text="Keep up the good work! Check out" />
-            <PanelTitle fontSize="20px"  marginBottom="0px"  text="the other categories to learn more" />
-            <PanelTitle fontSize="20px"  text="what it takes to look after a dog!" />
+            <PanelTitle fontSize="20px" marginTop="-5px" marginBottom="-5px" text="Keep up the good work! Check out" />
+            <PanelTitle fontSize="20px" marginBottom="0px" text="the other categories to learn more" />
+            <PanelTitle fontSize="20px" text="what it takes to look after a dog!" />
         </div>
         <div className="training_results_categories">
             <div className="training-results_maintenance">

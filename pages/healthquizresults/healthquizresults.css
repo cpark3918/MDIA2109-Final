@@ -1,0 +1,30 @@
+.training_results {
+    display: flex;
+    flex-direction: column;
+}
+
+.health-results_maintenance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.health-results_categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.health-results_training {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.healthresults_pagetitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

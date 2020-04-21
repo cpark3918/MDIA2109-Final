@@ -1,0 +1,6 @@
+.checkups_infopanel {
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    transform: scale(0.8);
+}

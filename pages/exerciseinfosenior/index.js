@@ -4,7 +4,7 @@ import LogoSmall from '../../comps/logo_small';
 import './exerciseinfosenior.css';
 import Maintenance from '../maintenance';
 
-const ExerciseInfoSenior = ({ backgroundColor}) => <div
+const ExerciseInfoSenior = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="exerciseinfo" id="mainappinfoscreen">
     <div className="defaultscreen">

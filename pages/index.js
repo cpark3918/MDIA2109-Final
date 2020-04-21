@@ -1,16 +1,16 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import DogSize from './dogsize';
+import Home from './home';
 
 
-function clickSmall() {
-    if (true) {
-    Router.push("/lifestage");
-    }
-}
+// function clickSmall() {
+//     if (true) {
+//     Router.push("/lifestage");
+//     }
+// }
 
-const DogSizePage = () => <div id="dogsizepage" onClick={clickSmall}>
-    <Link href="/lifestage"><DogSize /></Link>
+const HomePage = () => <div id="homepage" >
+   <Home />
 </div>
 
-export default DogSizePage;
+export default HomePage;

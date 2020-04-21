@@ -1,3 +1,4 @@
+import Router from 'next/router';
 import React from 'react';
 import './tutorial4.css';
 import LogoSmall from '../../comps/logo_small';
@@ -6,8 +7,14 @@ import PanelTitle from '../../comps/paneltitle';
 
 const tapIcon = require('../../animations/tap.gif')
 
+function nextTutorial(){
+    if(true){
+        Router.push('/tutorial5')
+    }
+}
+
 const Tutorial04 = () => {
-    return <div className="defaultscreen">
+    return <div className="defaultscreen" onClick={nextTutorial}>
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />
@@ -15,7 +22,7 @@ const Tutorial04 = () => {
                 <Menu />
             </div>
             <div className="tut_box" id="tut4_box">
-                <PanelTitle text="(Question)" color="#000" />
+                <PanelTitle text="(Question)" color="#707070" />
                 <div className="tut_topics">
                     <h2 id="maint">7 weeks old</h2>
                     <h2 id="train">16 weeks old</h2>
