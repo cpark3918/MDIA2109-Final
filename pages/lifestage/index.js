@@ -7,6 +7,7 @@ import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
 import Menu from '../../comps/menu';
+import Nav from '../../comps/nav';
 
 function clickPuppy() {
     if (true) {

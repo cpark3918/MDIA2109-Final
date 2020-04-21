@@ -15,11 +15,11 @@ const HealthQuizResults = ({ backgroundColor }) => <div
     className="health_results">
     <div className="defaultscreen">
         <LogoSmall />
-        <div className="healthresults_pagetitle">
+        <div className="health_results_pagetitle">
             <PageTitle text="Quiz Results" />
             <PageTitle marginTop="50px"text="2/3" />
         </div>
-        <div className="health_results_results">
+        <div className="health_results_message">
             <PanelTitle fontSize="20px" text="Good job!" />
             <PanelTitle fontSize="20px" marginTop="-5px" marginBottom="-5px" text="Keep up the good work! Check out" />
             <PanelTitle fontSize="20px" marginBottom="0px" text="the other categories to learn more" />
