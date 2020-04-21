@@ -36,6 +36,9 @@ import Tutorial03 from '../pages/tutorial3';
 import Tutorial04 from '../pages/tutorial4';
 import Tutorial05 from '../pages/tutorial5';
 import Resources from '../pages/resources';
+import MedicalPuppy from '../pages/medical_puppy';
+import MedicalAdult from '../pages/medical_adult';
+import MedicalSenior from '../pages/medical_senior';
 
 export default {
     title:"Pages",
@@ -68,6 +71,7 @@ export const MyMaintenanceQuizQ1 = () => <MaintenanceQuizQ1 />;
 export const MyMaintenanceQuizQ2 = () => <MaintenanceQuizQ2 />;
 export const MyMaintenanceQuizQ3 = () => <MaintenanceQuizQ3 />;
 export const MyMaintenanceQuizResults = () => <MaintenanceQuizResults />;
+
 export const HomePage = () => <Home />;
 export const AboutPage = () => <About />;
 export const TutorialPage01 = () => <Tutorial01 />;
@@ -76,3 +80,6 @@ export const TutorialPage03 = () => <Tutorial03 />;
 export const TutorialPage04 = () => <Tutorial04 />;
 export const TutorialPage05 = () => <Tutorial05 />;
 export const ResourcesPage = () => <Resources />;
+export const MedicalPuppyPage= () => <MedicalPuppy />;
+export const MedicalAdultPage= () => <MedicalAdult />;
+export const MedicalSeniorPage= () => <MedicalSenior />;

@@ -1,9 +1,9 @@
 .health {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    /* position: absolute;
     left: 70px;
-    top: 40px;
+    top: 40px; */
 }
 
 .health_logo {
