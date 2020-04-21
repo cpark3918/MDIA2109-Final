@@ -14,8 +14,8 @@ function openNav(){
 }
 
 const Menu = () => {
-    return <div className="menu_contain" id="menu">
-        <Link><img src={menuIcon} /></Link>
+    return <div className="menu_contain" id="menu" onClick={openNav}>
+        <Link href='/nav'><img src={menuIcon} /></Link>
     </div>
 };
 

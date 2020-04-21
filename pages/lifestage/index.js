@@ -6,6 +6,7 @@ import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+import Menu from '../../comps/menu';
 
 function clickPuppy() {
     if (true) {
@@ -24,6 +25,7 @@ const LifeStages = ({ backgroundColor }) => <div
         <div className="life-stage_logo">
             <LogoSmall />
         </div>
+        <Menu />
         <div className="life-stage_pagetitle">
             <PageTitle text="At which" />
             <PageTitle  marginBottom="15px" marginTop="15px" text="lifestage are" />

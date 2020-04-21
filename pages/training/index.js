@@ -30,9 +30,9 @@ const Training = ({ backgroundColor}) => <div
     <div className="defaultscreen">
             <LogoSmall />
         </div>
-//         <div className="menu_main">
+{/* //         <div className="menu_main"> */}
             <Menu />
-//         </div>
+{/* //         </div> */}
         <div className="training_pagetitle">
             <PageTitle marginBottom="55px" text="Training" />
         </div>
@@ -47,6 +47,6 @@ const Training = ({ backgroundColor}) => <div
             </div>
         </div>
     </div>
-</div>
+// </div>
 
 export default Training;
