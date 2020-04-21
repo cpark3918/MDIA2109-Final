@@ -29,8 +29,8 @@ h2 {
 #tut2_tap {
     width: 200px;
     height: auto;
-    position: absolute;
-    /* bottom: 130px; */
-    left: 250px;
-    top: 400px;
+    margin-top: -150px;
+    position: relative;
+    left: 150px;
+    /* top: 450px;  */
 }
