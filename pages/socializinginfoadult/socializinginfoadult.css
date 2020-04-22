@@ -1,6 +1,6 @@
 .socializinginfoPanel {
     position: fixed;
-    top: 25px;
+    top: 55px;
     left: 55px;
     transform: scale(0.8);
 }
@@ -10,6 +10,8 @@
     width: 480px;
     height: 800px;
 }
+
+.
 
 .transparencyScreen {
     background-color: rgba(97, 97, 97, 0.5);

@@ -35,5 +35,7 @@
 }
 
 #gif {
-    width: 50px;
+    width: 200px;
+    position: absolute;
+    top: -170px;
 }

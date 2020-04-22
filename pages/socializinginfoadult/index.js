@@ -19,9 +19,9 @@ const SocializingInfoAdult = ({ backgroundColor}) => <div
     className="socializinginfo" id="mainappinfoscreen">
     <div className="defaultscreen">
     <div className="transparencyScreen">
-        <div className="socializing-info_logo">
+        {/* <div className="socializing-info_logo">
             <LogoSmall />
-        </div>
+        </div> */}
         <div className="socializing-info_page">
             <Training />
         </div>
