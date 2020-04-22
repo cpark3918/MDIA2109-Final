@@ -1,6 +1,6 @@
 .infopanel_contain {
     background-color: #F3F2EF;
-    border: 15px solid #B0D0D3;
+    border: 15px solid ;
     border-radius: 5px;
     padding: 10px;
     width: 340px;
@@ -27,6 +27,7 @@
     font-size: 14pt;
     line-height: 1.3;
     padding: 5px;
+    text-align: left;
 }
 
 .info_close {

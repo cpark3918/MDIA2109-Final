@@ -9,7 +9,7 @@ import Router from 'next/router';
 
 function clickAnswer() {
     if (true) {
-    Router.push("/trainingquizq2");
+        Router.push("/trainingquizq2");
     }
 }
 
@@ -18,9 +18,7 @@ const TrainingQuizQ1 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="training_quiz">
     <div className="defaultscreen">
-        <div className="training_logo">
-            <LogoSmall />
-        </div>
+        <LogoSmall />
         <div className="trainingquiz_pagetitle">
             <PageTitle text="Training Quiz" />
         </div>
@@ -33,11 +31,11 @@ const TrainingQuizQ1 = ({ backgroundColor }) => <div
             <div onClick={clickAnswer} className="training1_answer1">
                 <Link href="/trainingquizq2"><CustomButton fontSize="30px" color="#B7CfD2" text="7 weeks old" /></Link>
             </div>
-            <div  onClick={clickAnswer}  className="training1_answer2">
-            <Link href="/trainingquizq2"><CustomButton  fontSize="30px" color="#Ef9B89" text="16 weeks old" /></Link>
+            <div onClick={clickAnswer} className="training1_answer2">
+                <Link href="/trainingquizq2"><CustomButton fontSize="30px" color="#Ef9B89" text="16 weeks old" /></Link>
             </div>
-            <div  onClick={clickAnswer}  className="training1_answer3">
-            <Link href="/trainingquizq2"><CustomButton  fontSize="30px" color="#B7D4A0" text="1 year old" /></Link>
+            <div onClick={clickAnswer} className="training1_answer3">
+                <Link href="/trainingquizq2"><CustomButton fontSize="30px" color="#B7D4A0" text="1 year old" /></Link>
             </div>
         </div>
     </div>

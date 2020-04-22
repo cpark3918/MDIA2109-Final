@@ -10,29 +10,30 @@ import Menu from '../../comps/menu';
 
 function clickExercise() {
     if (true) {
-    Router.push("/exerciseinfopuppy");
+        Router.push("/exerciseinfopuppy");
     }
 }
 
 function clickFood() {
     if (true) {
-    Router.push("/foodinfopuppy");
+        Router.push("/foodinfopuppy");
     }
 }
 
 const exerciseImg = require('../../cardIcons/exercise.png');
 const foodImg = require('../../cardIcons/food.png');
 
-const Maintenance = ({ backgroundColor}) => <div
+const Maintenance = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance">
     <div className="defaultscreen">
-        <div className="maintenance_logo">
+//         <div className="maintenance_logo">
             <LogoSmall />
-        </div>
-        <div className="menu_main">
+//         </div>
+//         <div className="menu_main">
             <Menu />
-        </div>
+//         </div>
+
         <div className="maintenance_pagetitle">
             <PageTitle marginBottom="55px" text="Maintenance" />
         </div>
@@ -42,7 +43,7 @@ const Maintenance = ({ backgroundColor}) => <div
                 <PanelTitle color="#B7CfD2" text="Exercise" />
             </div>
             <div onClick={clickFood} className="maintenance_food">
-            <Link href="/foodinfopuppy"><CardPanel color="#Ef9B89" src={foodImg} /></Link>
+                <Link href="/foodinfopuppy"><CardPanel color="#Ef9B89" src={foodImg} /></Link>
                 <PanelTitle color="#Ef9B89" text="Food" />
             </div>
         </div>

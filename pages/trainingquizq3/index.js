@@ -9,7 +9,7 @@ import PanelTitle from '../../comps/paneltitle';
 
 function clickAnswer() {
     if (true) {
-    Router.push("/trainingquizresults");
+        Router.push("/trainingquizresults");
     }
 }
 
@@ -17,9 +17,7 @@ const TrainingQuizQ3 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="training_quiz">
     <div className="defaultscreen">
-        <div className="training_logo">
-            <LogoSmall />
-        </div>
+        <LogoSmall />
         <div className="trainingquiz_pagetitle">
             <PageTitle text="Training Quiz" />
         </div>
@@ -30,13 +28,13 @@ const TrainingQuizQ3 = ({ backgroundColor }) => <div
         </div>
         <div className="training_answers3">
             <div onClick={clickAnswer} className="training3_answer">
-            <Link href="/trainingquizresults"><CustomButton fontSize="30px" color="#B7CfD2" text="Safe Space" /></Link>
+                <Link href="/trainingquizresults"><CustomButton fontSize="30px" color="#B7CfD2" text="Safe Space" /></Link>
             </div>
             <div onClick={clickAnswer} className="training3_answer">
-            <Link href="/trainingquizresults"><CustomButton  fontSize="30px" color="#Ef9B89" text="Prevents Barking" /></Link>
+                <Link href="/trainingquizresults"><CustomButton fontSize="30px" color="#Ef9B89" text="Prevents Barking" /></Link>
             </div>
             <div onClick={clickAnswer} className="training3_answer">
-            <Link href="/trainingquizresults"><CustomButton  fontSize="30px" color="#B7D4A0" text="Stay Out Of Trouble" /></Link>
+                <Link href="/trainingquizresults"><CustomButton fontSize="30px" color="#B7D4A0" text="Stay Out Of Trouble" /></Link>
             </div>
         </div>
     </div>

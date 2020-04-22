@@ -7,8 +7,8 @@
     height: 225px;
 }
 
-.custom_button_box {
+.tut_start {
     position: absolute;
-    bottom: -100px;
+    top: 650px;
     left: 155px;
 }

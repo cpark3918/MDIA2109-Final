@@ -1,16 +1,23 @@
+import Router from 'next/router';
 import React from 'react';
 import './tutorial3.css';
 import LogoSmall from '../../comps/logo_small';
 import Menu from '../../comps/menu'
 import InfoPanel from '../../comps/infopanel';
-import PanelTitle from '../../comps/paneltitle';
+import PageTitle from '../../comps/pagetitle';
+
+function nextTutorial(){
+    if(true){
+        Router.push('/tutorial4')
+    }
+}
 
 const Tutorial03 = () => {
-    return <div className="defaultscreen">
+    return <div className="defaultscreen" onClick={nextTutorial}>
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />
-                <PanelTitle text="Tutorial" color="#000" fontSize="35pt"/>
+                <PageTitle text="Tutorial" color="#000" fontSize="35pt"/>
                 <Menu />
             </div>
             <div className="tut_box">

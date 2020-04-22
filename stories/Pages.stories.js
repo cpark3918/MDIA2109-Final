@@ -1,7 +1,7 @@
 import React from 'react';
 
 import LifeStages from '../pages/lifestage';
-import DogSize from '../pages/dogsize';
+// import DogSize from '../pages/dogsize';
 import Topic from '../pages/topic';
 import Maintenance from '../pages/maintenance';
 import Health from '../pages/health';
@@ -36,13 +36,24 @@ import Tutorial03 from '../pages/tutorial3';
 import Tutorial04 from '../pages/tutorial4';
 import Tutorial05 from '../pages/tutorial5';
 import Resources from '../pages/resources';
+import MedicalPuppy from '../pages/medical_puppy';
+import MedicalAdult from '../pages/medical_adult';
+import MedicalSenior from '../pages/medical_senior';
+import CheckupsPuppy from '../pages/checkups_puppy';
+import CheckupsAdult from '../pages/checkups_adult';
+import CheckupsSenior from '../pages/checkups_senior';
+import HealthQuizPopUp from '../pages/healthquizpopup';
+import HealthQuiz01 from '../pages/healthquizq1';
+import HealthQuiz02 from '../pages/healthquizq2';
+import HealthQuiz03 from '../pages/healthquizq3';
+import HealthQuizResults from '../pages/healthquizresults';
 
 export default {
     title:"Pages",
 };
 
 export const MyLifeStages = () => <LifeStages />;
-export const MyDogSize = () => <DogSize />;
+// export const MyDogSize = () => <DogSize />;
 export const MyTopic = () => <Topic />;
 export const MyMaintenance = () => <Maintenance />;
 export const MyExerciseInfoPuppy = () => <ExerciseInfoPuppy />;
@@ -68,6 +79,7 @@ export const MyMaintenanceQuizQ1 = () => <MaintenanceQuizQ1 />;
 export const MyMaintenanceQuizQ2 = () => <MaintenanceQuizQ2 />;
 export const MyMaintenanceQuizQ3 = () => <MaintenanceQuizQ3 />;
 export const MyMaintenanceQuizResults = () => <MaintenanceQuizResults />;
+
 export const HomePage = () => <Home />;
 export const AboutPage = () => <About />;
 export const TutorialPage01 = () => <Tutorial01 />;
@@ -76,3 +88,14 @@ export const TutorialPage03 = () => <Tutorial03 />;
 export const TutorialPage04 = () => <Tutorial04 />;
 export const TutorialPage05 = () => <Tutorial05 />;
 export const ResourcesPage = () => <Resources />;
+export const CheckupsPuppyPage= () => <CheckupsPuppy />;
+export const CheckupsAdultPage= () => <CheckupsAdult />;
+export const CheckupsSeniorPage= () => <CheckupsSenior />;
+export const MedicalPuppyPage= () => <MedicalPuppy />;
+export const MedicalAdultPage= () => <MedicalAdult />;
+export const MedicalSeniorPage= () => <MedicalSenior />;
+export const HealthQuizPopUpPage = () => <HealthQuizPopUp />;
+export const HealthQuizQuestion1 = () => <HealthQuiz01 />
+export const HealthQuizQuestion2 = () => <HealthQuiz02 />
+export const HealthQuizQuestion3 = () => <HealthQuiz03 />
+export const HealthQuizResultsPage = () => <HealthQuizResults />;

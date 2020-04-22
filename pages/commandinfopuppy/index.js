@@ -19,9 +19,9 @@ const CommandInfoPuppy = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="commandinfo">
     <div className="defaultscreen">
-        <div className="command-info_logo">
+        {/* <div className="command-info_logo">
             <LogoSmall />
-        </div>
+        </div> */}
         <div className="command-info_page">
             <Training />
         </div>

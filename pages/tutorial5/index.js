@@ -1,3 +1,4 @@
+import Router from 'next/router';
 import React from 'react';
 import './tutorial5.css';
 import LogoSmall from '../../comps/logo_small';
@@ -7,6 +8,12 @@ import CustomButton from '../../comps/custombutton';
 
 const happyIcon = require('../../animations/happy-dog.gif');
 const poopIcon = require('../../animations/poop.gif');
+
+function clickStart() {
+    if (true) {
+        Router.push("/lifestage")
+    }
+}
 
 const Tutorial05 = () => {
     return <div className="defaultscreen">
@@ -30,7 +37,9 @@ const Tutorial05 = () => {
                 <div className="progress_inactive"></div>
                 <div className="progress_active"></div>
             </div>
-            <CustomButton text="Let's start!" color="#B7D4A0" fontSize="20pt" />
+            <div onClick={clickStart} className="tut_start">
+                <CustomButton text="Let's start!" color="#B7D4A0" fontSize="20pt" />
+            </div>
         </div>
     </div>
 };

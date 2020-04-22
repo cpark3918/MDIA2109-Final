@@ -12,10 +12,10 @@ function clickExit() {
     }
 }
 
-
 const bathroomgif = require('../../animations/bathroom.gif');
 
 const ExerciseInfoSenior = ({ backgroundColor}) => <div
+
     style={{ backgroundColor: backgroundColor }}
     className="exerciseinfo" id="mainappinfoscreen">
     <div className="defaultscreen">

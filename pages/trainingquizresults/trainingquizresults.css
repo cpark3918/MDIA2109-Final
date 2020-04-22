@@ -1,18 +1,18 @@
 .training_results {
     display: flex;
-    position: absolute;
+    /* position: absolute;
     top: 70px;
-    left: 30px;
+    left: 30px; */
     flex-direction: column;
 }
 
 
-.trainingresults_logo {
+/* .trainingresults_logo {
     position: fixed;
     top: 0;
     left: 0;
     transform: scale (0.7);
-}
+} */
 
 .training-results_maintenance {
     display: flex;

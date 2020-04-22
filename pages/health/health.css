@@ -1,19 +1,19 @@
 .health {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 70px;
-    top: 40px;
+    /* position: absolute; */
+    /* left: 70px;
+    top: 40px; */
 }
 
-.health_logo {
+/* .health_logo {
     position: fixed;
     top: 0;
     left: 0;
     transform: scale (0.7);
-}
+} */
 
-.health_vaccines {
+.health_medical {
     display: flex;
     flex-direction: column;
     align-items: center;

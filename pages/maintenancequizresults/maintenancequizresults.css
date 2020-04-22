@@ -1,8 +1,8 @@
 .maintenance_results {
     display: flex;
-    position: absolute;
+    /* position: absolute;
     top: 100px;
-    left: 30px;
+    left: 30px; */
     flex-direction: column;
 }
 
