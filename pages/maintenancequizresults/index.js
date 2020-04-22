@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import React from 'react';
 import './maintenancequizresults.css';
 import LogoSmall from '../../comps/logo_small';
@@ -9,6 +11,21 @@ import CardPanel from '../../comps/cardpanel';
 const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
 const healthImg = require('../../cardIcons/health.png');
+
+
+function clickTraining() {
+    if (true) {
+    Router.push("/training");
+    }
+}
+
+
+function clickHealth() {
+    if (true) {
+    Router.push("/health");
+    }
+}
+
 
 
 const MaintenanceQuizResults = ({ backgroundColor }) => <div
@@ -29,12 +46,12 @@ const MaintenanceQuizResults = ({ backgroundColor }) => <div
             <PanelTitle fontSize="20px"  text="what it takes to look after a dog!" />
         </div>
         <div className="maintenance_results_categories">
-            <div className="maintenance-results_training">
-                <CardPanel src={trainingImg} />
+            <div onClick={clickTraining} className="maintenance-results_training">
+                <Link href="/training"><CardPanel src={trainingImg} /></Link>
                 <PanelTitle color="#B7CfD2" text="Training" />
             </div>
-            <div className="maintenance-results_health">
-                <CardPanel color="#B7D4A0" src={healthImg} />
+            <div onClick={clickHealth} className="maintenance-results_health">
+            <Link href="/health"><CardPanel color="#B7D4A0" src={healthImg} /></Link>
                 <PanelTitle color="#B7D4A0" text="Health" />
             </div>
         </div>
