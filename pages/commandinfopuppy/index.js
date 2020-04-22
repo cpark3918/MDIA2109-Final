@@ -12,6 +12,9 @@ function clickExit() {
     }
 }
 
+
+const commandsgif = require('../../animations/commands.gif');
+
 const CommandInfoPuppy = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="commandinfo">
@@ -23,7 +26,7 @@ const CommandInfoPuppy = ({ backgroundColor}) => <div
             <Training />
         </div>
         <div onClick={clickExit} className="commandinfoPanel">
-            <Link href="/training"><InfoPanel /></Link>
+            <Link href="/training"><InfoPanel img={commandsgif} /></Link>
         </div>
     </div>
 </div>

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Router from 'next/router';
 import React from 'react';
 import './dogsize.css';
 import LogoSmall from '../../comps/logo_small';
@@ -6,6 +8,12 @@ import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
 
 const smalldogImg = require('../../cardIcons/small dog.png');
+
+function clickSmall() {
+    if (true) {
+    Router.push("/lifestage");
+    }
+}
 
 
 const DogSize = ({ backgroundColor }) => <div
@@ -20,8 +28,8 @@ const DogSize = ({ backgroundColor }) => <div
             <PageTitle marginTop="15px" text="of the dog" />
         </div>
         <div className="dog-size_panels">
-            <div className="dog-size_small">
-                <CardPanel src={smalldogImg}/>
+            <div onClick={clickSmall} className="dog-size_small">
+                <Link href="/lifestage"><CardPanel src={smalldogImg}/></Link>
                 <PanelTitle color="#B7CfD2" text="Small" />
             </div>
         </div>
