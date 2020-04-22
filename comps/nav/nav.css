@@ -1,6 +1,6 @@
 #navigation {
     position: relative;
-    left: -100%;
+    left: -120%;
     transition: left 1s;
 }
 
