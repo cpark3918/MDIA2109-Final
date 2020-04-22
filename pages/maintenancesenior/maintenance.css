@@ -1,0 +1,32 @@
+.maintenance {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 70px;
+    top: 40px;
+}
+
+.maintenance_logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale (0.7);
+}
+
+.maintenance_exercise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintenance_food { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintenance_pagetitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -13,6 +13,18 @@ function clickPuppy() {
     }
 }
 
+function clickAdult() {
+    if (true) {
+    Router.push("/topicadult");
+    }
+}
+
+function clickSenior() {
+    if (true) {
+    Router.push("/topicsenior");
+    }
+}
+
 const puppyImg = require('../../cardIcons/puppy.png');
 const adultImg = require('../../cardIcons/adult.png');
 const seniorImg = require('../../cardIcons/adult.png');
@@ -34,12 +46,12 @@ const LifeStages = ({ backgroundColor }) => <div
                 <Link href="/topic"><CardPanel src={puppyImg} /></Link>
                 <PanelTitle color="#B7CfD2" text="Puppy" />
             </div>
-            <div onClick={clickPuppy}  className="life-stage_adult">
-            <Link href="/topic"><CardPanel color="#Ef9B89" src={adultImg} /></Link>
+            <div onClick={clickAdult}  className="life-stage_adult">
+            <Link href="/topicadult"><CardPanel color="#Ef9B89" src={adultImg} /></Link>
                 <PanelTitle color="#Ef9B89" text="Adult" />
             </div>
-            <div onClick={clickPuppy}  className="life-stage_senior">
-            <Link href="/topic"><CardPanel color="#B7D4A0" src={seniorImg} /></Link>
+            <div onClick={clickSenior}  className="life-stage_senior">
+            <Link href="/topicsenior"><CardPanel color="#B7D4A0" src={seniorImg} /></Link>
                 <PanelTitle color="#B7D4A0" text="Senior" />
             </div>
         </div>
