@@ -1,6 +1,6 @@
 .commandinfoPanel {
     position: fixed;
-    top: 0px;
+    top: 60px;
     left: 55px;
     transform: scale(0.8);
 }

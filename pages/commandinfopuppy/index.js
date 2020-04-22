@@ -19,6 +19,7 @@ const CommandInfoPuppy = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="commandinfo">
     <div className="defaultscreen">
+    <div className="transparencyScreen">
         {/* <div className="command-info_logo">
             <LogoSmall />
         </div> */}
@@ -27,6 +28,7 @@ const CommandInfoPuppy = ({ backgroundColor}) => <div
         </div>
         <div onClick={clickExit} className="commandinfoPanel">
             <Link href="/training"><InfoPanel img={commandsgif} /></Link>
+        </div>
         </div>
     </div>
 </div>

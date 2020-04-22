@@ -1,9 +1,11 @@
 .socializinginfoPanel {
     position: fixed;
-    top: 15px;
+    top: 45px;
     left: 55px;
     transform: scale(0.8);
 }
+
+
 /* 
 .socializing-info_page {
     position: fixed;

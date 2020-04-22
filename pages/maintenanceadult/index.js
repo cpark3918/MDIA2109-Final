@@ -6,6 +6,7 @@ import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+import Menu from '../../comps/menu';
 
 function clickExercise() {
     if (true) {
@@ -28,6 +29,9 @@ const Maintenance = ({ backgroundColor}) => <div
     <div className="defaultscreen">
         <div className="maintenance_logo">
             <LogoSmall />
+        </div>
+        <div className="menu_main">
+            <Menu />
         </div>
         <div className="maintenance_pagetitle">
             <PageTitle marginBottom="55px" text="Maintenance" />
