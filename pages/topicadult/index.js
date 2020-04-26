@@ -6,6 +6,8 @@ import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+import BackToPrev from '../../comps/backtoprev';
+import Menu from '../../comps/menu';
 
 function clickMaintenance() {
     if (true) {
@@ -20,6 +22,11 @@ function clickTraining() {
     }
 }
 
+function clickBack() {
+    if (true) {
+        Router.push("/lifestage");
+    }
+}
 
 function clickHealth() {
     if (true) {
@@ -38,6 +45,7 @@ const Topic = ({ backgroundColor }) => <div
         <div className="topic_logo">
             <LogoSmall />
         </div>
+        <Menu />
         <div className="topic_pagetitle">
             <PageTitle text="Choose a" />
             <PageTitle marginTop="15px" text="topic" />
@@ -56,6 +64,9 @@ const Topic = ({ backgroundColor }) => <div
                 <PanelTitle color="#B7D4A0" text="Health" />
             </div>
         </div>
+    </div>
+    <div onClick={clickBack} id="backtoprev">
+        <BackToPrev />
     </div>
 </div>
 

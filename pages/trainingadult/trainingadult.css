@@ -1,17 +1,17 @@
 .training {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    /* position: absolute;
     left: 60px;
-    top: 40px;
+    top: 40px; */
 }
 
-.training_logo {
+/* .training_logo {
     position: fixed;
     top: 0;
     left: 0;
     transform: scale (0.7);
-}
+} */
 
 .training_commands {
     display: flex;

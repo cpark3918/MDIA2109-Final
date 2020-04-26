@@ -1,18 +1,18 @@
 .exerciseinfoPanel {
     position: fixed;
-    top: 70px;
-    left: 55px;
+    top: 0px;
+    left: 45px;
     transform: scale(0.8);
 }
 
 #mainappinfoscreen {
     background-color: #F3F2Ef;
-    width: 480px;
-    height: 800px;
+    width: 375px;
+    height: auto;
 }
 
 .transparencyScreen {
     background-color: rgba(97, 97, 97, 0.5);
-    width: 480px;
-    height: 800px;
+    width: 375px;
+    height: 812px;
 }

@@ -8,10 +8,17 @@ import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
 import Menu from '../../comps/menu';
 import Nav from '../../comps/nav';
+import BackToPrev from '../../comps/backtoprev';
 
 function clickPuppy() {
     if (true) {
     Router.push("/topic");
+    }
+}
+
+function clickBack() {
+    if (true) {
+        Router.push("/dogsize");
     }
 }
 
@@ -41,8 +48,8 @@ const LifeStages = ({ backgroundColor }) => <div
         <Menu />
         <div className="life-stage_pagetitle">
             <PageTitle text="At which" />
-            <PageTitle  marginBottom="15px" marginTop="15px" text="lifestage are" />
-            <PageTitle text="they in?" />
+            <PageTitle  marginBottom="20px" marginTop="5px" text="lifestage are" />
+            <PageTitle marginTop="15px;" text="they in?" />
         </div>
         <div className="life-stage_panels">
             <div onClick={clickPuppy} className="life-stage_puppy">
@@ -58,6 +65,9 @@ const LifeStages = ({ backgroundColor }) => <div
                 <PanelTitle color="#B7D4A0" text="Senior" />
             </div>
         </div>
+    </div>
+    <div onClick={clickBack} id="backtoprev">
+        <BackToPrev />
     </div>
 </div>
 

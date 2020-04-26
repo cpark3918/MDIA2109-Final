@@ -1,7 +1,7 @@
 .foodinfoPanel {
     position: absolute;
-    top: 80px;
-    left: 30px;
+    top: 0px;
+    left: 45px;
     transform: scale(0.8);
 }
 

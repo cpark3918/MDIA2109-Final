@@ -10,7 +10,7 @@ const AboutIcon = require('../../cardIcons/about.png')
 
 function clickStart() {
     if (true) {
-        Router.push("/lifestage")
+        Router.push("/dogsize")
     }
 }
 

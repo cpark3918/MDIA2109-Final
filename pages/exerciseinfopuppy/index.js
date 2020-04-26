@@ -21,9 +21,9 @@ const ExerciseInfoPuppy = ({ backgroundColor }) => <div
     className="exerciseinfo" id="mainappinfoscreen" >
     <div className="defaultscreen">
     <div className="transparencyScreen">
-        <div className="exercise-info_logo">
+        {/* <div className="exercise-info_logo">
             <LogoSmall />
-        </div>
+        </div> */}
         <div className="exercise-info_page">
             <Maintenance />
         </div>

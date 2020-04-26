@@ -6,6 +6,8 @@ import LogoSmall from '../../comps/logo_small';
 import CustomButton from '../../comps/custombutton';
 import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
+import Menu from '../../comps/menu';
+import BackToPrev from '../../comps/backtoprev';
 
 function clickAnswer() {
     if (true) {
@@ -13,9 +15,18 @@ function clickAnswer() {
     }
 }
 
+function clickBack() {
+    if (true) {
+        Router.push("/maintenancequizpopup");
+    }
+}
+
 const MaintenanceQuizQ1 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_quiz">
+         <div className="menu_main">
+            <Menu />
+        </div>
     <div className="defaultscreen">
             <LogoSmall />
         <div className="maintenancequiz_pagetitle">
@@ -23,8 +34,9 @@ const MaintenanceQuizQ1 = ({ backgroundColor }) => <div
         </div>
         <div className="maintenance_question1">
             <PanelTitle text="Is it better to give" />
-            <PanelTitle marginTop="-5px" marginBottom="-5px" text="your puppy multiple short" />
-            <PanelTitle text="walks or one long one?" />
+            <PanelTitle marginTop="-5px" marginBottom="-5px" text="your puppy multiple" />
+            <PanelTitle marginBottom="-0px"  text="short walks or" />
+            <PanelTitle text="one long one?" />
         </div>
         <div className="maintenance_answers1">
             <div onClick={clickAnswer}  className="maintenance1_answer">
@@ -37,6 +49,9 @@ const MaintenanceQuizQ1 = ({ backgroundColor }) => <div
             <Link href="/maintenancequizq2"><CustomButton  fontSize="30px" color="#B7D4A0" text="doesn't matter" /></Link>
             </div>
         </div>
+    </div>
+    <div onClick={clickBack} id="backtoprev">
+        <BackToPrev />
     </div>
 </div >
 
