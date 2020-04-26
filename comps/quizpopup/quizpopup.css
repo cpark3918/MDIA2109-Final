@@ -35,3 +35,8 @@
     top: 30px;
     left: 30px;
 }
+
+#title {
+    font-size: 48px;
+    margin-bottom: 50px;
+}

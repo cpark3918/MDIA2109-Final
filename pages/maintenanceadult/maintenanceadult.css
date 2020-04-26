@@ -1,17 +1,20 @@
 .maintenance {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 70px;
-    top: 40px;
+    /* position: absolute;
+    left: 25px;
+    top: 0px; */
 }
 
+
+/* 
 .maintenance_logo {
     position: fixed;
     top: 0;
-    left: 470px;
+    left: 370px;
     transform: scale (0.7);
-}
+} */
+
 
 .maintenance_exercise {
     display: flex;
@@ -37,3 +40,10 @@
     left: 10px;
     top: 10px;
 }
+
+.mainscreenmaintenance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }

@@ -6,12 +6,20 @@ import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+import Menu from '../../comps/menu';
+import BackToPrev from '../../comps/backtoprev';
 
 const smalldogImg = require('../../cardIcons/small dog.png');
 
 function clickSmall() {
     if (true) {
     Router.push("/lifestage");
+    }
+}
+
+function clickBack() {
+    if (true) {
+        Router.push("/");
     }
 }
 
@@ -23,6 +31,7 @@ const DogSize = ({ backgroundColor }) => <div
         <div className="dog-size_logo">
             <LogoSmall />
         </div>
+        <Menu />
         <div className="dog-size_pagetitle">
             <PageTitle text="Pick the size" />
             <PageTitle marginTop="15px" text="of the dog" />
@@ -33,6 +42,9 @@ const DogSize = ({ backgroundColor }) => <div
                 <PanelTitle color="#B7CfD2" text="Small" />
             </div>
         </div>
+    </div>
+    <div onClick={clickBack} id="backtoprev">
+        <BackToPrev />
     </div>
 </div>
 

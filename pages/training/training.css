@@ -9,7 +9,7 @@
 .training_logo {
     position: fixed;
     top: 0;
-    left: 470px;
+    left: 370px;
     transform: scale (0.7);
 }
 
@@ -31,11 +31,16 @@
     align-items: center;
 }
 
-.menu_main {
-    position: fixed;
-    left: -410px;
-    top: 10px;
+.mainscreentraining {
+   display: flex;
+   flex-direction: column;
 }
+
+/* .menu_main {
+    position: fixed;
+right: 0;
+    top: 10px;
+} */
 /* 
 .defaultscreen {
     position: fixed;

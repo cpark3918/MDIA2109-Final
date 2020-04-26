@@ -6,6 +6,8 @@ import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
+import Menu from '../../comps/menu';
+import BackToPrev from '../../comps/backtoprev';
 
 
 function clickCommands() {
@@ -20,6 +22,12 @@ function clickSocializing() {
     }
 }
 
+function clickBack() {
+    if (true) {
+        Router.push("/topicadult");
+    }
+}
+
 const commandsImg = require('../../cardIcons/commands.png');
 const socializingImg = require('../../cardIcons/socializing.png');
 
@@ -30,6 +38,7 @@ const Training = ({ backgroundColor}) => <div
         <div className="training_logo">
             <LogoSmall />
         </div>
+        <Menu />
         <div className="training_pagetitle">
             <PageTitle marginBottom="55px" text="Training" />
         </div>
@@ -43,6 +52,9 @@ const Training = ({ backgroundColor}) => <div
                 <PanelTitle color="#Ef9B89" text="Socializing" />
             </div>
         </div>
+    </div>
+    <div onClick={clickBack} id="backtoprev">
+        <BackToPrev />
     </div>
 </div>
 

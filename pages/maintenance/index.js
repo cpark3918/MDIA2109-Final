@@ -7,6 +7,7 @@ import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
 import Menu from '../../comps/menu';
+import BackToPrev from '../../comps/backtoprev';
 
 function clickExercise() {
     if (true) {
@@ -17,6 +18,12 @@ function clickExercise() {
 function clickFood() {
     if (true) {
         Router.push("/foodinfopuppy");
+    }
+}
+
+function clickBack() {
+    if (true) {
+        Router.push("/topic");
     }
 }
 
@@ -33,7 +40,7 @@ const Maintenance = ({ backgroundColor }) => <div
         <div className="menu_main">
             <Menu />
         </div>
-
+        <div className="mainapp">
         <div className="maintenance_pagetitle">
             <PageTitle marginBottom="55px" text="Maintenance" />
         </div>
@@ -46,7 +53,11 @@ const Maintenance = ({ backgroundColor }) => <div
                 <Link href="/foodinfopuppy"><CardPanel color="#Ef9B89" src={foodImg} /></Link>
                 <PanelTitle color="#Ef9B89" text="Food" />
             </div>
+            </div>
         </div>
+    </div>
+    <div onClick={clickBack} id="backtoprev">
+        <BackToPrev />
     </div>
 </div>
 

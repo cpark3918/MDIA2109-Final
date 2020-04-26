@@ -6,10 +6,18 @@ import LogoSmall from '../../comps/logo_small';
 import CustomButton from '../../comps/custombutton';
 import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
+import BackToPrev from '../../comps/backtoprev';
+import Menu from '../../comps/menu';
 
 function clickAnswer() {
     if (true) {
         Router.push("/trainingquizresults");
+    }
+}
+
+function clickBack() {
+    if (true) {
+        Router.push("/trainingquizq3");
     }
 }
 
@@ -18,6 +26,7 @@ const TrainingQuizQ3 = ({ backgroundColor }) => <div
     className="training_quiz">
     <div className="defaultscreen">
         <LogoSmall />
+        <Menu />
         <div className="trainingquiz_pagetitle">
             <PageTitle text="Training Quiz" />
         </div>
@@ -37,6 +46,9 @@ const TrainingQuizQ3 = ({ backgroundColor }) => <div
                 <Link href="/trainingquizresults"><CustomButton fontSize="30px" color="#B7D4A0" text="Stay Out Of Trouble" /></Link>
             </div>
         </div>
+    </div>
+    <div onClick={clickBack} id="backtoprev">
+        <BackToPrev />
     </div>
 </div >
 
