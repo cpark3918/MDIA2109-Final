@@ -7,80 +7,32 @@ import Nav from '../nav';
 
 const menuIcon = require('../../cardIcons/menu.png');
 
-const closeWindow = require('../../cardIcons/close_white.png')
-
-function clickNavHome() {
-    if (true) {
-        Router.push("/");
-    }
-}
-
-function clickNavAbout() {
-    if (true) {
-        Router.push("/about");
-    }
-}
-
-function clickNavTut() {
-    if (true) {
-        Router.push("/tutorial1");
-    }
-}
-
-function clickNavRes() {
-    if (true) {
-        Router.push("/resources");
-    }
-}
-
-// function openNav(){
-//     document.querySelector("#menu").style.opacity = 0;
-//     // document.querySelector("#navigation").style.left = 0;
-//     // setTimeout(function(){
-//     //     Router.push('/nav')
-//     // }, 1000)
-// }
-
-// const [pageleft, setLeft] = useState("-100%");
-
-// useEffect(()=>{
-//     setTimeout(()=>{
-//         setLeft(0);
-//     }, 50)
-// })
 
 const Menu = () => {
 
-    const [pageleft, setLeft] = useState("-110%");
+    const [pageleft, setLeft] = useState("-120%");
+    const [menuleft, moveLeft] = useState("10px");
 
     function openNavMenu() {
         // document.querySelector("#navigation").style.left = "-5%";
         setTimeout(() => {
             setLeft("-5%");
+            moveLeft("-100%");
         }, 50);
     }
 
     function closeNav() {
         // document.querySelector("#navigation").style.left = "-110%";
-        setTimeout(() => {
-            setLeft("-110%");
-        }, 50);
+        setLeft("-110%");
+        moveLeft("10px");
     }
 
-    return <div className="menu_contain" id="menu">
-        <img src={menuIcon} onClick={openNavMenu} />
-        {/* <div id="nav"><Nav left_css={pageleft}/></div> */}
-        <div className="nav_contain" id="navigation" style={{ left: pageleft }}>
-            <div className="nav_box">
-                <img src={closeWindow} onClick={closeNav} />
-                <div className="nav_menu">
-                    <Link href="/"><p onClick={clickNavHome} className="nav_text">Home</p></Link>
-                    <Link href="/about"><p onClick={clickNavAbout} className="nav_text">About Adogpt</p></Link>
-                    <Link href="/tutorial1"><p onClick={clickNavTut} className="nav_text">Tutorial</p></Link>
-                    <Link href="/resources"><p onClick={clickNavRes}>Resources</p></Link>
-                </div>
-            </div>
+
+    return <div className="app_menu">
+        <div className="menu_contain" id="menu" style={{ left: menuleft }}>
+            <img src={menuIcon} onClick={openNavMenu} />
         </div>
+        <Nav left_css={pageleft} onClick={closeNav} />
     </div>
 };
 

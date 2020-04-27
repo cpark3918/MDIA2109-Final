@@ -42,7 +42,7 @@ const Maintenance = ({ backgroundColor }) => <div
         </div>
         <div className="mainapp">
         <div className="maintenance_pagetitle">
-            <PageTitle marginBottom="55px" text="Maintenance" />
+            <PageTitle marginTop="120px" marginBottom="55px" text="Maintenance" />
         </div>
         <div className="maintenance_panels">
             <div onClick={clickExercise} className="maintenance_exercise">

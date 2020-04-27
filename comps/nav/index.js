@@ -30,7 +30,7 @@ function clickNavRes() {
     }
 }
 
-const Nav = ({left_css}) => {
+const Nav = ({ left_css, onClick }) => {
 
     // const [pageleft, setLeft] = useState("-110%");
 
@@ -49,13 +49,10 @@ const Nav = ({left_css}) => {
     //     }, 50);
     // }
 
-    function closeNav(){
-        document.querySelector("#navigation").style.left = "-110%";
-    }
 
-    return <div className="nav_contain" id="navigation" style={{left: left_css}}>
+    return <div className="nav_contain" id="navigation" style={{ left: left_css }}>
         <div className="nav_box">
-            <img src={closeWindow} onClick={closeNav}/>
+            <img src={closeWindow} onClick={onClick} />
             <div className="nav_menu">
                 <Link href="/"><p onClick={clickNavHome} className="nav_text">Home</p></Link>
                 <Link href="/about"><p onClick={clickNavAbout} className="nav_text">About Adogpt</p></Link>
@@ -64,6 +61,16 @@ const Nav = ({left_css}) => {
             </div>
         </div>
     </div>
+
+    function closeNav() {
+        document.querySelector("#navigation").style.left = "-110%";
+    }
+
+    navigator.defaultProps = {
+        left_css: "120%",
+        onClick: closeNav
+    }
 };
+
 
 export default Nav;

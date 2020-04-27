@@ -1,12 +1,12 @@
 #navigation {
     position: relative;
     /* left: -110%; */
-    top: -70px;
+    top: 0px;
     transition: left 1s;
 }
 
 .nav_contain {
-    width: 300px;
+    width: 240px;
     height: 853px;
     background-color: #EF9B89;
 }
@@ -22,7 +22,7 @@
     height: 25px;
     object-fit: contain;
     position: absolute;
-    left: 265px;
+    left: 200px;
     top: 20px;
 }
 
