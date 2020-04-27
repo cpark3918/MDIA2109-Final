@@ -4,7 +4,7 @@ import React from 'react';
 import './home.css';
 import LogoHome from '../../comps/logo_home';
 import CustomButton from '../../comps/custombutton';
-import BackToPrev from '../../comps/backtoprev'
+import BackToPrev from '../../comps/backtoprev';
 
 const AboutIcon = require('../../cardIcons/about.png')
 

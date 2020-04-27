@@ -3,8 +3,8 @@ import React from 'react';
 import './about.css';
 import PanelTitle from '../../comps/paneltitle';
 import BackToPrev from '../../comps/backtoprev';
+import PageTitle from '../../comps/pagetitle';
 
-const AboutIcon = require('../../cardIcons/about.png');
 const DogImg1 = require('../../dogImages/dog1.jpg');
 
 function backToHome() {
@@ -16,6 +16,7 @@ function backToHome() {
 const About = () => {
     return <div className="defaultscreen">
         <div className="aboutpage">
+            <PageTitle text="About us" marginTop={0}/>
             <img className="dog_image" src={DogImg1} />
             <PanelTitle fontSize={50} text="Adopt + Dog" marginTop="60px" color="#EF9B89" />
             <PanelTitle fontSize={60} text="= Adogpt" marginTop="20px" color="#B0D0D3" />

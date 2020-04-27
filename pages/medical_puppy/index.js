@@ -11,15 +11,17 @@ function clickQuiz() {
     }
 }
 
-const MedicalPuppy = () => {
-    return <div id="mainappinfoscreen">
+const medicalgif = require('../../animations/medical.gif');
+
+const MedicalPuppy = ({backgroundColor}) => {
+    return <div style={{ backgroundColor: backgroundColor }} id="mainappinfoscreen">
         <div className="defaultscreen">
             <div className="transparencyScreen">
                 <div className="medical_page">
                     <Health />
                 </div>
                 <div onClick={clickQuiz} className="medical_infopanel">
-                    <Link href="/healthquizpopup"><InfoPanel title="Medical Care" color="#EF9B89" info="All puppies should be immunized against parvovirus, distemper, rabies and hepatitis.
+                    <Link href="/healthquizpopup"><InfoPanel img={medicalgif} title="Medical Care" color="#EF9B89" info="All puppies should be immunized against parvovirus, distemper, rabies and hepatitis.
 
 DHLPPC (combination of vaccines against distemper, hepatitis, leptospirosis, parainfluenze, parvo and corona virus)
 1st shot: 6-8 weeks | 2nd: 9-11 weeks | 3rd: 12-14 weeks | 4th: 16-17 weeks

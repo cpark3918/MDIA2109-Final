@@ -4,12 +4,11 @@
     justify-content: center;
     align-items: center;
     /* background-color: #F3F2EF; */
-    padding-top: 20px;
     min-height: 853px;
 }
 
 .dog_image {
-    width: 380px;
+    width: 300px;
     height: auto;
     object-fit: contain;
     /* padding: 10px; */
@@ -32,5 +31,5 @@ p {
 }
 
 .aboutpage_backhome {
-    margin-top: 180px;
+    margin-top: 20px;
 }

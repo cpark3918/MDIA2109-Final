@@ -7,6 +7,7 @@ import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
 import CardPanel from '../../comps/cardpanel';
 import Menu from '../../comps/menu';
+import BackToPrev from '../../comps/backtoprev';
 
 function clickCheckups() {
     if (true) {
@@ -17,6 +18,12 @@ function clickCheckups() {
 function clickMedical() {
     if (true) {
         Router.push("/medical_puppy");
+    }
+}
+
+function clickBack() {
+    if (true) {
+        Router.push("/topic");
     }
 }
 
@@ -44,6 +51,9 @@ const Health = ({ backgroundColor}) => <div
                 <PanelTitle color="#Ef9B89" text="Medical Care" />
             </div>
         </div>
+    </div>
+    <div onClick={clickBack} id="backtoprev">
+        <BackToPrev />
     </div>
 </div>
 
