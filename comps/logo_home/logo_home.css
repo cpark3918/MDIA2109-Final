@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Manrope:wght@300&display=swap');
+
 .logo_home_contain {
     display: inline-flex;
     flex-direction: column;
@@ -12,7 +14,8 @@
 }
 
 .logo_text {
-    font-family: 'Baloo';
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
     font-size: 45pt;
     color: #EF9B89;
     margin-bottom: -10px;
