@@ -20,10 +20,10 @@ const TrainingQuizQ1 = ({ backgroundColor }) => <div
     className="training_quiz">
     <div className="defaultscreen">
         <LogoSmall />
+        <Menu />
         <div className="trainingquiz_pagetitle">
             <PageTitle text="Training Quiz" />
         </div>
-        <Menu />
         <div className="training_question1">
             <PanelTitle text="Approximately how old" />
             <PanelTitle marginTop="-5px" marginBottom="-2px" text="should your puppy be" />
