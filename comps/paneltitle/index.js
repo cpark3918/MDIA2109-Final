@@ -3,7 +3,7 @@ import './paneltitle.css';
 
 const PanelTitle = ({text, color, fontSize, marginTop, marginBottom}) => <div 
 className="panel_title">
-    <h2 style={{color:color, fontSize: fontSize, marginTop: marginTop, marginBottom: marginBottom}}>{text}</h2>
+    <h2 id="panel_title_text" style={{color:color, fontSize: fontSize, marginTop: marginTop, marginBottom: marginBottom}}>{text}</h2>
 </div> 
 
 PanelTitle.defaultProps = {
