@@ -13,8 +13,8 @@ const InfoPanel = ({ title, info, img, color }) => {
         <img className="info_close" src={close} />
         <div className="infopanel_box">
         <img id="gif" src={img} />
-             <h1 style={{color: color}}>{title}</h1>
-            <p>{info}</p>
+             <h1 id="infopanelh1" style={{color: color}}>{title}</h1>
+            <p id="infopanelp">{info}</p>
         </div>
     </div>
 }
