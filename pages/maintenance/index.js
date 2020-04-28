@@ -34,12 +34,10 @@ const Maintenance = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance">
     <div className="defaultscreen">
-        <div className="maintenance_logo">
+        <div>
             <LogoSmall />
         </div>
-        <div className="menu_main">
             <Menu />
-        </div>
         <div className="mainapp">
         <div className="maintenance_pagetitle">
             <PageTitle marginTop="120px" marginBottom="55px" text="Maintenance" />
