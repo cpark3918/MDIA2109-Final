@@ -4,11 +4,13 @@ import LogoSmall from '../../comps/logo_small';
 import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
 import CardPanel from '../../comps/cardpanel';
+import Menu from '../../comps/menu';
 
 
 const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
 const healthImg = require('../../cardIcons/health.png');
+const quizAnimation = require('../../animations/happy-dog.gif');
 
 
 const TrainingQuizResults = ({ backgroundColor }) => <div
@@ -16,9 +18,11 @@ const TrainingQuizResults = ({ backgroundColor }) => <div
     className="training_results">
     <div className="defaultscreen">
         <LogoSmall />
+        <Menu />
         <div className="trainingresults_pagetitle">
             <PageTitle text="Quiz Results" />
-            <PageTitle text="2/3" />
+            <PanelTitle marginTop="5px" marginBottom="10px;" text="2/3" />
+            <img id="animation" src={quizAnimation}></img>
         </div>
         <div className="training_results_results">
             <PanelTitle fontSize="20px" text="Good job!" />

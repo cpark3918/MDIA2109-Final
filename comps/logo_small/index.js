@@ -1,11 +1,19 @@
 import React from 'react';
 import './logo_small.css';
+import Link from 'next/link';
+import Router from 'next/router';
+
+function clickLogoSmall() {
+    if (true) {
+    Router.push("/");
+    }
+}
 
 const logo = require('../logo_home/logo.png');
 
 const LogoSmall = () => <div className="defaultscreen">
-    <div className="logo_contain">
-        <img src={logo} />
+    <div onClick={clickLogoSmall} className="logo_contain">
+        <Link href="/"><img src={logo} /></Link>
     </div>
 </div>
 

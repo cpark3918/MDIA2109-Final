@@ -6,11 +6,12 @@ import LogoSmall from '../../comps/logo_small';
 import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
 import CardPanel from '../../comps/cardpanel';
-
+import Menu from '../../comps/menu';
 
 const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
 const healthImg = require('../../cardIcons/health.png');
+const animation = require('../../animations/happy-dog.gif');
 
 
 function clickTraining() {
@@ -31,11 +32,15 @@ function clickHealth() {
 const MaintenanceQuizResults = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_results">
+         <div className="menu_main">
+            <Menu />
+        </div>
     <div className="defaultscreen">
         <LogoSmall />
         <div className="maintenanceresults_pagetitle">
             <PageTitle text="Quiz Results" />
-            <PageTitle text="2/3" />
+            <PanelTitle marginTop="5px" marginBottom="10px;" text="2/3" />
+            <img id="animation" src={animation}></img>
         </div>
         <div className="maintenance_results_results">
             <PanelTitle fontSize="20px" text="Good job!" />
