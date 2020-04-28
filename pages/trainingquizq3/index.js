@@ -17,7 +17,7 @@ function clickAnswer() {
 
 function clickBack() {
     if (true) {
-        Router.push("/trainingquizq3");
+        Router.push("/trainingquizq2");
     }
 }
 
