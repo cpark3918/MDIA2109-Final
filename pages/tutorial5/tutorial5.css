@@ -3,12 +3,17 @@
 }
 
 .tut_animations img {
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
+    margin: -10px;
 }
 
 .tut_start {
     position: absolute;
-    top: 650px;
-    left: 155px;
+    top: 600px;
+
+}
+
+#tut5_p {
+    margin-top: 80px;
 }

@@ -20,8 +20,8 @@ const Tutorial04 = () => {
             <div className="tut_icons">
                 <LogoSmall />
                 <PageTitle text="Tutorial" color="#000" fontSize="35pt"/>
-                <Menu />
             </div>
+            <Menu />
             <div className="tut_box" id="tut4_box">
                 <PanelTitle text="(Question)" color="#707070" />
                 <div className="tut_topics">

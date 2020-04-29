@@ -63,7 +63,7 @@ const Nav = ({ left_css, onClick }) => {
     </div>
 
     function closeNav() {
-        document.querySelector("#navigation").style.left = "-110%";
+        document.querySelector("#navigation").style.left = "-120%";
     }
 
     navigator.defaultProps = {

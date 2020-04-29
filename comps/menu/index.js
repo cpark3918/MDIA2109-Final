@@ -10,7 +10,7 @@ const menuIcon = require('../../cardIcons/menu.png');
 
 const Menu = () => {
 
-    const [pageleft, setLeft] = useState("-120%");
+    const [pageleft, setLeft] = useState("-130%");
     const [menuleft, moveLeft] = useState("10px");
 
     function openNavMenu() {
