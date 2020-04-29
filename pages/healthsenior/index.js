@@ -11,19 +11,19 @@ import BackToPrev from '../../comps/backtoprev';
 
 function clickCheckups() {
     if (true) {
-        Router.push("/checkups_puppy");
+        Router.push("/checkups_senior");
     }
 }
 
 function clickMedical() {
     if (true) {
-        Router.push("/medical_puppy");
+        Router.push("/medical_senior");
     }
 }
 
 function clickBack() {
     if (true) {
-        Router.push("/topic");
+        Router.push("/topicsenior");
     }
 }
 
@@ -43,11 +43,11 @@ const Health = ({ backgroundColor}) => <div
         </div>
         <div className="health_panels">
             <div onClick={clickCheckups} className="health_checkups">
-                <Link href="/checkups_puppy"><CardPanel src={checkupsImg} /></Link>
+                <Link href="/checkups_senior"><CardPanel src={checkupsImg} /></Link>
                 <PanelTitle color="#B7CfD2" text="Check-Ups" />
             </div>
             <div onClick={clickMedical} className="health_medical">
-                <Link href="/medical_puppy"><CardPanel color="#Ef9B89" src={vaccinesImg} /></Link>
+            <Link href="/medical_senior"><CardPanel color="#Ef9B89" src={vaccinesImg} /></Link>
                 <PanelTitle color="#Ef9B89" text="Medical Care" />
             </div>
         </div>
