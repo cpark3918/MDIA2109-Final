@@ -1,6 +1,15 @@
-.foodinfoPanel {
+/* .foodinfoPanel {
     position: fixed;
     top: 0px;
     left: 45px;
     transform: scale(0.8);
+} */
+
+
+.transparencyScreen {
+    background-color: rgba(97, 97, 97, 0.5);
+    width: 100%;
+    height: 812px;
+    position: fixed;
+    top: 0;
 }

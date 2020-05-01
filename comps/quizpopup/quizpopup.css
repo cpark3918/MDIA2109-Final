@@ -3,22 +3,28 @@
 
 .quizpopup_contain {
     display: inline-flex;
-    padding: 40px;
+    padding: 20px;
     background-color: #F3F2EF;
     border: 15px solid #B0D0D3;
     border-radius: 5px;
+    width: 80%;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    z-index: 9;
 }
 
 .quizpopup_contain h1 {
     font-family: "Baloo";
     color: #B0D0D3;
-    font-size: 50pt;
+    font-size: 30pt;
     margin-top: -20px;
 }
 
 .quizpopup_contain p {
     font-family: 'Manrope', sans-serif;
-    font-size: 20pt;
+    font-size: 16pt;
     text-align: center;
     margin-top: -50px;
     line-height: 1.5;
@@ -27,7 +33,7 @@
 #quizpopupp {
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
-    font-size: 20pt;
+    font-size: 18pt;
     line-height: 1.5;
 }
 
@@ -42,8 +48,8 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 20px;
+    left: 20px;
 }
 
 #title {

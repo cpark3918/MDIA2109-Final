@@ -17,7 +17,7 @@ const bathroomgif = require('../../animations/bathroom.gif');
 const ExerciseInfoSenior = ({ backgroundColor}) => <div
 
     style={{ backgroundColor: backgroundColor }}
-    className="exerciseinfo" id="mainappinfoscreen">
+    className="exerciseinfo">
     <div className="defaultscreen">
     <div className="transparencyScreen">
         {/* <div className="exercise-info_logo">
@@ -27,7 +27,15 @@ const ExerciseInfoSenior = ({ backgroundColor}) => <div
             <Maintenance />
         </div>
         <div onClick={clickExit} className="exerciseinfoPanel">
-        <Link href="/maintenancesenior"><InfoPanel img={bathroomgif} title="Exercise" info="As dogs age and enter their senior years, their energy levels begin to regress. However it remains equally important to properly exercise them every day. It is recommended to have frequent but short exercise periods. Owners should take into consideration that the speed and mobility of their dog has declined; they won't be able to handle the rigorous exercises that they once did before. At this age, your dogs hearing and sight may start to deteriorate. For this reason it is best to stay on familiar routes, as it will prevent them from becoming anxious, stressed, or confused. " /></Link>
+        <Link href="/maintenancesenior"><InfoPanel img={bathroomgif} title="Exercise" info="As dogs  
+        enter their senior years, their energy levels begin to regress. 
+        However it remains equally important to properly exercise them 
+        every day. It is recommended to have frequent but short exercise 
+        periods. Owners should take into consideration that the speed and 
+        mobility of their dog has declined. At this age, 
+        your dogs hearing and sight may start to deteriorate. For this 
+        reason it is best to stay on familiar routes, as it will prevent 
+        them from becoming anxious, stressed, or confused. " /></Link>
         </div>
         </div>
     </div>

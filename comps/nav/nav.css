@@ -5,6 +5,7 @@
     /* left: -110%; */
     top: 0px;
     transition: left 1s;
+    z-index: 50;
 }
 
 .nav_contain {
