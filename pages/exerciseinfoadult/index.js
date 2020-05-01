@@ -16,7 +16,7 @@ const bathroomgif = require('../../animations/bathroom.gif');
 
 const ExerciseInfoAdult = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
-    className="exerciseinfo" id="mainappinfoscreen">
+    className="exerciseinfo">
     <div className="defaultscreen">
     <div className="transparencyScreen">
         {/* <div className="exercise-info_logo">
