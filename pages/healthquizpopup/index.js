@@ -11,6 +11,12 @@ function clickStartQuiz() {
     }
 }
 
+function clickExit() {
+    if (true) {
+    Router.push("/health");
+    }
+}
+
 const HealthQuizPopUp = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="quizpopup">
@@ -22,6 +28,7 @@ const HealthQuizPopUp = ({ backgroundColor }) => <div
             <Link href="healthquizq1"><QuizPopUp /></Link>
         </div>
     </div>
+    <div onClick={clickExit} id="exit"></div>
 </div> 
 
 export default HealthQuizPopUp;
