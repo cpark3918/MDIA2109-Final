@@ -14,7 +14,7 @@ function clickExit() {
 const checkupsgif = require('../../animations/vet.gif');
 
 const CheckupsSenior = ({backgroundColor}) => {
-    return <div style={{ backgroundColor: backgroundColor }} id="mainappinfoscreen">
+    return <div style={{ backgroundColor: backgroundColor }} >
         <div className="defaultscreen">
             <div className="transparencyScreen">
                 <div className="checkups_page">
