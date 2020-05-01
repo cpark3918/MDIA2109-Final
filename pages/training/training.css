@@ -6,12 +6,12 @@
     top: 40px; */
 }
 
-.training_logo {
+/* .training_logo {
     position: fixed;
     top: 0;
     left: 370px;
     transform: scale (0.7);
-}
+} */
 
 .training_commands {
     display: flex;

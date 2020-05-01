@@ -8,7 +8,20 @@ import Link from 'next/link';
 import Router from 'next/router';
 import Menu from '../../comps/menu';
 
+import {data, ChangeData} from '../../pages/data';
+
+console.log(data);
+
 function clickAnswer() {
+    if (true) {
+        Router.push("/trainingquizq2");
+    }
+}
+
+function clickRight(){
+    ChangeData({
+        score:"1"
+    })
     if (true) {
         Router.push("/trainingquizq2");
     }
@@ -32,13 +45,13 @@ const TrainingQuizQ1 = ({ backgroundColor }) => <div
         </div>
         <div className="training_answers1">
             <div onClick={clickAnswer} className="training1_answer1">
-                <Link href="/trainingquizq2"><CustomButton fontSize="30px" color="#B7CfD2" text="7 weeks old" /></Link>
+                <CustomButton fontSize="30px" color="#B7CfD2" text="7 weeks old" />
             </div>
-            <div onClick={clickAnswer} className="training1_answer2">
-                <Link href="/trainingquizq2"><CustomButton fontSize="30px" color="#Ef9B89" text="16 weeks old" /></Link>
+            <div onClick={clickRight} className="training1_answer2">
+                <CustomButton fontSize="30px" color="#Ef9B89" text="16 weeks old" />
             </div>
             <div onClick={clickAnswer} className="training1_answer3">
-                <Link href="/trainingquizq2"><CustomButton fontSize="30px" color="#B7D4A0" text="1 year old" /></Link>
+              <CustomButton fontSize="30px" color="#B7D4A0" text="1 year old" />
             </div>
         </div>
     </div>

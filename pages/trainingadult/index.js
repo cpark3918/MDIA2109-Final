@@ -35,9 +35,7 @@ const Training = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="training">
     <div className="defaultscreen">
-        <div className="training_logo">
             <LogoSmall />
-        </div>
         <Menu />
         <div className="training_pagetitle">
             <PageTitle marginBottom="55px" text="Training" />
