@@ -42,4 +42,4 @@ fed at the same times every day as this creates a sense of security for the pupp
     </div>
 </div>
 
-export default FoodInfoPuppy
+export default FoodInfoPuppy;

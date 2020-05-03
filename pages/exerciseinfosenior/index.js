@@ -41,4 +41,4 @@ const ExerciseInfoSenior = ({ backgroundColor}) => <div
     </div>
 </div>
 
-export default ExerciseInfoSenior
+export default ExerciseInfoSenior;

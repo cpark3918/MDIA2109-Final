@@ -39,7 +39,7 @@ const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
 const healthImg = require('../../cardIcons/health.png');
 
-const Topic = ({ backgroundColor }) => <div
+const TopicSenior = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="Topic">
     <div className="defaultscreen">
@@ -71,4 +71,4 @@ const Topic = ({ backgroundColor }) => <div
     </div>
 </div>
 
-export default Topic;
+export default TopicSenior;

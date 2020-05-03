@@ -38,4 +38,4 @@ const TrainingQuizPopUp = ({ backgroundColor }) => <div
     <div onClick={clickExit} id="exit"></div>
 </div> 
 
-export default TrainingQuizPopUp
+export default TrainingQuizPopUp;

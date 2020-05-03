@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Router from 'next/router';
 import Home from './home';
+import React from 'react';
 
 
 // function clickSmall() {
