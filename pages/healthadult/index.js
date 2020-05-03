@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Router from 'next/router';
 import React from 'react';
-import './health.css';
+import './healthadult.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
 import PageTitle from '../../comps/pagetitle';
