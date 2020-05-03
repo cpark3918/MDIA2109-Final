@@ -32,4 +32,4 @@ const SocializingInfoPuppy = ({ backgroundColor}) => <div
 </div>
 </div>
 
-export default SocializingInfoPuppy
+export default SocializingInfoPuppy;

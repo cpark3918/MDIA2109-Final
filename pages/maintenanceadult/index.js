@@ -30,7 +30,7 @@ function clickBack() {
 const exerciseImg = require('../../cardIcons/exercise.png');
 const foodImg = require('../../cardIcons/food.png');
 
-const Maintenance = ({ backgroundColor }) => <div
+const MaintenanceAdult = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance">
     <div className="defaultscreen">
@@ -61,4 +61,4 @@ const Maintenance = ({ backgroundColor }) => <div
     </div>
 </div>
 
-export default Maintenance;
+export default MaintenanceAdult;

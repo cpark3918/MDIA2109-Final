@@ -34,4 +34,4 @@ const ExerciseInfoPuppy = ({ backgroundColor }) => <div
     </div>
 </div>
 
-export default ExerciseInfoPuppy
+export default ExerciseInfoPuppy;

@@ -30,7 +30,7 @@ function clickBack() {
 const checkupsImg = require('../../cardIcons/checkups.png');
 const vaccinesImg = require('../../cardIcons/vaccines.png');
 
-const Health = ({ backgroundColor}) => <div
+const HealthAdult = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="health">
     <div className="defaultscreen">
@@ -57,4 +57,4 @@ const Health = ({ backgroundColor}) => <div
     </div>
 </div>
 
-export default Health;
+export default HealthAdult;

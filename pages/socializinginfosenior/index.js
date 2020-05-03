@@ -33,4 +33,4 @@ const SocializingInfoSenior = ({ backgroundColor}) => <div
     </div>
 </div>
 
-export default SocializingInfoSenior
+export default SocializingInfoSenior;

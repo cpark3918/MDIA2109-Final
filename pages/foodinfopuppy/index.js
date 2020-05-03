@@ -36,4 +36,4 @@ To train your pet to meal feed as a puppy, they should be fed at the same times 
     </div>
 </div>
 
-export default FoodInfoPuppy
+export default FoodInfoPuppy;

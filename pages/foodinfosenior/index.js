@@ -34,4 +34,4 @@ const FoodInfoSenior = ({ backgroundColor}) => <div
     </div>
 </div>
 
-export default FoodInfoSenior
+export default FoodInfoSenior;

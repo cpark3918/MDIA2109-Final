@@ -31,7 +31,7 @@ function clickBack() {
 const commandsImg = require('../../cardIcons/commands.png');
 const socializingImg = require('../../cardIcons/socializing.png');
 
-const Training = ({ backgroundColor}) => <div
+const TrainingAdult = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="training">
     <div className="defaultscreen">
@@ -58,4 +58,4 @@ const Training = ({ backgroundColor}) => <div
     </div>
 </div>
 
-export default Training;
+export default TrainingAdult;

@@ -32,4 +32,4 @@ const ExerciseInfoAdult = ({ backgroundColor}) => <div
     </div>
 </div>
 
-export default ExerciseInfoAdult
+export default ExerciseInfoAdult;
