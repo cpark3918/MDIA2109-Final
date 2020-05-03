@@ -4,20 +4,45 @@ import LogoSmall from '../../comps/logo_small';
 import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
 import CardPanel from '../../comps/cardpanel';
+import Menu from '../../comps/menu';
+
+import { data, ChangeData } from '../../pages/data';
+
+console.log(data);
 
 
 const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
+const animation = require('../../animations/happy-dog.gif');
 
 
-const HealthQuizResults = ({ backgroundColor }) => <div
+const HealthQuizResults = ({ backgroundColor }) => {
+
+    var text = "";
+if(data.score === 3){
+    text="3/3"
+} else if (data.score === 2){
+    text="2/3"
+} else if (data.score === "1"){
+    text="1/3"
+} else if (data.score === "11"){
+    text="2/3"
+} else if (data.score === "111"){
+    text="3/3"
+} else {
+    text="0/3"
+}
+
+return <div
     style={{ backgroundColor: backgroundColor }}
     className="health_results">
     <div className="defaultscreen">
+        <Menu />
         <LogoSmall />
         <div className="health_results_pagetitle">
             <PageTitle text="Quiz Results" />
-            <PageTitle marginTop="50px"text="2/3" />
+            <PageTitle marginTop="50px" text={text}/>
+            <img id="animation" src={animation}></img>
         </div>
         <div className="health_results_message">
             <PanelTitle fontSize="20px" text="Good job!" />
@@ -37,5 +62,6 @@ const HealthQuizResults = ({ backgroundColor }) => <div
         </div>
     </div>
 </div >
+}
 
 export default HealthQuizResults;

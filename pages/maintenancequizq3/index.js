@@ -9,6 +9,10 @@ import PanelTitle from '../../comps/paneltitle';
 import Menu from '../../comps/menu';
 import BackToPrev from '../../comps/backtoprev';
 
+import { data, ChangeData } from '../../pages/data';
+
+console.log(data);
+
 
 function clickResults() {
     if (true) {
@@ -21,6 +25,16 @@ function clickBack() {
         Router.push("/maintenancequizq2");
     }
 }
+
+function clickRight(){
+    ChangeData({
+        score:data.score+1
+    })
+    if (true) {
+        Router.push("/maintenancequizresults");
+    }
+}
+
 
 
 const MaintenanceQuizQ3 = ({ backgroundColor }) => <div
@@ -46,7 +60,7 @@ const MaintenanceQuizQ3 = ({ backgroundColor }) => <div
             <div onClick={clickResults} className="maintenance3_answer">
                 <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#Ef9B89" text="Whenever I eat" /></Link>
             </div>
-            <div onClick={clickResults} className="maintenance3_answer">
+            <div onClick={clickRight} className="maintenance3_answer">
                 <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#B7D4A0" text="3-4 times a day" /></Link>
             </div>
         </div>

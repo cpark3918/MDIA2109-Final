@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap');
+
 .page_title {
-    font-family: baloo;
+    font-family: 'Baloo 2', cursive;
     line-height: 0px;
+    font-weight: 800;
     /* margin-top: 50px;
     margin-bottom: 20px; */
 }

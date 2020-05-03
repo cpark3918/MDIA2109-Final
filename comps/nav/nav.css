@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Manrope:wght@300&display=swap');
+
 #navigation {
     position: relative;
     /* left: -110%; */
     top: 0px;
     transition: left 1s;
+    z-index: 50;
 }
 
 .nav_contain {
@@ -31,7 +34,8 @@
 }
 
 .nav_menu p {
-    font-family: "GmarketSansLight";
+    font-family: 'Manrope';
+    font-weight: 300;
     font-size: 18pt;
     color: #F3F2EF;
     /* padding-left: 15px;

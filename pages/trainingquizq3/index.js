@@ -9,6 +9,10 @@ import PanelTitle from '../../comps/paneltitle';
 import BackToPrev from '../../comps/backtoprev';
 import Menu from '../../comps/menu';
 
+import {data, ChangeData} from '../../pages/data';
+
+console.log(data);
+
 function clickAnswer() {
     if (true) {
         Router.push("/trainingquizresults");
@@ -17,9 +21,20 @@ function clickAnswer() {
 
 function clickBack() {
     if (true) {
-        Router.push("/trainingquizq3");
+        Router.push("/trainingquizq2");
     }
 }
+
+
+function clickRight(){
+    ChangeData({
+        score:data.score+1
+    })
+    if (true) {
+        Router.push("/trainingquizresults");
+    }
+}
+
 
 const TrainingQuizQ3 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
@@ -37,13 +52,13 @@ const TrainingQuizQ3 = ({ backgroundColor }) => <div
         </div>
         <div className="training_answers3">
             <div onClick={clickAnswer} className="training3_answer">
-                <Link href="/trainingquizresults"><CustomButton fontSize="30px" color="#B7CfD2" text="Safe Space" /></Link>
+                <CustomButton fontSize="30px" color="#B7CfD2" text="Safe Space" />
             </div>
             <div onClick={clickAnswer} className="training3_answer">
-                <Link href="/trainingquizresults"><CustomButton fontSize="30px" color="#Ef9B89" text="Prevents Barking" /></Link>
+                <CustomButton fontSize="30px" color="#Ef9B89" text="Prevents Barking" />
             </div>
-            <div onClick={clickAnswer} className="training3_answer">
-                <Link href="/trainingquizresults"><CustomButton fontSize="30px" color="#B7D4A0" text="Stay Out Of Trouble" /></Link>
+            <div onClick={clickRight} className="training3_answer">
+                <CustomButton fontSize="30px" color="#B7D4A0" text="Stay Out Of Trouble" />
             </div>
         </div>
     </div>

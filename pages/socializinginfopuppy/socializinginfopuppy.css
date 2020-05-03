@@ -1,13 +1,4 @@
-body, html {
-    margin: 0;
-}
 
-.socializinginfoPanel {
-    position: absolute;
-    top: 10px;
-    left: 45px;
-    transform: scale(0.8);
-}
 
 
 /* 
@@ -17,14 +8,16 @@ body, html {
     left: 50px;
 } */
 
-#mainappinfoscreen {
+/* #mainappinfoscreen {
     background-color: #F3F2Ef;
     max-width: 480px;
     min-height: 800px;
-}
+} */
 
 .transparencyScreen {
     background-color: rgba(97, 97, 97, 0.5);
-    max-width: 480px;
-    min-height: 800px; 
+    width: 100%;
+    height: 812px;
+    position: fixed;
+    top: 0;
 }

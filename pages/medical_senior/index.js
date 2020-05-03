@@ -14,7 +14,7 @@ function clickQuiz() {
 const medicalgif = require('../../animations/medical.gif');
 
 const MedicalSenior = ({backgroundColor}) => {
-    return <div style={{ backgroundColor: backgroundColor }} id="mainappinfoscreen">
+    return <div style={{ backgroundColor: backgroundColor }}>
         <div className="defaultscreen">
             <div className="transparencyScreen">
                 <div className="medical_page">

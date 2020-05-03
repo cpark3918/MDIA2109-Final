@@ -5,7 +5,14 @@ import './quizpopup.css';
 import Maintenance from '../maintenance';
 import QuizPopUp from '../../comps/quizpopup';
 
+import {data, ChangeData} from '../../pages/data';
+
+console.log(data);
+
 function clickStartQuiz() {
+    ChangeData({
+        score:0
+    })
     if (true) {
     Router.push("/maintenancequizq1");
     }
