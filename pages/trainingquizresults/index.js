@@ -36,12 +36,16 @@ function clickHealth() {
 
 const TrainingQuizResults = ({ backgroundColor }) => {
     var text = "";
-    if(data.score === "3"){
+    if(data.score === 3){
         text="3/3"
-    } else if (data.score === "2"){
+    } else if (data.score === 2){
         text="2/3"
     } else if (data.score === "1"){
         text="1/3"
+    } else if (data.score === "11"){
+        text="2/3"
+    } else if (data.score === "111"){
+        text="3/3"
     } else {
         text="0/3"
     }

@@ -1,5 +1,5 @@
 export var data = {
-    score:""
+    score:0
 }
 
 

@@ -8,6 +8,10 @@ import PanelTitle from '../../comps/paneltitle';
 import CardPanel from '../../comps/cardpanel';
 import Menu from '../../comps/menu';
 
+import { data, ChangeData } from '../../pages/data';
+
+console.log(data);
+
 const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
 const healthImg = require('../../cardIcons/health.png');
@@ -29,7 +33,24 @@ function clickHealth() {
 
 
 
-const MaintenanceQuizResults = ({ backgroundColor }) => <div
+const MaintenanceQuizResults = ({ backgroundColor }) => {
+
+var text = "";
+if(data.score === 3){
+    text="3/3"
+} else if (data.score === 2){
+    text="2/3"
+} else if (data.score === "1"){
+    text="1/3"
+} else if (data.score === "11"){
+    text="2/3"
+} else if (data.score === "111"){
+    text="3/3"
+} else {
+    text="0/3"
+}
+
+return <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_results">
          <div className="menu_main">
@@ -39,7 +60,7 @@ const MaintenanceQuizResults = ({ backgroundColor }) => <div
         <LogoSmall />
         <div className="maintenanceresults_pagetitle">
             <PageTitle text="Quiz Results" />
-            <PanelTitle marginTop="5px" marginBottom="10px;" text="2/3" />
+            <PanelTitle marginTop="5px" marginBottom="10px;" text={text} />
             <img id="animation" src={animation}></img>
         </div>
         <div className="maintenance_results_results">
@@ -60,5 +81,6 @@ const MaintenanceQuizResults = ({ backgroundColor }) => <div
         </div>
     </div>
 </div >
+}
 
 export default MaintenanceQuizResults;

@@ -9,6 +9,10 @@ import PanelTitle from '../../comps/paneltitle';
 import Menu from '../../comps/menu';
 import BackToPrev from '../../comps/backtoprev';
 
+import { data, ChangeData } from '../../pages/data';
+
+console.log(data);
+
 function clickAnswer() {
     if (true) {
         Router.push("/maintenancequizq3");
@@ -18,6 +22,15 @@ function clickAnswer() {
 function clickBack() {
     if (true) {
         Router.push("/maintenancequizq1");
+    }
+}
+
+function clickRight(){
+    ChangeData({
+        score:data.score+1
+    })
+    if (true) {
+        Router.push("/maintenancequizq3");
     }
 }
 
@@ -41,13 +54,13 @@ const MaintenanceQuizQ2 = ({ backgroundColor }) => <div
         </div>
         <div className="maintenance_answers2">
             <div onClick={clickAnswer} className="maintenance2_answer">
-                <Link href="/maintenancequizq3"><CustomButton fontSize="30px" color="#B7CfD2" text="Yes!" /></Link>
+                <CustomButton fontSize="30px" color="#B7CfD2" text="Yes!" />
+            </div>
+            <div onClick={clickRight} className="maintenance2_answer">
+                <CustomButton fontSize="30px" color="#Ef9B89" text="No." />
             </div>
             <div onClick={clickAnswer} className="maintenance2_answer">
-                <Link href="/maintenancequizq3"><CustomButton fontSize="30px" color="#Ef9B89" text="No." /></Link>
-            </div>
-            <div onClick={clickAnswer} className="maintenance2_answer">
-                <Link href="/maintenancequizq3"><CustomButton fontSize="30px" color="#B7D4A0" text="That's a thing?" /></Link>
+                <CustomButton fontSize="30px" color="#B7D4A0" text="That's a thing?" />
             </div>
         </div>
     </div>

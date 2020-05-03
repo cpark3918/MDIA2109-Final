@@ -9,9 +9,22 @@ import PanelTitle from '../../comps/paneltitle';
 import Menu from '../../comps/menu';
 import BackToPrev from '../../comps/backtoprev';
 
+import { data, ChangeData } from '../../pages/data';
+
+console.log(data);
+
 function clickAnswer() {
     if (true) {
-    Router.push("/maintenancequizq2");
+        Router.push("/maintenancequizq2");
+    }
+}
+
+function clickRight() {
+    ChangeData({
+        score: data.score + 1
+    })
+    if (true) {
+        Router.push("/maintenancequizq2");
     }
 }
 
@@ -24,29 +37,29 @@ function clickBack() {
 const MaintenanceQuizQ1 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_quiz">
-         <div className="menu_main">
-            <Menu />
-        </div>
+    <div className="menu_main">
+        <Menu />
+    </div>
     <div className="defaultscreen">
-            <LogoSmall />
+        <LogoSmall />
         <div className="maintenancequiz_pagetitle">
             <PageTitle fontSize="40px" text="Maintenance Quiz" />
         </div>
         <div className="maintenance_question1">
             <PanelTitle text="Is it better to give" />
             <PanelTitle marginTop="-5px" marginBottom="-5px" text="your puppy multiple" />
-            <PanelTitle marginBottom="-0px"  text="short walks or" />
+            <PanelTitle marginBottom="-0px" text="short walks or" />
             <PanelTitle text="one long one?" />
         </div>
         <div className="maintenance_answers1">
-            <div onClick={clickAnswer}  className="maintenance1_answer">
-            <Link href="/maintenancequizq2"><CustomButton fontSize="30px" color="#B7CfD2" text="multiple!" /></Link>
+            <div onClick={clickRight} className="maintenance1_answer">
+                <CustomButton fontSize="30px" color="#B7CfD2" text="multiple!" />
             </div>
-            <div onClick={clickAnswer}  className="maintenance1_answer">
-            <Link href="/maintenancequizq2"><CustomButton  fontSize="30px" color="#Ef9B89" text="only 1!" /></Link>
+            <div onClick={clickAnswer} className="maintenance1_answer">
+                <CustomButton fontSize="30px" color="#Ef9B89" text="only 1!" />
             </div>
-            <div onClick={clickAnswer}  className="maintenance1_answer">
-            <Link href="/maintenancequizq2"><CustomButton  fontSize="30px" color="#B7D4A0" text="doesn't matter" /></Link>
+            <div onClick={clickAnswer} className="maintenance1_answer">
+                <CustomButton fontSize="30px" color="#B7D4A0" text="doesn't matter" />
             </div>
         </div>
     </div>

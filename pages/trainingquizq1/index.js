@@ -20,7 +20,7 @@ function clickAnswer() {
 
 function clickRight(){
     ChangeData({
-        score:"1"
+        score:data.score+1
     })
     if (true) {
         Router.push("/trainingquizq2");

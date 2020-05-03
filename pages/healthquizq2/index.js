@@ -6,6 +6,11 @@ import LogoSmall from '../../comps/logo_small';
 import CustomButton from '../../comps/custombutton';
 import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
+import Menu from '../../comps/menu';
+
+import { data, ChangeData } from '../../pages/data';
+
+console.log(data);
 
 function clickAnswer() {
     if (true) {
@@ -13,10 +18,20 @@ function clickAnswer() {
     }
 }
 
+function clickRight(){
+    ChangeData({
+        score:data.score+1
+    })
+    if (true) {
+        Router.push("/healthquizq3");
+    }
+}
+
 const HealthQuizQ2 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="health_quiz">
     <div className="defaultscreen">
+            <Menu />
             <LogoSmall />
         <div className="healthquiz_pagetitle">
             <PageTitle text="Health Quiz" />
@@ -30,7 +45,7 @@ const HealthQuizQ2 = ({ backgroundColor }) => <div
             <div onClick={clickAnswer}  className="health_answer">
             <Link href="/healthquizq3"><CustomButton fontSize="30px" color="#B7CfD2" text="$100-$200" /></Link>
             </div>
-            <div onClick={clickAnswer}  className="health_answer">
+            <div onClick={clickRight}  className="health_answer">
             <Link href="/healthquizq3"><CustomButton  fontSize="30px" color="#Ef9B89" text="$700-$1,500" /></Link>
             </div>
             <div onClick={clickAnswer}  className="health_answer">
