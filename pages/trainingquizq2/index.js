@@ -10,7 +10,7 @@ import Menu from '../../comps/menu';
 import BackToPrev from '../../comps/backtoprev';
 
 
-import {data, ChangeData} from '../../pages/data';
+import {data, ChangeData} from '../../data';
 
 console.log(data);
 

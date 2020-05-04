@@ -6,7 +6,7 @@ import PanelTitle from '../../comps/paneltitle';
 import CardPanel from '../../comps/cardpanel';
 import Menu from '../../comps/menu';
 
-import { data, ChangeData } from '../../pages/data';
+import { data, ChangeData } from '../../data';
 
 console.log(data);
 
