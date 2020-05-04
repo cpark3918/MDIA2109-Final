@@ -5,7 +5,7 @@ import './quizpopup.css';
 import Maintenance from '../maintenance';
 import QuizPopUp from '../../comps/quizpopup';
 
-import {data, ChangeData} from '../../pages/data';
+import {data, ChangeData} from '../../data';
 
 console.log(data);
 
