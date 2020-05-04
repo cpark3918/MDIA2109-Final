@@ -8,7 +8,7 @@ import Menu from '../../comps/menu';
 import Link from 'next/link';
 import Router from 'next/router';
 
-import { data, ChangeData } from '../../pages/data';
+import { data, ChangeData } from '../../data';
 
 console.log(data);
 

@@ -9,7 +9,7 @@ import PanelTitle from '../../comps/paneltitle';
 import BackToPrev from '../../comps/backtoprev';
 import Menu from '../../comps/menu';
 
-import {data, ChangeData} from '../../pages/data';
+import {data, ChangeData} from '../../data';
 
 console.log(data);
 
