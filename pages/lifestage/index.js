@@ -81,5 +81,6 @@ return <div
         <BackToPrev />
     </div>
 </div>
+}
 
 export default LifeStages;
