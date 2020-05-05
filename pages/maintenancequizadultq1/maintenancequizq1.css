@@ -6,7 +6,7 @@
     flex-direction: column;
     position: relative;
     left: 0%;
-    transition: left 1s;
+    transition: left 2s;
 }
 
 .maintenance1_answer {

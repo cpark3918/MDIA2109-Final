@@ -24,9 +24,10 @@ function clickRight() {
     ChangeData({
         score: data.score + 1
     })
-    if (true) {
+    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/maintenancequizadultq2");
-    }
+    }, 600)
 }
 
 function clickBack() {

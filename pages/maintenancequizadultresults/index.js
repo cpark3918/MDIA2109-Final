@@ -22,9 +22,10 @@ function clickTraining() {
     ChangeData({
         score:0
     })
-    if (true) {
-    Router.push("/trainingadult");
-    }
+    document.querySelector(".maintenance_results").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/trainingadult");
+    }, 600)
 }
 
 
@@ -32,9 +33,10 @@ function clickHealth() {
     ChangeData({
         score:0
     })
-    if (true) {
-    Router.push("/healthadult");
-    }
+    document.querySelector(".maintenance_results").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/healthadult");
+    }, 600)
 }
 
 
@@ -56,9 +58,16 @@ if(data.score === 3){
     text="0/3"
 }
 
+useEffect(() => {
+    setTimeout(()=>{
+        document.querySelector("#page").style.left = "0%";
+    }, 50);
+}, []);
+
+
 return <div
     style={{ backgroundColor: backgroundColor }}
-    className="maintenance_results">
+    className="maintenance_results" id="page">
          <div className="menu_main">
             <Menu />
         </div>

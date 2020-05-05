@@ -14,9 +14,10 @@ import { data, ChangeData } from '../../data';
 console.log(data);
 
 function clickAnswer() {
-    if (true) {
+    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/maintenancequizadultq3");
-    }
+    }, 600)
 }
 
 function clickBack() {
@@ -29,9 +30,10 @@ function clickRight() {
     ChangeData({
         score: data.score + 1
     })
-    if (true) {
+    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/maintenancequizadultq3");
-    }
+    }, 600)
 }
 
 
