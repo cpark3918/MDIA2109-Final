@@ -4,6 +4,9 @@
     top: 40px;
     left: 30px; */
     flex-direction: column;
+    position: relative;
+    left: -100%;
+    transition: left 2s;
 }
 
 .maintenance_logo {

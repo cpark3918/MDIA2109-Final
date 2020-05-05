@@ -4,6 +4,9 @@
     top: 40px;
     left: 30px; */
     flex-direction: column;
+    position: relative;
+    left: 0%;
+    transition: left 1s;
 }
 
 .maintenance1_answer {

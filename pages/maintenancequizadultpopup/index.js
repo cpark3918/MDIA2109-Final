@@ -32,7 +32,7 @@ const TrainingQuizAdultPopUp = ({ backgroundColor }) => <div
             <Maintenance />
         </div>
         <div  onClick={clickStartQuiz} className="qpopup">
-            <Link href="maintenancequizadultq1"><QuizPopUp /></Link>
+            <QuizPopUp />
         </div>
     </div>
     <div onClick={clickExit} id="exit"></div>
