@@ -48,9 +48,7 @@ const MaintenanceQuizAdultQ2 = ({ backgroundColor }) => {
     return <div
         style={{ backgroundColor: backgroundColor }}
         className="maintenance_quiz" id="page">
-        <div className="menu_main">
             <Menu />
-        </div>
         <div className="defaultscreen">
             <LogoSmall />
             <div className="maintenancequiz_pagetitle">

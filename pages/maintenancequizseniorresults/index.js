@@ -22,9 +22,10 @@ function clickTraining() {
     ChangeData({
         score:0
     })
-    if (true) {
-    Router.push("/trainingsenior");
-    }
+    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/trainingsenior");
+    }, 600)
 }
 
 
@@ -32,9 +33,10 @@ function clickHealth() {
     ChangeData({
         score:0
     })
-    if (true) {
-    Router.push("/healthsenior");
-    }
+    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/healthsenior");
+    }, 600)
 }
 
 
@@ -56,12 +58,17 @@ if(data.score === 3){
     text="0/3"
 }
 
+useEffect(() => {
+    setTimeout(()=>{
+        document.querySelector("#page").style.left = "0%";
+    }, 50);
+}, []);
+
+
 return <div
     style={{ backgroundColor: backgroundColor }}
-    className="maintenance_results">
-         <div className="menu_main">
+    className="maintenance_results" id="page">
             <Menu />
-        </div>
     <div className="defaultscreen">
         <LogoSmall />
         <div className="maintenanceresults_pagetitle">

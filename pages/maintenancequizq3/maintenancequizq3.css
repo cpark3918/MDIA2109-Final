@@ -2,6 +2,9 @@
     display: flex;
  
     flex-direction: column;
+    position: relative;
+    left: 100%;
+    transition: left 2s;
 }
 
 .maintenance3_answer {

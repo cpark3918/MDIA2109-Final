@@ -68,9 +68,7 @@ useEffect(() => {
 return <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_results" id="page">
-         <div className="menu_main">
             <Menu />
-        </div>
     <div className="defaultscreen">
         <LogoSmall />
         <div className="maintenanceresults_pagetitle">
