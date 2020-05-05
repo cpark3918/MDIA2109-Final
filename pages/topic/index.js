@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './topic.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
@@ -10,9 +10,10 @@ import Menu from '../../comps/menu';
 import BackToPrev from '../../comps/backtoprev';
 
 function clickMaintenance() {
-    if (true) {
-    Router.push("/maintenance");
-    }
+    document.querySelector(".Topic").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/maintenance");
+    }, 600)
 }
 
 function clickBack() {
@@ -22,25 +23,35 @@ function clickBack() {
 }
 
 function clickTraining() {
-    if (true) {
-    Router.push("/training");
-    }
+    document.querySelector(".Topic").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/training");
+    }, 600)
 }
 
 
 function clickHealth() {
-    if (true) {
-    Router.push("/health");
-    }
+    document.querySelector(".Topic").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/health");
+    }, 600)
 }
 
 const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
 const healthImg = require('../../cardIcons/health.png');
 
-const Topic = ({ backgroundColor }) => <div
+const Topic = ({ backgroundColor }) => {
+
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="Topic">
+    className="Topic" id="page">
     <div className="defaultscreen">
 
             <LogoSmall />
@@ -68,5 +79,6 @@ const Topic = ({ backgroundColor }) => <div
         <BackToPrev />
     </div>
 </div>
+}
 
 export default Topic;
