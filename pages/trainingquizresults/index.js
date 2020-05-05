@@ -20,15 +20,17 @@ const quizAnimation = require('../../animations/happy-dog.gif');
 
 
 function clickMaintenance() {
-    if (true) {
+    document.querySelector(".training_results").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/maintenance");
-    }
+    }, 600)
 }
 
 function clickHealth() {
-    if (true) {
+    document.querySelector(".training_results").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/health");
-    }
+    }, 600)
 }
 
 
@@ -49,10 +51,15 @@ const TrainingQuizResults = ({ backgroundColor }) => {
         text="0/3"
     }
 
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
 
 return <div
         style={{ backgroundColor: backgroundColor }}
-        className="training_results">
+        className="training_results" id="page">
         <div className="defaultscreen">
             <LogoSmall />
             <Menu />

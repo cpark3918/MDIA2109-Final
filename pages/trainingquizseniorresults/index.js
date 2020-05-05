@@ -23,18 +23,20 @@ function clickMaintenance() {
     ChangeData({
         score:0
     })
-    if (true) {
+    document.querySelector(".training_results").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/maintenancesenior");
-    }
+    }, 600)
 }
 
 function clickHealth() {
     ChangeData({
         score:0
     })
-    if (true) {
+    document.querySelector(".training_results").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/healthsenior");
-    }
+    }, 600)
 }
 
 
@@ -55,10 +57,15 @@ const TrainingQuizSeniorResults = ({ backgroundColor }) => {
         text="0/3"
     }
 
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
 
 return <div
         style={{ backgroundColor: backgroundColor }}
-        className="training_results">
+        className="training_results" id="page">
         <div className="defaultscreen">
             <LogoSmall />
             <Menu />

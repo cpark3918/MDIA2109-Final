@@ -4,6 +4,9 @@
     top: 60px;
     left: 50px; */
     flex-direction: column;
+    position: relative;
+    left: 100%;
+    transition: left 2s;
 }
 
 .training3_answer {
