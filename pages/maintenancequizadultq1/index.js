@@ -36,9 +36,15 @@ function clickBack() {
 }
 
 
-const MaintenanceQuizAdultQ1 = ({ backgroundColor }) => 
+const MaintenanceQuizAdultQ1 = ({ backgroundColor }) => {
 
- <div style={{ backgroundColor: backgroundColor }}
+useEffect(() => {
+    setTimeout(()=>{
+        document.querySelector("#page").style.left = "0%";
+    }, 50);
+}, []);
+
+ return <div style={{ backgroundColor: backgroundColor }}
         className="maintenance_quiz">
         <div className="menu_main">
             <Menu />
@@ -70,7 +76,7 @@ const MaintenanceQuizAdultQ1 = ({ backgroundColor }) =>
             <BackToPrev />
         </div>
     </div >
-
+}
 
 
 export default MaintenanceQuizAdultQ1;
