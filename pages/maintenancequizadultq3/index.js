@@ -79,5 +79,6 @@ const MaintenanceQuizAdultQ3 = ({ backgroundColor }) => {
         <BackToPrev />
     </div>
 </div >
+}
 
 export default MaintenanceQuizAdultQ3;
