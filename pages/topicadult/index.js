@@ -10,16 +10,18 @@ import BackToPrev from '../../comps/backtoprev';
 import Menu from '../../comps/menu';
 
 function clickMaintenance() {
-    if (true) {
-    Router.push("/maintenanceadult");
-    }
+    document.querySelector(".Topic").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/maintenanceadult");
+    }, 600)
 }
 
 
 function clickTraining() {
-    if (true) {
-    Router.push("/trainingadult");
-    }
+    document.querySelector(".Topic").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/trainingadult");
+    }, 600)
 }
 
 function clickBack() {
@@ -29,18 +31,27 @@ function clickBack() {
 }
 
 function clickHealth() {
-    if (true) {
-    Router.push("/healthadult");
-    }
+    document.querySelector(".Topic").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/healthadult");
+    }, 600)
 }
 
 const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
 const healthImg = require('../../cardIcons/health.png');
 
-const TopicAdult = ({ backgroundColor }) => <div
+const TopicAdult = ({ backgroundColor }) => {
+
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="Topic">
+    className="Topic" id="page">
     <div className="defaultscreen">
         <div className="topic_logo">
             <LogoSmall />
@@ -69,5 +80,6 @@ const TopicAdult = ({ backgroundColor }) => <div
         <BackToPrev />
     </div>
 </div>
+}
 
 export default TopicAdult;
