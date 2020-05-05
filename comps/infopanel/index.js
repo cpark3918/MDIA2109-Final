@@ -1,16 +1,14 @@
 import React from 'react';
 import './infopanel.css';
 
-const close = require('../infopanel/x.png');
+const closeWindowGray = require('../../cardIcons/close_gray.png')
 const gif = require('../../animations/commands.gif');
-
-
 
 
 
 const InfoPanel = ({ title, info, img, color }) => {
     return <div style={{ borderColor: color }} className="infopanel_contain">
-        <img className="info_close" src={close} />
+        <img className="info_close" src={closeWindowGray} />
         <div className="infopanel_box">
             <img id="gif" src={img} />
             <h1 id="infopanelh1" style={{ color: color }}>{title}</h1>

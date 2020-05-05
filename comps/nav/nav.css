@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Manrope:wght@300&display=swap');
 
-#navigation {
-    position: relative;
+.navigation {
+    position: fixed;
     /* left: -110%; */
     top: 0px;
-    transition: left 1s;
-    z-index: 50;
-}
-
-.nav_contain {
     width: 240px;
     height: 853px;
     background-color: #EF9B89;
+    z-index: 200;
+    box-shadow: 1px 0px 7px rgba(0,0,0, 0.5);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+}
+
+/* .nav_contain {
+    width: 240px;
+    height: 853px;
+    background-color: #EF9B89;
+} */
+
+.navigation.open {
+    transform: translateX(0);
 }
 
 .nav_box {

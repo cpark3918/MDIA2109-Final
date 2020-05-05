@@ -14,14 +14,14 @@ function nextTutorial(){
 }
 
 const Tutorial02 = () => {
-    return <div className="defaultscreen" onClick={nextTutorial}>
+    return <div className="defaultscreen">
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />
                 <PageTitle text="Tutorial" color="#000" fontSize="35pt"/>
             </div>
             <Menu />
-            <div className="tut_box">
+            <div className="tut_box" onClick={nextTutorial}>
                 <div className="tut_topics">
                     <h2 id="maint">Maintenance</h2>
                     <h2 id="train">Training</h2>
@@ -33,7 +33,7 @@ const Tutorial02 = () => {
             <div className="progress_box">
                 <div className="progress_inactive"></div>
                 <div className="progress_active"></div>
-                <div className="progress_inactive"></div>
+                <div className="progress_inactive" onClick={nextTutorial}></div>
                 <div className="progress_inactive"></div>
                 <div className="progress_inactive"></div>
             </div>

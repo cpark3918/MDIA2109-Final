@@ -5,6 +5,8 @@ import './quizpopup.css';
 import Training from '../training';
 import QuizPopUp from '../../comps/quizpopup';
 
+import BackDrop from '../../comps/backdrop';
+
 function clickStartQuiz() {
     if (true) {
     Router.push("/trainingquizq1");
@@ -21,6 +23,7 @@ const TrainingQuizPopUp = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="quizpopup">
     <div className="defaultscreen">
+    {/* <BackDrop /> */}
         <div className="trainingpage">
             <Training />
         </div>

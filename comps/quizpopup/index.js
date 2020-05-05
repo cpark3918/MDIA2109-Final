@@ -1,6 +1,8 @@
 import React from 'react';
 import './quizpopup.css';
-import CustomButton from '../custombutton'
+import CustomButton from '../custombutton';
+
+import BackDrop from '../backdrop';
 
 const closeWindowGray = require('../../cardIcons/close_gray.png')
 
@@ -11,6 +13,7 @@ const QuizPopup = () => <div className="quizpopup_contain">
          <p id="quizpopupp">Time to put your <br></br>knowledge to the test!</p>
          <CustomButton text="Start Quiz" fontSize="30pt"/>
      </div>
+     {/* <BackDrop /> */}
 </div>
 
 export default QuizPopup;
