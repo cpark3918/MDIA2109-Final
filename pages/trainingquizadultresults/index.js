@@ -10,6 +10,8 @@ import Router from 'next/router';
 
 import { data, ChangeData } from '../../data';
 
+// import { data, ChangeData } from '../../data';
+
 console.log(data);
 
 
