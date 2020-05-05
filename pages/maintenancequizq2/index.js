@@ -38,9 +38,9 @@ function clickRight(){
 const MaintenanceQuizQ2 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_quiz">
-         <div className="menu_main">
+
             <Menu />
-        </div>
+
     <div className="defaultscreen">
         <LogoSmall />
         <div className="maintenancequiz_pagetitle">

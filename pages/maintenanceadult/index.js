@@ -37,12 +37,12 @@ const MaintenanceAdult = ({ backgroundColor }) => <div
         <div className="maintenance_logo">
             <LogoSmall />
         </div>
-        <div className="menu_main">
+
             <Menu />
-        </div>
+
         <div className="mainscreenmainteance">
             <div className="maintenance_pagetitle">
-                <PageTitle marginBottom="55px" text="Maintenance" />
+                <PageTitle marginTop="120px" marginBottom="55px" text="Maintenance" />
             </div>
             <div className="maintenance_panels">
                 <div onClick={clickExercise} className="maintenance_exercise">

@@ -5,6 +5,8 @@ import './quizpopup.css';
 import Health from '../health';
 import QuizPopUp from '../../comps/quizpopup';
 
+import BackDrop from '../../comps/backdrop';
+
 function clickStartQuiz() {
     if (true) {
     Router.push("/healthquizq1");

@@ -6,6 +6,8 @@ import LogoSmall from '../../comps/logo_small';
 import './foodinfoadult.css';
 import Maintenance from '../maintenance';
 
+import BackDrop from '../../comps/backdrop';
+
 const foodgif = require('../../animations/food.gif');
 
 function clickQuiz() {
@@ -18,7 +20,8 @@ const FoodInfoAdult = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="foodinfo">
     <div className="defaultscreen">
-    <div className="transparencyScreen">
+        <BackDrop />
+    {/* <div className="transparencyScreen"> */}
         {/* <div className="food-info_logo">
             <LogoSmall />
         </div> */}
@@ -26,10 +29,10 @@ const FoodInfoAdult = ({ backgroundColor}) => <div
             <Maintenance />
         </div>
         <div onClick={clickQuiz}  className="foodinfoPanel">
-        <Link href="/maintenancequizpopup"><InfoPanel img={foodgif} color="#ef8B89" title="Food" info="To determine how much food to feed your dog, you should start by knowing your dog’s estimated adult weight. Most large breed dogs will weigh between 50 to 150 pounds, while small breeds weigh under 20 pounds. Small dogs have higher energy requirements than large dogs and need a dense, nutrient-rich food. Adult dogs mostly only require two meals a day. Sticking to a schedule can help your canine companion avoid grazing, feel like part of the family, and can encourage good mealtime behavior." /></Link>
+        <Link href="/maintenancequizpopup"><InfoPanel img={foodgif} color="#ef9B89" title="Food" info="To determine how much food to feed your dog, you should start by knowing your dog’s estimated adult weight. Most large breed dogs will weigh between 50 to 150 pounds, while small breeds weigh under 20 pounds. Small dogs have higher energy requirements than large dogs and need a dense, nutrient-rich food. Adult dogs mostly only require two meals a day. Sticking to a schedule can help your canine companion avoid grazing, feel like part of the family, and can encourage good mealtime behavior." /></Link>
         </div>
         </div>
-    </div>
+    {/* </div> */}
 </div>
 
 export default FoodInfoAdult;

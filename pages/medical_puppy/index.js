@@ -5,6 +5,8 @@ import './medical_puppy.css';
 import InfoPanel from '../../comps/infopanel';
 import Health from '../health';
 
+import BackDrop from '../../comps/backdrop';
+
 function clickQuiz() {
     if (true) {
     Router.push("/healthquizpopup");
@@ -16,7 +18,8 @@ const medicalgif = require('../../animations/medical.gif');
 const MedicalPuppy = ({backgroundColor}) => {
     return <div style={{ backgroundColor: backgroundColor }}>
         <div className="defaultscreen">
-            <div className="transparencyScreen">
+            <BackDrop />
+            {/* <div className="transparencyScreen"> */}
                 <div className="medical_page">
                     <Health />
                 </div>
@@ -32,7 +35,7 @@ Benefits of neutering (male) / Spaying (female) include being less likely to get
 Any time between 8 weeks - 6 months; before the dog is sexually mature (**Ask your vet for their advise)"/></Link>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
     </div>
 };
 

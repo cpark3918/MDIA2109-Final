@@ -6,7 +6,7 @@ import Router from 'next/router';
 
 import BackDrop from '../backdrop';
 
-const closeWindow = require('../../cardIcons/close_white.png')
+// const closeWindow = require('../../cardIcons/close_white.png')
 
 function clickNavHome() {
     if (true) {
@@ -58,7 +58,6 @@ const Nav = props => {
 
     return ( <div className={navClasses}>
         <div className="nav_box">
-            <img src={closeWindow}/>
             <div className="nav_menu">
                 <Link href="/"><p onClick={clickNavHome} className="nav_text">Home</p></Link>
                 <Link href="/about"><p onClick={clickNavAbout} className="nav_text">About Adogpt</p></Link>

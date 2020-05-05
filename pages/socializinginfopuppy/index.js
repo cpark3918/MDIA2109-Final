@@ -6,22 +6,25 @@ import InfoPanel from '../../comps/infopanel';
 import LogoSmall from '../../comps/logo_small';
 import './socializinginfopuppy.css';
 
+import BackDrop from '../../comps/backdrop';
+
 const socializinggif = require('../../animations/socializing.gif');
 
 function clickQuiz() {
     if (true) {
-    Router.push("/trainingquizpopup");
+        Router.push("/trainingquizpopup");
     }
 }
 
-const SocializingInfoPuppy = ({ backgroundColor}) => <div
+const SocializingInfoPuppy = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="socializinginfo" >
     <div className="defaultscreen">
+        <BackDrop />
         {/* <div className="socializing-info_logo">
             <LogoSmall />
         </div> */}
-        <div className="transparencyScreen">
+        {/* <div className="transparencyScreen"> */}
         <div className="socializing-info_page">
             <Training />
         </div>
@@ -34,7 +37,7 @@ const SocializingInfoPuppy = ({ backgroundColor}) => <div
               while introducing them to other puppies and people." /></Link>
         </div>
     </div>
-</div>
+    {/* </div> */}
 </div>
 
 export default SocializingInfoPuppy;

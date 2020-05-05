@@ -6,6 +6,8 @@ import LogoSmall from '../../comps/logo_small';
 import './exerciseinfosenior.css';
 import Maintenance from '../maintenance';
 
+import BackDrop from '../../comps/backdrop';
+
 function clickExit() {
     if (true) {
     Router.push("/maintenancesenior");
@@ -19,7 +21,8 @@ const ExerciseInfoSenior = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="exerciseinfo">
     <div className="defaultscreen">
-    <div className="transparencyScreen">
+        <BackDrop />
+    {/* <div className="transparencyScreen"> */}
         {/* <div className="exercise-info_logo">
             <LogoSmall />
         </div> */}
@@ -38,7 +41,7 @@ const ExerciseInfoSenior = ({ backgroundColor}) => <div
         them from becoming anxious, stressed, or confused. " /></Link>
         </div>
         </div>
-    </div>
+    {/* </div> */}
 </div>
 
 export default ExerciseInfoSenior;
