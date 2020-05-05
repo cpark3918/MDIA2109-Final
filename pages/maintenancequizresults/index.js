@@ -19,16 +19,18 @@ const animation = require('../../animations/happy-dog.gif');
 
 
 function clickTraining() {
-    if (true) {
-    Router.push("/training");
-    }
+    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/training");
+    }, 600)
 }
 
 
 function clickHealth() {
-    if (true) {
-    Router.push("/health");
-    }
+    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/health");
+    }, 600)
 }
 
 
@@ -50,9 +52,16 @@ if(data.score === 3){
     text="0/3"
 }
 
+useEffect(() => {
+    setTimeout(()=>{
+        document.querySelector("#page").style.left = "0%";
+    }, 50);
+}, []);
+
+
 return <div
     style={{ backgroundColor: backgroundColor }}
-    className="maintenance_results">
+    className="maintenance_results" id="page"> 
     <div className="defaultscreen">
         <Menu />
         <LogoSmall />

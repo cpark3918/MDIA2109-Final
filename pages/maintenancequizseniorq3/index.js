@@ -15,9 +15,10 @@ console.log(data);
 
 
 function clickResults() {
-    if (true) {
+    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/maintenancequizseniorresults");
-    }
+    }, 600)
 }
 
 function clickBack() {
@@ -30,19 +31,26 @@ function clickRight(){
     ChangeData({
         score:data.score+1
     })
-    if (true) {
+    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/maintenancequizseniorresults");
-    }
+    }, 600)
 }
 
 
 
-const MaintenanceQuizSeniorQ3 = ({ backgroundColor }) => <div
+const MaintenanceQuizSeniorQ3 = ({ backgroundColor }) => {
+
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="maintenance_quiz">
-         <div className="menu_main">
+    className="maintenance_quiz" id="page">
             <Menu />
-        </div>
     <div className="defaultscreen">
         <LogoSmall />
         <div className="maintenancequiz_pagetitle">
@@ -69,5 +77,6 @@ const MaintenanceQuizSeniorQ3 = ({ backgroundColor }) => <div
         <BackToPrev />
     </div>
 </div >
+}
 
 export default MaintenanceQuizSeniorQ3;

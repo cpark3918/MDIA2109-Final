@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 0%;
+    left: 100%;
     transition: left 2s;
 }
 
