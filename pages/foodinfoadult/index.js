@@ -10,7 +10,7 @@ const foodgif = require('../../animations/food.gif');
 
 function clickQuiz() {
     if (true) {
-    Router.push("/maintenancequizpopup");
+    Router.push("/maintenancequizadultpopup");
     }
 }
 

@@ -10,7 +10,7 @@ const socializinggif = require('../../animations/socializing.gif');
 
 function clickQuiz() {
     if (true) {
-    Router.push("/trainingquizpopup");
+    Router.push("/trainingquizpopupadult");
     }
 }
 

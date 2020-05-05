@@ -1,0 +1,25 @@
+.maintenance_quiz {
+    display: flex;
+    /* position: absolute;
+    top: 40px;
+    left: 30px; */
+    flex-direction: column;
+}
+
+.maintenance1_answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintenance_question1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintenancequiz_pagetitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
