@@ -4,6 +4,9 @@
     /* position: absolute;
     left: 60px;
     top: 40px; */
+    position: relative;
+    left: 0%;
+    transition: left 2s;
 }
 
 /* .life-stage_logo {

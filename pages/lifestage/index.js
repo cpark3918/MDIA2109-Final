@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './lifestage.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
@@ -11,36 +11,47 @@ import Nav from '../../comps/nav';
 import BackToPrev from '../../comps/backtoprev';
 
 function clickPuppy() {
-    if (true) {
-    Router.push("/topic");
-    }
+    document.querySelector(".Life_Stage").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/topicpuppy");
+    }, 600)
 }
 
 function clickBack() {
     if (true) {
-        Router.push("/dogsize");
+        Router.push("/");
     }
 }
 
 function clickAdult() {
-    if (true) {
-    Router.push("/topicadult");
-    }
+    document.querySelector(".Life_Stage").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/topicadult");
+    }, 600)
 }
 
 function clickSenior() {
-    if (true) {
-    Router.push("/topicsenior");
-    }
+    document.querySelector(".Life_Stage").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/topicsenior");
+    }, 600)
 }
 
 const puppyImg = require('../../cardIcons/puppy.png');
 const adultImg = require('../../cardIcons/adult.png');
 const seniorImg = require('../../cardIcons/adult.png');
 
-const LifeStages = ({ backgroundColor }) => <div
+const LifeStages = ({ backgroundColor }) => {
+    
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+    
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="Life_Stage">
+    className="Life_Stage" id="page">
     <div className="defaultscreen">
         <div className="life-stage_logo">
             <LogoSmall />
