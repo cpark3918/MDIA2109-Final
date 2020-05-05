@@ -15,6 +15,29 @@ const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
 const animation = require('../../animations/happy-dog.gif');
 
+function clickTraining() {
+    ChangeData({
+        score:0
+    })
+    document.querySelector(".health_results").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/trainingsenior");
+    }, 600)
+}
+
+
+function clickMaintenance() {
+    ChangeData({
+        score:0
+    })
+    document.querySelector(".health_results").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/healthsenior");
+    }, 600)
+}
+
+
+
 
 const HealthQuizResults = ({ backgroundColor }) => {
 
@@ -51,11 +74,11 @@ return <div
             <PanelTitle fontSize="20px" text="what it takes to look after a dog!" />
         </div>
         <div className="health_results_categories">
-            <div className="health-results_maintenance">
+            <div onClick={clickMaintenance} className="health-results_maintenance">
                 <CardPanel src={maintenanceImg} />
                 <PanelTitle color="#B7CfD2" text="Maintenance" />
             </div>
-            <div className="health-results_training">
+            <div onClick={clickTraining} className="health-results_training">
                 <CardPanel color="#EF9B89" src={trainingImg} />
                 <PanelTitle color="#EF9B89" text="Training" />
             </div>
