@@ -10,7 +10,7 @@ const AboutIcon = require('../../cardIcons/about.png')
 
 function clickStart() {
     if (true) {
-        Router.push("/dogsize")
+        Router.push("/lifestage")
     }
 }
 
@@ -31,13 +31,13 @@ const Home = () => {
         <div className="home_contain">
             <LogoHome />
             <div onClick={clickStart}>
-                <CustomButton text="Let's Start!" color="#B7D4A0" fontSize="20pt" />
+                <Link href="/lifestage"><CustomButton text="Let's Start!" color="#B7D4A0" fontSize="20pt" /></Link>
             </div>
             <div onClick={startTutorial} className="tut_button">Tutorial</div>
             <div onClick={aboutUs} className="home_about">
                 {/* <BackToPrev text="About Us" img={AboutIcon} /> */}
                 <img src={AboutIcon} />
-                <p>About Us</p>
+                <p id="home_about_text">About Us</p>
             </div>
         </div>
     </div>
