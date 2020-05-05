@@ -45,7 +45,7 @@ useEffect(() => {
 }, []);
 
  return <div style={{ backgroundColor: backgroundColor }}
-        className="maintenance_quiz">
+        className="maintenance_quiz" id="#page">
         <div className="menu_main">
             <Menu />
         </div>
