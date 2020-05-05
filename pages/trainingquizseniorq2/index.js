@@ -15,18 +15,20 @@ import {data, ChangeData} from '../../data';
 console.log(data);
 
 function clickAnswer() {
-    if (true) {
+    document.querySelector(".training_quiz").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/trainingquizseniorq3");
-    }
+    }, 600)
 }
 
 function clickRight(){
     ChangeData({
         score:data.score+1
     })
-    if (true) {
+    document.querySelector(".training_quiz").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/trainingquizseniorq3");
-    }
+    }, 600)
 }
 
 
@@ -36,9 +38,18 @@ function clickBack() {
     }
 }
 
-const TrainingQuizSeniorQ2 = ({ backgroundColor }) => <div
+const TrainingQuizSeniorQ2 = ({ backgroundColor }) =>{
+    
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+   
+
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="training_quiz">
+    className="training_quiz" id="page">
     <div className="defaultscreen">
         <LogoSmall />
         <Menu />
@@ -66,5 +77,6 @@ const TrainingQuizSeniorQ2 = ({ backgroundColor }) => <div
         <BackToPrev />
     </div>
 </div >
+}
 
 export default TrainingQuizSeniorQ2;

@@ -13,23 +13,33 @@ import { data, ChangeData } from '../../data';
 console.log(data);
 
 function clickAnswer() {
-    if (true) {
-    Router.push("/healthquizq2");
-    }
+    document.querySelector(".health_quiz").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/healthquizq2");
+    }, 600)
 }
 
 function clickRight(){
     ChangeData({
         score:data.score+1
     })
-    if (true) {
+    document.querySelector(".health_quiz").style.left = "-100%";
+    setTimeout(function(){
         Router.push("/healthquizq2");
-    }
+    }, 600)
 }
 
-const HealthQuizQ1 = ({ backgroundColor }) => <div
+const HealthQuizQ1 = ({ backgroundColor }) => {
+
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="health_quiz">
+    className="health_quiz" id="page">
     <div className="defaultscreen">
             <Menu />
             <LogoSmall />
@@ -54,5 +64,6 @@ const HealthQuizQ1 = ({ backgroundColor }) => <div
         </div>
     </div>
 </div >
+}
 
 export default HealthQuizQ1;
