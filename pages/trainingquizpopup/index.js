@@ -28,7 +28,8 @@ const TrainingQuizPopUp = ({ backgroundColor }) => <div
             <Link href="trainingquizq1"><QuizPopUp /></Link>
         </div>
     </div>
-    <div onClick={clickExit} id="exit"></div>
+    <div onClick={clickExit} id="exit">
+    </div>
 </div> 
 
 export default TrainingQuizPopUp

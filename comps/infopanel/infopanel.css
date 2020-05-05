@@ -14,7 +14,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -45%);
-    z-index: 10;
+    z-index: 200;
 }
 
 .infopanel_box {
@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: center;
     padding: 5px;
+    margin-top: 20px;
 }
 
 #infopanelh1 {
@@ -31,6 +32,7 @@
     color: #B0D0D3;
     font-size: 40pt;
     line-height: 30pt;
+    text-align: center;
 }
 
 .infopanel_box h1 {
@@ -59,8 +61,9 @@
 }
 
 .info_close {
-    width: 30px;
+    width: 22px;
 }
+
 
 #gif {
     width: 200px;

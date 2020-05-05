@@ -8,7 +8,7 @@ import PanelTitle from '../../comps/paneltitle';
 import CardPanel from '../../comps/cardpanel';
 import Menu from '../../comps/menu';
 
-import { data, ChangeData } from '../../pages/data';
+import { data, ChangeData } from '../../data';
 
 console.log(data);
 
@@ -53,10 +53,8 @@ if(data.score === 3){
 return <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_results">
-         <div className="menu_main">
-            <Menu />
-        </div>
     <div className="defaultscreen">
+        <Menu />
         <LogoSmall />
         <div className="maintenanceresults_pagetitle">
             <PageTitle text="Quiz Results" />

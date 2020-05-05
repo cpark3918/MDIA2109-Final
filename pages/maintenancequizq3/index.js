@@ -9,7 +9,7 @@ import PanelTitle from '../../comps/paneltitle';
 import Menu from '../../comps/menu';
 import BackToPrev from '../../comps/backtoprev';
 
-import { data, ChangeData } from '../../pages/data';
+import { data, ChangeData } from '../../data';
 
 console.log(data);
 
@@ -40,9 +40,9 @@ function clickRight(){
 const MaintenanceQuizQ3 = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_quiz">
-         <div className="menu_main">
+
             <Menu />
-        </div>
+
     <div className="defaultscreen">
         <LogoSmall />
         <div className="maintenancequiz_pagetitle">

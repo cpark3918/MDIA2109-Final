@@ -4,7 +4,9 @@ import './nav.css';
 import Link from 'next/link';
 import Router from 'next/router';
 
-const closeWindow = require('../../cardIcons/close_white.png')
+import BackDrop from '../backdrop';
+
+// const closeWindow = require('../../cardIcons/close_white.png')
 
 function clickNavHome() {
     if (true) {
@@ -30,7 +32,7 @@ function clickNavRes() {
     }
 }
 
-const Nav = ({ left_css, onClick }) => {
+const Nav = props => {
 
     // const [pageleft, setLeft] = useState("-110%");
 
@@ -49,10 +51,13 @@ const Nav = ({ left_css, onClick }) => {
     //     }, 50);
     // }
 
+    let navClasses = 'navigation';
+    if (props.show){
+        navClasses = 'navigation open';
+    }
 
-    return <div className="nav_contain" id="navigation" style={{ left: left_css }}>
+    return ( <div className={navClasses}>
         <div className="nav_box">
-            <img src={closeWindow} onClick={onClick} />
             <div className="nav_menu">
                 <Link href="/"><p onClick={clickNavHome} className="nav_text">Home</p></Link>
                 <Link href="/about"><p onClick={clickNavAbout} className="nav_text">About Adogpt</p></Link>
@@ -61,15 +66,7 @@ const Nav = ({ left_css, onClick }) => {
             </div>
         </div>
     </div>
-
-    function closeNav() {
-        document.querySelector("#navigation").style.left = "-120%";
-    }
-
-    navigator.defaultProps = {
-        left_css: "120%",
-        onClick: closeNav
-    }
+    );
 };
 
 

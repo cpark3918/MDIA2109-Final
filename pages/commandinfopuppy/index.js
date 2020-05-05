@@ -6,6 +6,8 @@ import InfoPanel from '../../comps/infopanel';
 import LogoSmall from '../../comps/logo_small';
 import './commandinfopuppy.css';
 
+import BackDrop from '../../comps/backdrop';
+
 function clickExit() {
     if (true) {
     Router.push("/training");
@@ -19,7 +21,8 @@ const CommandInfoPuppy = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="commandinfo">
     <div className="defaultscreen">
-    <div className="transparencyScreen">
+        <BackDrop />
+    {/* <div className="transparencyScreen"> */}
         {/* <div className="command-info_logo">
             <LogoSmall />
         </div> */}
@@ -30,7 +33,7 @@ const CommandInfoPuppy = ({ backgroundColor}) => <div
             <Link href="/training"><InfoPanel img={commandsgif} /></Link>
         </div>
         </div>
-    </div>
+    {/* </div> */}
 </div>
 
 export default CommandInfoPuppy

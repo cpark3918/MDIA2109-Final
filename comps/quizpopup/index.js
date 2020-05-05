@@ -1,6 +1,8 @@
 import React from 'react';
 import './quizpopup.css';
-import CustomButton from '../custombutton'
+import CustomButton from '../custombutton';
+
+import BackDrop from '../backdrop';
 
 const closeWindowGray = require('../../cardIcons/close_gray.png')
 

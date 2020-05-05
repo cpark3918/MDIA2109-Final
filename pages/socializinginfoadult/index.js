@@ -39,4 +39,4 @@ const SocializingInfoAdult = ({ backgroundColor}) => <div
     </div>
 </div>
 
-export default SocializingInfoAdult
+export default SocializingInfoAdult;

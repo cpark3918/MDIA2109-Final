@@ -8,7 +8,7 @@ import Menu from '../../comps/menu';
 import Link from 'next/link';
 import Router from 'next/router';
 
-import { data, ChangeData } from '../../pages/data';
+import { data, ChangeData } from '../../data';
 
 console.log(data);
 
@@ -17,7 +17,7 @@ const maintenanceImg = require('../../cardIcons/maintenance.png');
 const trainingImg = require('../../cardIcons/training.png');
 const healthImg = require('../../cardIcons/health.png');
 const quizAnimation = require('../../animations/happy-dog.gif');
-const num = require('../../pages/data');
+const num = require('../../data');
 
 
 function clickMaintenance() {

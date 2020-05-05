@@ -9,10 +9,11 @@
     border-radius: 5px;
     width: 80%;
     position: absolute;
-    top: 42%;
+    top: -450px;
+    /* top: 42%;
     left: 50%;
-    transform: translate(-50%, -45%);
-    z-index: 9;
+    transform: translate(-50%, -45%); */
+    z-index: 200;
 }
 
 .quizpopup_contain h1 {

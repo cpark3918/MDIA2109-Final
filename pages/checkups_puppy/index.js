@@ -5,6 +5,8 @@ import './checkups_puppy.css';
 import InfoPanel from '../../comps/infopanel';
 import Health from '../health';
 
+import BackDrop from '../../comps/backdrop';
+
 function clickExit() {
     if (true) {
     Router.push("/health");
@@ -16,7 +18,8 @@ const checkupsgif = require('../../animations/vet.gif');
 const CheckupsPuppy = ({backgroundColor}) => {
     return <div style={{ backgroundColor: backgroundColor }}>
         <div className="defaultscreen">
-            <div className="transparencyScreen">
+            <BackDrop />
+            {/* <div className="transparencyScreen"> */}
                 <div className="checkups_page">
                     <Health />
                 </div>
@@ -25,7 +28,7 @@ const CheckupsPuppy = ({backgroundColor}) => {
 Annual vet bills cost $100-$300, not including preventative medication (i.e. flea, tick and heartworm preventatives. these range from $100-200 per year)."/></Link>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
     </div>
 };
 

@@ -8,7 +8,7 @@ import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
 import Menu from '../../comps/menu';
 
-import { data, ChangeData } from '../../pages/data';
+import { data, ChangeData } from '../../data';
 
 console.log(data);
 

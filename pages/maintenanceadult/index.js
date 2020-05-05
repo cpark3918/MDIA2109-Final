@@ -30,19 +30,19 @@ function clickBack() {
 const exerciseImg = require('../../cardIcons/exercise.png');
 const foodImg = require('../../cardIcons/food.png');
 
-const Maintenance = ({ backgroundColor }) => <div
+const MaintenanceAdult = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance">
     <div className="defaultscreen">
         <div className="maintenance_logo">
             <LogoSmall />
         </div>
-        <div className="menu_main">
+
             <Menu />
-        </div>
+
         <div className="mainscreenmainteance">
             <div className="maintenance_pagetitle">
-                <PageTitle marginBottom="55px" text="Maintenance" />
+                <PageTitle marginTop="120px" marginBottom="55px" text="Maintenance" />
             </div>
             <div className="maintenance_panels">
                 <div onClick={clickExercise} className="maintenance_exercise">
@@ -61,4 +61,4 @@ const Maintenance = ({ backgroundColor }) => <div
     </div>
 </div>
 
-export default Maintenance;
+export default MaintenanceAdult;
