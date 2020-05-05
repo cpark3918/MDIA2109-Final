@@ -6,20 +6,22 @@ import InfoPanel from '../../comps/infopanel';
 import LogoSmall from '../../comps/logo_small';
 import './commandinfosenior.css';
 
+import BackDrop from '../../comps/backdrop';
 
 function clickExit() {
     if (true) {
-    Router.push("/trainingsenior");
+        Router.push("/trainingsenior");
     }
 }
 
 const commandsgif = require('../../animations/commands.gif');
 
-const CommandInfoSenior = ({ backgroundColor}) => <div
+const CommandInfoSenior = ({ backgroundColor }) => <div
     style={{ backgroundColor: backgroundColor }}
     className="commandinfo">
     <div className="defaultscreen">
-    <div className="transparencyScreen">
+        <BackDrop />
+        {/* <div className="transparencyScreen"> */}
         {/* <div className="command-info_logo">
             <LogoSmall />
         </div> */}
@@ -27,7 +29,7 @@ const CommandInfoSenior = ({ backgroundColor}) => <div
             <Training />
         </div>
         <div onClick={clickExit} className="commandinfoPanel">
-        <Link href="/trainingsenior"><InfoPanel img={commandsgif} info="Most people
+            <Link href="/trainingsenior"><InfoPanel img={commandsgif} info="Most people
          associate training with puppies, but the reality is that dogs 
          are able to learn at any age.
          Senior dogs may be experiencing blindness, deafness, joint pains,
@@ -37,8 +39,8 @@ const CommandInfoSenior = ({ backgroundColor}) => <div
              motivate them but make sure you choose treats that are nutritious
               with age-related benefits. " /></Link>
         </div>
-        </div>
     </div>
+    {/* </div> */}
 </div>
 
 export default CommandInfoSenior

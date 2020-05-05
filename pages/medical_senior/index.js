@@ -5,6 +5,8 @@ import Health from '../health';
 import Link from 'next/link';
 import Router from 'next/router';
 
+import BackDrop from '../../comps/backdrop';
+
 function clickQuiz() {
     if (true) {
     Router.push("/healthquizpopup");
@@ -16,7 +18,8 @@ const medicalgif = require('../../animations/medical.gif');
 const MedicalSenior = ({backgroundColor}) => {
     return <div style={{ backgroundColor: backgroundColor }}>
         <div className="defaultscreen">
-            <div className="transparencyScreen">
+            <BackDrop />
+            {/* <div className="transparencyScreen"> */}
                 <div className="medical_page">
                     <Health />
                 </div>
@@ -28,7 +31,7 @@ b) Urinary tract disease: increased urination / spotting or accidents in the hou
 c) Heart disease: coughing, difficulty breathing, decreased tolerance of exercise and appetite, and vomiting."/></Link>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
     </div>
 };
 

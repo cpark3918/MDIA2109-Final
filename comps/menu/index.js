@@ -57,11 +57,11 @@ class Menu extends Component {
     }
 
     render() {
-        // let nav;
+        let nav;
         let backdrop;
 
         if (this.state.slideNav){
-            // nav = <Nav click={this.navClose}/>;
+            nav = <Nav click={this.navClose}/>;
             backdrop = <BackDrop click={this.navClose}/>;
         }
         return (

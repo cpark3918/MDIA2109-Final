@@ -6,6 +6,7 @@ import InfoPanel from '../../comps/infopanel';
 import LogoSmall from '../../comps/logo_small';
 import './socializinginfosenior.css';
 
+import BackDrop from '../../comps/backdrop';
 
 const socializinggif = require('../../animations/socializing.gif');
 
@@ -19,7 +20,8 @@ const SocializingInfoSenior = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="commandinfo" >
     <div className="defaultscreen">
-    <div className="transparencyScreen">
+        <BackDrop />
+    {/* <div className="transparencyScreen"> */}
         {/* <div className="socializing-info_logo">
             <LogoSmall />
         </div> */}
@@ -38,7 +40,7 @@ const SocializingInfoSenior = ({ backgroundColor}) => <div
           dog." /></Link>
         </div>
         </div>
-    </div>
+    {/* </div> */}
 </div>
 
 export default SocializingInfoSenior;

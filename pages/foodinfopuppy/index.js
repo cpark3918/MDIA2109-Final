@@ -6,6 +6,7 @@ import LogoSmall from '../../comps/logo_small';
 import './foodinfopuppy.css';
 import Maintenance from '../maintenance';
 
+import BackDrop from '../../comps/backdrop';
 
 const foodgif = require('../../animations/food.gif');
 
@@ -20,7 +21,8 @@ const FoodInfoPuppy = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="foodinfo">
     <div className="defaultscreen">
-    <div className="transparencyScreen">
+        <BackDrop />
+    {/* <div className="transparencyScreen"> */}
         {/* <div className="food-info_logo">
             <LogoSmall />
         </div> */}
@@ -39,7 +41,7 @@ To train your pet to meal feed as a puppy, they should be
 fed at the same times every day as this creates a sense of security for the puppy. At about six months of age, you can cut feedings back to three times a day, and then cut back to twice or once a day." /></Link>
         </div>
         </div>
-    </div>
+    {/* </div> */}
 </div>
 
 export default FoodInfoPuppy;

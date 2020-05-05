@@ -13,7 +13,6 @@ const QuizPopup = () => <div className="quizpopup_contain">
          <p id="quizpopupp">Time to put your <br></br>knowledge to the test!</p>
          <CustomButton text="Start Quiz" fontSize="30pt"/>
      </div>
-     {/* <BackDrop /> */}
 </div>
 
 export default QuizPopup;

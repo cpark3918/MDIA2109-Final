@@ -53,10 +53,8 @@ if(data.score === 3){
 return <div
     style={{ backgroundColor: backgroundColor }}
     className="maintenance_results">
-         <div className="menu_main">
-            <Menu />
-        </div>
     <div className="defaultscreen">
+        <Menu />
         <LogoSmall />
         <div className="maintenanceresults_pagetitle">
             <PageTitle text="Quiz Results" />
