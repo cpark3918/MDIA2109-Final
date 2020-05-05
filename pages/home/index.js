@@ -35,7 +35,9 @@ const Home = () => {
             </div>
             <div onClick={startTutorial} className="tut_button">Tutorial</div>
             <div onClick={aboutUs} className="home_about">
-                <BackToPrev text="About Us" img={AboutIcon} />
+                {/* <BackToPrev text="About Us" img={AboutIcon} /> */}
+                <img src={AboutIcon} />
+                <p>About Us</p>
             </div>
         </div>
     </div>
