@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect}  from 'react';
 import './quizpopup.css';
 import Maintenance from '../maintenance';
 import QuizPopUp from '../../comps/quizpopup';

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect}  from 'react';
 import './trainingquizq1.css';
 import LogoSmall from '../../comps/logo_small';
 import CustomButton from '../../comps/custombutton';

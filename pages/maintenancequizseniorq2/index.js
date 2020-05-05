@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect}  from 'react';
 import './maintenancequizq2.css';
 import LogoSmall from '../../comps/logo_small';
 import CustomButton from '../../comps/custombutton';
