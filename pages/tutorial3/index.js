@@ -13,14 +13,14 @@ function nextTutorial(){
 }
 
 const Tutorial03 = () => {
-    return <div className="defaultscreen" onClick={nextTutorial}>
+    return <div className="defaultscreen">
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />
                 <PageTitle text="Tutorial" color="#000" fontSize="35pt"/>
             </div>
             <Menu />
-            <div className="tut_box" id="tut3_box">
+            <div className="tut_box" id="tut3_box" onClick={nextTutorial}>
                 <div id="tut_infopanel">
                     <PageTitle text="Information" color="#B0D0D3" fontSize="30pt" marginTop={30} marginBottom={0}/>
                     <p>"You will be quizzed after you have opened all panels (i.e. Commands). So make sure to read the content carefully! </p>
@@ -31,7 +31,7 @@ const Tutorial03 = () => {
                 <div className="progress_inactive"></div>
                 <div className="progress_inactive"></div>
                 <div className="progress_active"></div>
-                <div className="progress_inactive"></div>
+                <div className="progress_inactive" onClick={nextTutorial}></div>
                 <div className="progress_inactive"></div>
             </div>
         </div>

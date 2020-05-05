@@ -5,6 +5,10 @@
     transform: scale(0.8);
 } */
 
+.qpopup {
+    transform: scale(0.8);
+}
+
 #exit {
     position: absolute;
     left: 25px;
