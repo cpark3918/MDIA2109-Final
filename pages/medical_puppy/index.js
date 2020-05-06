@@ -16,14 +16,7 @@ function clickQuiz() {
 const medicalgif = require('../../animations/medical.gif');
 
 const MedicalPuppy = ({backgroundColor}) => {
- 
-    useEffect(() => {
-        setTimeout(()=>{
-            document.querySelector("#page").style.left = "0%";
-        }, 50);
-    }, []);
-   
-   return <div style={{ backgroundColor: backgroundColor }} id="page">
+   return <div style={{ backgroundColor: backgroundColor }}>
         <div className="defaultscreen">
             <BackDrop />
             {/* <div className="transparencyScreen"> */}

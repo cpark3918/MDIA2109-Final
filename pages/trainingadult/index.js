@@ -12,13 +12,13 @@ import BackToPrev from '../../comps/backtoprev';
 
 function clickCommands() {
     if (true) {
-    Router.push("/commandinfoadult");
+        Router.push("/commandinfoadult");
     }
 }
 
 function clickSocializing() {
     if (true) {
-    Router.push("/socializinginfoadult");
+        Router.push("/socializinginfoadult");
     }
 }
 
@@ -31,39 +31,41 @@ function clickBack() {
 const commandsImg = require('../../cardIcons/commands.png');
 const socializingImg = require('../../cardIcons/socializing.png');
 
-const TrainingAdult = ({ backgroundColor}) => {
+const TrainingAdult = ({ backgroundColor }) => {
 
     useEffect(() => {
-        setTimeout(()=>{
+        setTimeout(() => {
             document.querySelector("#page").style.left = "0%";
         }, 50);
     }, []);
-    
-    
-return <div
-    style={{ backgroundColor: backgroundColor }}
-    className="training" id="page">
-    <div className="defaultscreen">
+
+
+    return <div
+        style={{ backgroundColor: backgroundColor }}
+        className="training">
+        <div className="defaultscreen">
             <LogoSmall />
-        <Menu />
-        <div className="training_pagetitle">
-            <PageTitle marginBottom="55px" text="Training" />
-        </div>
-        <div className="training_panels">
-            <div onClick={clickCommands} className="training_commands">
-                <Link href="/commandinfoadult"><CardPanel src={commandsImg} /></Link>
-                <PanelTitle color="#B7CfD2" text="Commands" />
+            <Menu />
+            <div id="page">
+                <div className="training_pagetitle">
+                    <PageTitle marginBottom="55px" text="Training" />
+                </div>
+                <div className="training_panels">
+                    <div onClick={clickCommands} className="training_commands">
+                        <Link href="/commandinfoadult"><CardPanel src={commandsImg} /></Link>
+                        <PanelTitle color="#B7CfD2" text="Commands" />
+                    </div>
+                    <div onClick={clickSocializing} className="training_socializing">
+                        <Link href="/traininginfoadult"><CardPanel color="#Ef9B89" src={socializingImg} /></Link>
+                        <PanelTitle color="#Ef9B89" text="Socializing" />
+                    </div>
+                </div>
             </div>
-            <div onClick={clickSocializing} className="training_socializing">
-            <Link href="/traininginfoadult"><CardPanel color="#Ef9B89" src={socializingImg} /></Link>
-                <PanelTitle color="#Ef9B89" text="Socializing" />
+            <div onClick={clickBack} id="backtoprev">
+                <BackToPrev />
             </div>
         </div>
     </div>
-    <div onClick={clickBack} id="backtoprev">
-        <BackToPrev />
-    </div>
-</div>
 }
 
 export default TrainingAdult;

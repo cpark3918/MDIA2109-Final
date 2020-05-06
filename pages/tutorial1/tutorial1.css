@@ -12,6 +12,10 @@
     position: relative;
     left: 0%;
     transition: left 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 /* .screen_icons {
