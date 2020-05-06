@@ -17,3 +17,9 @@
 #tut5_p {
     margin-top: 80px;
 }
+
+#page {
+    position: relative;
+    left: 100%;
+    transition: left 2s;
+}
