@@ -24,28 +24,28 @@ const Tutorial05 = () => {
         }, 50);
     }, []);
     
-    return <div className="defaultscreen" id="page">
+    return <div className="defaultscreen">
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />
                 <PageTitle text="Tutorial" color="#000" fontSize="35pt" marginTop={80}/>
             </div>
             <Menu />
-            <div className="tut_box">
+            <div id="page" className="tut_box">
                 <div className="tut_animations">
                     <img src={happyIcon} />
                     <img src={poopIcon} />
                 </div>
                 <p id="tut5_p">Different animations will appear on your screen depending on your score. You may have to retake the quiz(zes) to be fully prepared to adopt!</p>
             </div>
-            <div className="progress_box">
+            <div id="page" className="progress_box">
                 <div className="progress_inactive"></div>
                 <div className="progress_inactive"></div>
                 <div className="progress_inactive"></div>
                 <div className="progress_inactive"></div>
                 <div className="progress_active"></div>
             </div>
-            <div onClick={clickStart} className="tut_start">
+            <div id="page" onClick={clickStart} className="tut_start">
                 <CustomButton text="Let's start!" color="#B7D4A0" fontSize="20pt" />
             </div>
         </div>
