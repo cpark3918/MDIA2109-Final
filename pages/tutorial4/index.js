@@ -1,5 +1,5 @@
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './tutorial4.css';
 import LogoSmall from '../../comps/logo_small';
 import Menu from '../../comps/menu'
@@ -9,13 +9,21 @@ import PageTitle from '../../comps/pagetitle';
 const tapIcon = require('../../animations/tap.gif')
 
 function nextTutorial(){
-    if(true){
-        Router.push('/tutorial5')
-    }
+    document.querySelector("#page").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/tutorial5");
+    }, 600)
 }
 
 const Tutorial04 = () => {
-    return <div className="defaultscreen" >
+    
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+    
+    return <div className="defaultscreen" id="page" >
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />

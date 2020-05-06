@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './medical_adult.css';
 import InfoPanel from '../../comps/infopanel';
 import Health from '../health';
@@ -14,7 +14,14 @@ function clickQuiz() {
 const medicalgif = require('../../animations/medical.gif');
 
 const MedicalAdult = ({backgroundColor}) => {
-    return <div style={{ backgroundColor: backgroundColor }}>
+
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+
+    return <div style={{ backgroundColor: backgroundColor }} id="page">
         <div className="defaultscreen">
             <div className="transparencyScreen">
                 <div className="medical_page">

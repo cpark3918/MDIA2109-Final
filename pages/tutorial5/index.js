@@ -1,5 +1,5 @@
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './tutorial5.css';
 import LogoSmall from '../../comps/logo_small';
 import Menu from '../../comps/menu'
@@ -10,13 +10,21 @@ const happyIcon = require('../../animations/happy-dog.gif');
 const poopIcon = require('../../animations/poop.gif');
 
 function clickStart() {
-    if (true) {
-        Router.push("/lifestage")
-    }
+    document.querySelector("#page").style.left = "-100%";
+    setTimeout(function(){
+        Router.push("/lifestage");
+    }, 600)
 }
 
 const Tutorial05 = () => {
-    return <div className="defaultscreen">
+    
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+    
+    return <div className="defaultscreen" id="page">
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />

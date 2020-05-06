@@ -8,6 +8,12 @@
     height: 100%;
 }
 
+#page {
+    position: relative;
+    left: 0%;
+    transition: left 2s;
+}
+
 /* .screen_icons {
     margin-top: 20px;
 } */
