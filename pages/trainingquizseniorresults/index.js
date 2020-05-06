@@ -23,7 +23,7 @@ function clickMaintenance() {
     ChangeData({
         score: 0
     })
-    document.querySelector(".training_results").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/maintenancesenior");
     }, 600)
@@ -33,7 +33,7 @@ function clickHealth() {
     ChangeData({
         score: 0
     })
-    document.querySelector(".training_results").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/healthsenior");
     }, 600)

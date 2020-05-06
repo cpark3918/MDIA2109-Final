@@ -19,7 +19,7 @@ const animation = require('../../animations/happy-dog.gif');
 
 
 function clickTraining() {
-    document.querySelector(".maintenance_results").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/training");
     }, 600)
@@ -27,7 +27,7 @@ function clickTraining() {
 
 
 function clickHealth() {
-    document.querySelector(".maintenance_results").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/health");
     }, 600)
