@@ -51,27 +51,27 @@ const LifeStages = ({ backgroundColor }) => {
     
 return <div
     style={{ backgroundColor: backgroundColor }}
-    className="Life_Stage">
+    className="Life_Stage" id="page">
     <div className="defaultscreen">
         <div className="life-stage_logo">
             <LogoSmall />
         </div>
         <Menu />
-        <div id="page" className="life-stage_pagetitle">
+        <div className="life-stage_pagetitle">
             <PageTitle text="At which" />
             <PageTitle  marginBottom="20px" marginTop="5px" text="lifestage are" />
             <PageTitle marginTop="15px;" text="they in?" />
         </div>
-        <div id="page" className="life-stage_panels">
-            <div id="page" onClick={clickPuppy} className="life-stage_puppy">
+        <div className="life-stage_panels">
+            <div onClick={clickPuppy} className="life-stage_puppy">
                 <Link href="/topic"><CardPanel src={puppyImg} /></Link>
                 <PanelTitle color="#B7CfD2" text="Puppy" />
             </div>
-            <div id="page" onClick={clickAdult}  className="life-stage_adult">
+            <div onClick={clickAdult}  className="life-stage_adult">
             <Link href="/topicadult"><CardPanel color="#Ef9B89" src={adultImg} /></Link>
                 <PanelTitle color="#Ef9B89" text="Adult" />
             </div>
-            <div id="page" onClick={clickSenior}  className="life-stage_senior">
+            <div onClick={clickSenior}  className="life-stage_senior">
             <Link href="/topicsenior"><CardPanel color="#B7D4A0" src={seniorImg} /></Link>
                 <PanelTitle color="#B7D4A0" text="Senior" />
             </div>
