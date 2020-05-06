@@ -32,13 +32,13 @@ const Tutorial04 = () => {
             <Menu />
             <div id="page" className="tut_box" id="tut4_box" onClick={nextTutorial}>
                 <PanelTitle text="(Question)" color="#707070" />
-                <div className="tut_topics">
+                <div id="page" className="tut_topics">
                     <h2 id="maint">7 weeks old</h2>
                     <h2 id="train">16 weeks old</h2>
                     <h2 id="health">1 year old</h2>
                     <img id="tut4_tap" src={tapIcon} />
                 </div>
-                <p>Take the quiz (per category).<br></br>Each quiz consists of 3 questions!</p>
+                <p id="page">Take the quiz (per category).<br></br>Each quiz consists of 3 questions!</p>
             </div>
             <div id="page" className="progress_box">
                 <div className="progress_inactive"></div>
