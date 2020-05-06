@@ -23,14 +23,14 @@ const Tutorial04 = () => {
         }, 50);
     }, []);
     
-    return <div className="defaultscreen" id="page" >
+    return <div className="defaultscreen">
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />
                 <PageTitle text="Tutorial" color="#000" fontSize="35pt"/>
             </div>
             <Menu />
-            <div className="tut_box" id="tut4_box" onClick={nextTutorial}>
+            <div id="page" className="tut_box" id="tut4_box" onClick={nextTutorial}>
                 <PanelTitle text="(Question)" color="#707070" />
                 <div className="tut_topics">
                     <h2 id="maint">7 weeks old</h2>
@@ -40,7 +40,7 @@ const Tutorial04 = () => {
                 </div>
                 <p>Take the quiz (per category).<br></br>Each quiz consists of 3 questions!</p>
             </div>
-            <div className="progress_box">
+            <div id="page" className="progress_box">
                 <div className="progress_inactive"></div>
                 <div className="progress_inactive"></div>
                 <div className="progress_inactive"></div>
