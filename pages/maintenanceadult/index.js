@@ -30,9 +30,17 @@ function clickBack() {
 const exerciseImg = require('../../cardIcons/exercise.png');
 const foodImg = require('../../cardIcons/food.png');
 
-const MaintenanceAdult = ({ backgroundColor }) => <div
+const MaintenanceAdult = ({ backgroundColor }) => {
+    
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+  
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="maintenance">
+    className="maintenance" id="page">
     <div className="defaultscreen">
         <div className="maintenance_logo">
             <LogoSmall />
@@ -60,5 +68,6 @@ const MaintenanceAdult = ({ backgroundColor }) => <div
         <BackToPrev />
     </div>
 </div>
+}
 
 export default MaintenanceAdult;
