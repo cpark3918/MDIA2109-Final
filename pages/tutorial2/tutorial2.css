@@ -9,6 +9,9 @@ h2 {
     position: relative;
     left: 100%;
     transition: left 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tut_topics h2 {
