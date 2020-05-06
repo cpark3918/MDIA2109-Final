@@ -1,5 +1,5 @@
 import Router from 'next/router';
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './tutorial4.css';
 import LogoSmall from '../../comps/logo_small';
 import Menu from '../../comps/menu'

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './tutorial1.css';
 import LogoSmall from '../../comps/logo_small';
 import CardPanel from '../../comps/cardpanel';

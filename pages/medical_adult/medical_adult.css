@@ -5,6 +5,12 @@
     transform: scale(0.8);
 } */
 
+#page {
+    position: relative;
+    left: 100%;
+    transition: left 2s;
+}
+
 
 .transparencyScreen {
     background-color: rgba(97, 97, 97, 0.5);
