@@ -22,14 +22,14 @@ const Tutorial02 = () => {
         }, 50);
     }, []);
     
-    return <div className="defaultscreen">
+    return <div className="defaultscreen" id="page">
         <div className="tut">
             <div className="tut_icons">
                 <LogoSmall />
                 <PageTitle text="Tutorial" color="#000" fontSize="35pt"/>
             </div>
             <Menu />
-            <div id="page" className="tut_box" onClick={nextTutorial}>
+            <div className="tut_box" onClick={nextTutorial}>
                 <div className="tut_topics">
                     <h2 id="maint">Maintenance</h2>
                     <h2 id="train">Training</h2>
