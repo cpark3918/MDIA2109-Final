@@ -11,7 +11,7 @@ import Nav from '../../comps/nav';
 import BackToPrev from '../../comps/backtoprev';
 
 function clickPuppy() {
-    document.querySelector(".Life_Stage").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/topic");
     }, 600)
@@ -24,14 +24,14 @@ function clickBack() {
 }
 
 function clickAdult() {
-    document.querySelector(".Life_Stage").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/topicadult");
     }, 600)
 }
 
 function clickSenior() {
-    document.querySelector(".Life_Stage").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/topicsenior");
     }, 600)
