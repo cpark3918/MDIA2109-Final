@@ -43,10 +43,10 @@ const HealthQuizQ1 = ({ backgroundColor }) => {
         <div className="defaultscreen">
             <Menu />
             <LogoSmall />
+            <div className="healthquiz_pagetitle">
+                <PageTitle text="Health Quiz" />
+            </div>
             <div id="page">
-                <div className="healthquiz_pagetitle">
-                    <PageTitle text="Health Quiz" />
-                </div>
                 <div className="health_question">
                     <PanelTitle text="How often should rabies" />
                     <PanelTitle marginTop="-5px" marginBottom="-5px" text="shot be administered?" />
