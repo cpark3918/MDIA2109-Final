@@ -13,7 +13,7 @@ import BackToPrev from '../../comps/backtoprev';
 function clickPuppy() {
     document.querySelector(".Life_Stage").style.left = "-100%";
     setTimeout(function(){
-        Router.push("/topicpuppy");
+        Router.push("/topic");
     }, 600)
 }
 
