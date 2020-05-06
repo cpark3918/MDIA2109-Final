@@ -4,6 +4,13 @@
     transition: left 2s;
 } */
 
+.health_quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 #page {
     position: relative;
     left: 100%;

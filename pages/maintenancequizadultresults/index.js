@@ -22,7 +22,7 @@ function clickTraining() {
     ChangeData({
         score: 0
     })
-    document.querySelector(".maintenance_results").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/trainingadult");
     }, 600)
@@ -33,7 +33,7 @@ function clickHealth() {
     ChangeData({
         score: 0
     })
-    document.querySelector(".maintenance_results").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/healthadult");
     }, 600)
@@ -67,29 +67,31 @@ const MaintenanceQuizAdultResults = ({ backgroundColor }) => {
 
     return <div
         style={{ backgroundColor: backgroundColor }}
-        className="maintenance_results" id="page">
+        className="maintenance_results">
         <div className="defaultscreen">
-        <Menu />
+            <Menu />
             <LogoSmall />
-            <div className="maintenanceresults_pagetitle">
-                <PageTitle text="Quiz Results" />
-                <PanelTitle marginTop="5px" marginBottom="10px;" text={text} />
-                <img id="animation" src={animation}></img>
-            </div>
-            <div className="maintenance_results_results">
-                <PanelTitle fontSize="20px" text="Good job!" />
-                <PanelTitle fontSize="20px" marginTop="-5px" marginBottom="-5px" text="Keep up the good work! Check out" />
-                <PanelTitle fontSize="20px" marginBottom="0px" text="the other categories to learn more" />
-                <PanelTitle fontSize="20px" text="what it takes to look after a dog!" />
-            </div>
-            <div className="maintenance_results_categories">
-                <div onClick={clickTraining} className="maintenance-results_training">
-                    <Link href="/trainingadult"><CardPanel src={trainingImg} /></Link>
-                    <PanelTitle color="#B7CfD2" text="Training" />
+            <div id="page">
+                <div className="maintenanceresults_pagetitle">
+                    <PageTitle text="Quiz Results" />
+                    <PanelTitle marginTop="5px" marginBottom="10px;" text={text} />
+                    <img id="animation" src={animation}></img>
                 </div>
-                <div onClick={clickHealth} className="maintenance-results_health">
-                    <Link href="/healthadult"><CardPanel color="#B7D4A0" src={healthImg} /></Link>
-                    <PanelTitle color="#B7D4A0" text="Health" />
+                <div className="maintenance_results_results">
+                    <PanelTitle fontSize="20px" text="Good job!" />
+                    <PanelTitle fontSize="20px" marginTop="-5px" marginBottom="-5px" text="Keep up the good work! Check out" />
+                    <PanelTitle fontSize="20px" marginBottom="0px" text="the other categories to learn more" />
+                    <PanelTitle fontSize="20px" text="what it takes to look after a dog!" />
+                </div>
+                <div className="maintenance_results_categories">
+                    <div onClick={clickTraining} className="maintenance-results_training">
+                        <Link href="/trainingadult"><CardPanel src={trainingImg} /></Link>
+                        <PanelTitle color="#B7CfD2" text="Training" />
+                    </div>
+                    <div onClick={clickHealth} className="maintenance-results_health">
+                        <Link href="/healthadult"><CardPanel color="#B7D4A0" src={healthImg} /></Link>
+                        <PanelTitle color="#B7D4A0" text="Health" />
+                    </div>
                 </div>
             </div>
         </div>
