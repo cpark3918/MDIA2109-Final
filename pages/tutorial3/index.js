@@ -29,7 +29,7 @@ const Tutorial03 = () => {
             </div>
             <Menu />
             <div id="page" className="tut_box" id="tut3_box" onClick={nextTutorial}>
-                <div id="tut_infopanel">
+                <div id="page" id="tut_infopanel">
                     <PageTitle text="Information" color="#B0D0D3" fontSize="30pt" marginTop={30} marginBottom={0}/>
                     <p>"You will be quizzed after you have opened all panels (i.e. Commands). So make sure to read the content carefully! </p>
                 </div>
