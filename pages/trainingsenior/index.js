@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, {useEffect} from 'react';
 import './trainingsenior.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
@@ -31,9 +31,17 @@ function clickBack() {
 const commandsImg = require('../../cardIcons/commands.png');
 const socializingImg = require('../../cardIcons/socializing.png');
 
-const TrainingSenior = ({ backgroundColor}) => <div
+const TrainingSenior = ({ backgroundColor}) => {
+
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+    
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="training">
+    className="training" id="page">
     <div className="defaultscreen">
             <LogoSmall />
         <Menu />
@@ -55,6 +63,7 @@ const TrainingSenior = ({ backgroundColor}) => <div
         <BackToPrev />
     </div>
 </div>
+}
 
 export default TrainingSenior;
 

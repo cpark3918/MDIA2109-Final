@@ -4,6 +4,9 @@
     /* position: absolute;
     left: 25px;
     top: 0px; */
+    position: relative;
+    left: 100%;
+    transition: left 2s;
 }
 
 

@@ -30,9 +30,17 @@ function clickBack() {
 const checkupsImg = require('../../cardIcons/checkups.png');
 const vaccinesImg = require('../../cardIcons/vaccines.png');
 
-const HealthSenior = ({ backgroundColor}) => <div
+const HealthSenior = ({ backgroundColor}) => {
+  
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+    
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="health">
+    className="health" id="page">
     <div className="defaultscreen">
             <div>
             <LogoSmall />
@@ -56,5 +64,6 @@ const HealthSenior = ({ backgroundColor}) => <div
         <BackToPrev />
     </div>
 </div>
+}
 
 export default HealthSenior;

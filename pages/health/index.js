@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './health.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
@@ -30,9 +30,17 @@ function clickBack() {
 const checkupsImg = require('../../cardIcons/checkups.png');
 const vaccinesImg = require('../../cardIcons/vaccines.png');
 
-const Health = ({ backgroundColor}) => <div
+const Health = ({ backgroundColor}) => {
+       
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="health">
+    className="health" id="page">
     <div className="defaultscreen">
             <div>
             <LogoSmall />
@@ -56,5 +64,6 @@ const Health = ({ backgroundColor}) => <div
         <BackToPrev />
     </div>
 </div>
+}
 
 export default Health;

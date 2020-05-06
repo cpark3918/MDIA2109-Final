@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './maintenance.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
@@ -30,9 +30,17 @@ function clickBack() {
 const exerciseImg = require('../../cardIcons/exercise.png');
 const foodImg = require('../../cardIcons/food.png');
 
-const MaintenanceSenior = ({ backgroundColor }) => <div
+const MaintenanceSenior = ({ backgroundColor }) => {
+
+    useEffect(() => {
+        setTimeout(()=>{
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+    
+return <div
     style={{ backgroundColor: backgroundColor }}
-    className="maintenance">
+    className="maintenance" id="page">
     <div className="defaultscreen">
         <div className="maintenance_logo">
             <LogoSmall />
@@ -56,5 +64,6 @@ const MaintenanceSenior = ({ backgroundColor }) => <div
         <BackToPrev />
     </div>
 </div>
+}
 
 export default MaintenanceSenior;

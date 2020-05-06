@@ -4,6 +4,9 @@
     /* position: absolute; */
     /* left: 70px;
     top: 40px; */
+    position: relative;
+    left: 100%;
+    transition: left 2s;
 }
 
 /* .health_logo {
