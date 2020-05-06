@@ -14,7 +14,7 @@ import { data, ChangeData } from '../../data';
 console.log(data);
 
 function clickAnswer() {
-    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/maintenancequizadultq2");
     }, 600)
@@ -24,7 +24,7 @@ function clickRight() {
     ChangeData({
         score: data.score + 1
     })
-    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/maintenancequizadultq2");
     }, 600)
