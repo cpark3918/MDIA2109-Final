@@ -14,8 +14,8 @@ import { data, ChangeData } from '../../data';
 console.log(data);
 
 function clickAnswer() {
-    document.querySelector(".maintenance_quiz").style.left = "-100%";
-    setTimeout(function(){
+    document.querySelector("#page").style.left = "-100%";
+    setTimeout(function () {
         Router.push("/maintenancequizadultq3");
     }, 600)
 }
@@ -30,50 +30,52 @@ function clickRight() {
     ChangeData({
         score: data.score + 1
     })
-    document.querySelector(".maintenance_quiz").style.left = "-100%";
-    setTimeout(function(){
+    document.querySelector("#page").style.left = "-100%";
+    setTimeout(function () {
         Router.push("/maintenancequizadultq3");
     }, 600)
 }
 
 
 const MaintenanceQuizAdultQ2 = ({ backgroundColor }) => {
-    
+
     useEffect(() => {
-        setTimeout(()=>{
+        setTimeout(() => {
             document.querySelector("#page").style.left = "0%";
         }, 50);
     }, []);
 
     return <div
         style={{ backgroundColor: backgroundColor }}
-        className="maintenance_quiz" id="page">
-            <Menu />
+        className="maintenance_quiz">
+        <Menu />
         <div className="defaultscreen">
             <LogoSmall />
             <div className="maintenancequiz_pagetitle">
                 <PageTitle fontSize="40px" text="Maintenance Quiz" />
             </div>
-            <div className="maintenance_question2">
-                <PanelTitle text="Will your dog" />
-                <PanelTitle marginTop="-5px" marginBottom="-5px" text="eat the same kind" />
-                <PanelTitle marginBottom="-5px" text="of food throughout" />
-                <PanelTitle text="their life?" />
+            <div id="page">
+                <div className="maintenance_question2">
+                    <PanelTitle text="Will your dog" />
+                    <PanelTitle marginTop="-5px" marginBottom="-5px" text="eat the same kind" />
+                    <PanelTitle marginBottom="-5px" text="of food throughout" />
+                    <PanelTitle text="their life?" />
+                </div>
+                <div className="maintenance_answers2">
+                    <div onClick={clickAnswer} className="maintenance2_answer">
+                        <CustomButton fontSize="30px" color="#B7CfD2" text="Yes!" />
+                    </div>
+                    <div onClick={clickRight} className="maintenance2_answer">
+                        <CustomButton fontSize="30px" color="#Ef9B89" text="No." />
+                    </div>
+                    <div onClick={clickAnswer} className="maintenance2_answer">
+                        <CustomButton fontSize="30px" color="#B7D4A0" text="That's a thing?" />
+                    </div>
+                </div>
             </div>
-            <div className="maintenance_answers2">
-                <div onClick={clickAnswer} className="maintenance2_answer">
-                    <CustomButton fontSize="30px" color="#B7CfD2" text="Yes!" />
-                </div>
-                <div onClick={clickRight} className="maintenance2_answer">
-                    <CustomButton fontSize="30px" color="#Ef9B89" text="No." />
-                </div>
-                <div onClick={clickAnswer} className="maintenance2_answer">
-                    <CustomButton fontSize="30px" color="#B7D4A0" text="That's a thing?" />
-                </div>
+            <div onClick={clickBack} id="backtoprev">
+                <BackToPrev />
             </div>
-        </div>
-        <div onClick={clickBack} id="backtoprev">
-            <BackToPrev />
         </div>
     </div >
 }

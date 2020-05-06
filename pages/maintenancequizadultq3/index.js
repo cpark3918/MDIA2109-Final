@@ -15,7 +15,7 @@ console.log(data);
 
 
 function clickResults() {
-    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/maintenancequizadultresults");
     }, 600)
@@ -31,7 +31,7 @@ function clickRight() {
     ChangeData({
         score: data.score + 1
     })
-    document.querySelector(".maintenance_quiz").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/maintenancequizadultresults");
     }, 600)
@@ -49,32 +49,34 @@ const MaintenanceQuizAdultQ3 = ({ backgroundColor }) => {
 
     return <div
         style={{ backgroundColor: backgroundColor }}
-        className="maintenance_quiz" id="page">
+        className="maintenance_quiz">
         <Menu />
         <div className="defaultscreen">
             <LogoSmall />
             <div className="maintenancequiz_pagetitle">
                 <PageTitle fontSize="40px" text="Maintenance Quiz" />
             </div>
-            <div className="maintenance_question3">
-                <PanelTitle text="How many times a day" />
-                <PanelTitle marginTop="-5px" marginBottom="-5px" text="should you feed" />
-                <PanelTitle marginBottom="55px" text="your adult dog?" />
+            <div id="page">
+                <div className="maintenance_question3">
+                    <PanelTitle text="How many times a day" />
+                    <PanelTitle marginTop="-5px" marginBottom="-5px" text="should you feed" />
+                    <PanelTitle marginBottom="55px" text="your adult dog?" />
+                </div>
+                <div className="maintenance_answers3">
+                    <div onClick={clickResults} className="maintenance3_answer">
+                        <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#B7CfD2" text="Once an hour" /></Link>
+                    </div>
+                    <div onClick={clickResults} className="maintenance3_answer">
+                        <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#Ef9B89" text="Whenever I eat" /></Link>
+                    </div>
+                    <div onClick={clickRight} className="maintenance3_answer">
+                        <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#B7D4A0" text="2 times a day" /></Link>
+                    </div>
+                </div>
             </div>
-            <div className="maintenance_answers3">
-                <div onClick={clickResults} className="maintenance3_answer">
-                    <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#B7CfD2" text="Once an hour" /></Link>
-                </div>
-                <div onClick={clickResults} className="maintenance3_answer">
-                    <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#Ef9B89" text="Whenever I eat" /></Link>
-                </div>
-                <div onClick={clickRight} className="maintenance3_answer">
-                    <Link href="/maintenancequizresults"><CustomButton fontSize="30px" color="#B7D4A0" text="2 times a day" /></Link>
-                </div>
+            <div onClick={clickBack} id="backtoprev">
+                <BackToPrev />
             </div>
-        </div>
-        <div onClick={clickBack} id="backtoprev">
-            <BackToPrev />
         </div>
     </div >
 }
