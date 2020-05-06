@@ -13,9 +13,3 @@
     position: fixed;
     top: 0;
 }
-
-#page {
-    position: relative;
-    left: 100%;
-    transition: left 2s;
-}

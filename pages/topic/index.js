@@ -10,7 +10,7 @@ import Menu from '../../comps/menu';
 import BackToPrev from '../../comps/backtoprev';
 
 function clickMaintenance() {
-    document.querySelector(".Topic").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/maintenance");
     }, 600)
@@ -23,7 +23,7 @@ function clickBack() {
 }
 
 function clickTraining() {
-    document.querySelector(".Topic").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/training");
     }, 600)
@@ -31,7 +31,7 @@ function clickTraining() {
 
 
 function clickHealth() {
-    document.querySelector(".Topic").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/health");
     }, 600)
