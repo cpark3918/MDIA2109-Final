@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './maintenancequizresults.css';
 import LogoSmall from '../../comps/logo_small';
 import PageTitle from '../../comps/pagetitle';
@@ -19,66 +19,77 @@ const animation = require('../../animations/happy-dog.gif');
 
 
 function clickTraining() {
-    if (true) {
-    Router.push("/training");
-    }
+    document.querySelector("#page").style.left = "-100%";
+    setTimeout(function () {
+        Router.push("/training");
+    }, 600)
 }
 
 
 function clickHealth() {
-    if (true) {
-    Router.push("/health");
-    }
+    document.querySelector("#page").style.left = "-100%";
+    setTimeout(function () {
+        Router.push("/health");
+    }, 600)
 }
 
 
 
 const MaintenanceQuizResults = ({ backgroundColor }) => {
 
-var text = "";
-if(data.score === 3){
-    text="3/3"
-} else if (data.score === 2){
-    text="2/3"
-} else if (data.score === "1"){
-    text="1/3"
-} else if (data.score === "11"){
-    text="2/3"
-} else if (data.score === "111"){
-    text="3/3"
-} else {
-    text="0/3"
-}
+    var text = "";
+    if (data.score === 3) {
+        text = "3/3"
+    } else if (data.score === 2) {
+        text = "2/3"
+    } else if (data.score === "1") {
+        text = "1/3"
+    } else if (data.score === "11") {
+        text = "2/3"
+    } else if (data.score === "111") {
+        text = "3/3"
+    } else {
+        text = "0/3"
+    }
 
-return <div
-    style={{ backgroundColor: backgroundColor }}
-    className="maintenance_results">
-    <div className="defaultscreen">
-        <Menu />
-        <LogoSmall />
-        <div className="maintenanceresults_pagetitle">
-            <PageTitle text="Quiz Results" />
-            <PanelTitle marginTop="5px" marginBottom="10px;" text={text} />
-            <img id="animation" src={animation}></img>
-        </div>
-        <div className="maintenance_results_results">
-            <PanelTitle fontSize="20px" text="Good job!" />
-            <PanelTitle fontSize="20px" marginTop="-5px" marginBottom="-5px" text="Keep up the good work! Check out" />
-            <PanelTitle fontSize="20px" marginBottom="0px" text="the other categories to learn more" />
-            <PanelTitle fontSize="20px" text="what it takes to look after a dog!" />
-        </div>
-        <div className="maintenance_results_categories">
-            <div onClick={clickTraining} className="maintenance-results_training">
-                <Link href="/training"><CardPanel src={trainingImg} /></Link>
-                <PanelTitle color="#B7CfD2" text="Training" />
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
+
+
+    return <div
+        style={{ backgroundColor: backgroundColor }}
+        className="maintenance_results">
+        <div className="defaultscreen">
+            <Menu />
+            <LogoSmall />
+            <div id="page">
+                <div className="maintenanceresults_pagetitle">
+                    <PageTitle text="Quiz Results" />
+                    <PanelTitle marginTop="5px" marginBottom="10px;" text={text} />
+                    <img id="animation" src={animation}></img>
+                </div>
+                <div className="maintenance_results_results">
+                    <PanelTitle fontSize="20px" text="Good job!" />
+                    <PanelTitle fontSize="20px" marginTop="-5px" marginBottom="-5px" text="Keep up the good work! Check out" />
+                    <PanelTitle fontSize="20px" marginBottom="0px" text="the other categories to learn more" />
+                    <PanelTitle fontSize="20px" text="what it takes to look after a dog!" />
+                </div>
+                <div className="maintenance_results_categories">
+                    <div onClick={clickTraining} className="maintenance-results_training">
+                        <Link href="/training"><CardPanel src={trainingImg} /></Link>
+                        <PanelTitle color="#B7CfD2" text="Training" />
+                    </div>
+                    <div onClick={clickHealth} className="maintenance-results_health">
+                        <Link href="/health"><CardPanel color="#B7D4A0" src={healthImg} /></Link>
+                        <PanelTitle color="#B7D4A0" text="Health" />
+                    </div>
+                </div>
             </div>
-            <div onClick={clickHealth} className="maintenance-results_health">
-            <Link href="/health"><CardPanel color="#B7D4A0" src={healthImg} /></Link>
-                <PanelTitle color="#B7D4A0" text="Health" />
-            </div>
         </div>
-    </div>
-</div >
+    </div >
 }
 
 export default MaintenanceQuizResults;

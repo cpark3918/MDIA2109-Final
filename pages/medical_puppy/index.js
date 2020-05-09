@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './medical_puppy.css';
 import InfoPanel from '../../comps/infopanel';
 import Health from '../health';
@@ -16,7 +16,7 @@ function clickQuiz() {
 const medicalgif = require('../../animations/medical.gif');
 
 const MedicalPuppy = ({backgroundColor}) => {
-    return <div style={{ backgroundColor: backgroundColor }}>
+   return <div style={{ backgroundColor: backgroundColor }}>
         <div className="defaultscreen">
             <BackDrop />
             {/* <div className="transparencyScreen"> */}

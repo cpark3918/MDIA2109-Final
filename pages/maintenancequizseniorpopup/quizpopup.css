@@ -1,0 +1,16 @@
+/* .qpopup {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    transform: scale(0.8); */
+/* } */
+
+#exit {
+    position: absolute;
+    left: 25px;
+    top: 225px;
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid black; */
+    z-index: 100;
+}

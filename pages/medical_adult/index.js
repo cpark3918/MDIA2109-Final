@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './medical_adult.css';
 import InfoPanel from '../../comps/infopanel';
 import Health from '../health';

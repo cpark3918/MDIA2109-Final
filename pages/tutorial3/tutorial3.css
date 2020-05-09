@@ -8,6 +8,15 @@ body, html {
     margin: 0;
 }
 
+#page {
+    position: relative;
+    left: 100%;
+    transition: left 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .tut3_box {
     display: inline-flex;
     flex-direction: column;

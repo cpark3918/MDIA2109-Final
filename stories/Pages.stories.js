@@ -47,6 +47,28 @@ import HealthQuiz01 from '../pages/healthquizq1';
 import HealthQuiz02 from '../pages/healthquizq2';
 import HealthQuiz03 from '../pages/healthquizq3';
 import HealthQuizResults from '../pages/healthquizresults';
+import TrainingQuizAdultQ1 from '../pages/trainingquizadultq1';
+import TrainingQuizAdultQ2 from '../pages/trainingquizadultq2';
+import TrainingQuizAdultQ3 from '../pages/trainingquizadultq3';
+import TrainingQuizPopUpAdult from '../pages/trainingquizpopupadult';
+import TrainingQuizAdultResults from '../pages/trainingquizadultresults';
+import TrainingQuizSeniorQ1 from '../pages/trainingquizseniorq1';
+import TrainingQuizSeniorQ2 from '../pages/trainingquizseniorq2';
+import TrainingQuizSeniorQ3 from '../pages/trainingquizseniorq3';
+import TrainingQuizPopUpSenior from '../pages/trainingquizpopupsenior';
+import TrainingQuizSeniorResults from '../pages/trainingquizseniorresults';
+import MaintenanceQuizAdultPopUp from '../pages/maintenancequizadultpopup';
+import MaintenanceQuizAdultQ1 from '../pages/maintenancequizadultq1';
+import MaintenanceQuizAdultQ2 from '../pages/maintenancequizadultq2';
+import MaintenanceQuizAdultQ3 from '../pages/maintenancequizadultq3';
+import MaintenanceQuizAdultResults from '../pages/maintenancequizadultresults';
+import MaintenanceQuizSeniorPopUp from '../pages/maintenancequizseniorpopup';
+import MaintenanceQuizSeniorQ1 from '../pages/maintenancequizseniorq1';
+import MaintenanceQuizSeniorQ2 from '../pages/maintenancequizseniorq2';
+import MaintenanceQuizSeniorQ3 from '../pages/maintenancequizseniorq3';
+import MaintenanceQuizSeniorResults from '../pages/maintenancequizseniorresults';
+
+
 
 export default {
     title:"Pages",
@@ -99,3 +121,23 @@ export const HealthQuizQuestion1 = () => <HealthQuiz01 />
 export const HealthQuizQuestion2 = () => <HealthQuiz02 />
 export const HealthQuizQuestion3 = () => <HealthQuiz03 />
 export const HealthQuizResultsPage = () => <HealthQuizResults />;
+export const TrainingQuizAdultQ1 = () => <TrainingQuizAdultQ1 />;
+export const TrainingQuizAdultQ2 = () => <TrainingQuizAdultQ2 />;
+export const TrainingQuizAdultQ3 = () => <TrainingQuizAdultQ3 />;
+export const TrainingQuizAdultResults = () => <TrainingQuizAdultResults />;
+export const TrainingQuizPopUpAdult = () => <TrainingQuizPopUpAdult />;
+export const TrainingQuizSeniorQ1 = () => <TrainingQuizSeniorQ1 />;
+export const TrainingQuizSeniorQ2 = () => <TrainingQuizSeniorQ2 />;
+export const TrainingQuizSeniorQ3 = () => <TrainingQuizSeniorQ3 />;
+export const TrainingQuizSeniorResults = () => <TrainingQuizSeniorResults />;
+export const TrainingQuizPopUpSenior = () => <TrainingQuizPopUpSenior />;
+export const MaintenanceQuizAdultPopUp = () => <MaintenanceQuizAdultPopUp />;
+export const MaintenanceQuizAdultQ1 = () => <MaintenanceQuizAdultQ1 />;
+export const MaintenanceQuizAdultQ2 = () => <MaintenanceQuizAdultQ2 />;
+export const MaintenanceQuizAdultQ3 = () => <MaintenanceQuizAdultQ3 />;
+export const MaintenanceQuizAdultResults = () => <MaintenanceQuizAdultResults />;
+export const MaintenanceQuizSeniorPopUp = () => <MaintenanceQuizSeniorPopUp />;
+export const MaintenanceQuizSeniorQ1 = () => <MaintenanceQuizSeniorQ1 />;
+export const MaintenanceQuizSeniorQ2 = () => <MaintenanceQuizSeniorQ2 />;
+export const MaintenanceQuizSeniorQ3 = () => <MaintenanceQuizSeniorQ3 />;
+export const MaintenanceQuizSeniorResults = () => <MaintenanceQuizSeniorResults />;

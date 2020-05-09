@@ -1,0 +1,38 @@
+.maintenance_quiz {
+    display: flex;
+    /* position: absolute;
+    top: 40px;
+    left: 30px; */
+    flex-direction: column;
+    align-items: center;
+    /* position: relative;
+    left: 0%;
+    transition: left 2s; */
+}
+
+#page {
+    position: relative;
+    left: 100%;
+    transition: left 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintenance1_answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintenance_question1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maintenancequiz_pagetitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
