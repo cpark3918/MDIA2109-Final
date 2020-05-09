@@ -5,7 +5,8 @@
     /* left: -110%; */
     top: 0px;
     width: 240px;
-    height: 853px;
+    /* height: 853px; */
+    height: 100%;
     background-color: #EF9B89;
     z-index: 200;
     box-shadow: 1px 0px 7px rgba(0,0,0, 0.5);

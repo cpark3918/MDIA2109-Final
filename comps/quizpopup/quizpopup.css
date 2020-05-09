@@ -2,7 +2,9 @@
 
 
 .quizpopup_contain {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color: #F3F2EF;
     border: 15px solid #B0D0D3;
