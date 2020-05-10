@@ -9,7 +9,7 @@ import BackDrop from '../../comps/backdrop';
 
 function clickQuiz() {
     if (true) {
-    Router.push("/healthquizpopup");
+    Router.push("/healthquizseniorpopup");
     }
 }
 
@@ -24,7 +24,7 @@ const MedicalSenior = ({backgroundColor}) => {
                     <Health />
                 </div>
                 <div  onClick={clickQuiz} className="medical_infopanel">
-                <Link href="/healthquizpopup"><InfoPanel img={medicalgif} title="Medical Care" color="#EF9B89" info="Booster shots for Rabies every 3 years still apply, but talk to your vet for more detailed vaccination program for your dog
+                <Link href="/healthquizseniorpopup"><InfoPanel img={medicalgif} title="Medical Care" color="#EF9B89" info="Booster shots for Rabies every 3 years still apply, but talk to your vet for more detailed vaccination program for your dog
 Some common warning signs of disease in older pets:
 a) Kidney disease: decreased appetite, increased thirst and urination, poor hair coat, vomiting and sore mouth
 b) Urinary tract disease: increased urination / spotting or accidents in the house, straining to urinate, blood in urine, and weeakness
