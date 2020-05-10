@@ -1,44 +1,55 @@
 import Link from 'next/link';
 import Router from 'next/router';
 import React from 'react';
-import './healthquizadultpopup.css';
+import './quizpopup.css';
 import Health from '../health';
 import QuizPopUp from '../../comps/quizpopup';
 
 import BackDrop from '../../comps/backdrop';
 
-import {data, ChangeData} from '../../data';
+import { data, ChangeData } from '../../data';
 
 console.log(data);
 
 function clickStartQuiz() {
     ChangeData({
-        score:0
+        score: 0
     })
     if (true) {
-    Router.push("/healthquizadult_q1");
+        Router.push("/healthquizadult_q1");
     }
 }
 
 function clickExit() {
     if (true) {
-    Router.push("/healthadult");
+        Router.push("/healthadult");
     }
 }
 
-const HealthQuizAdultPopUp = ({ backgroundColor }) => <div
-    style={{ backgroundColor: backgroundColor }}
-    className="quizpopup">
-    <div className="defaultscreen">
-        <div className="trainingpage">
-            <Health />
+const HealthQuizAdultPopUp = ({ backgroundColor }) => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector(".qpopup").style.opacity = "1";
+        }, 50);
+    }, []);
+
+
+    return <div
+        style={{ backgroundColor: backgroundColor }}
+        className="quizpopup">
+        <div className="defaultscreen">
+            <BackDrop />
+            <div className="trainingpage">
+                <Health />
+            </div>
+            {/* <BackDrop /> */}
+            <div onClick={clickStartQuiz} className="qpopup">
+                <Link href="/healthquizadult_q1"><QuizPopUp /></Link>
+            </div>
         </div>
-        {/* <BackDrop /> */}
-        <div  onClick={clickStartQuiz} className="qpopup">
-            <Link href="/healthquizadult_q1"><QuizPopUp /></Link>
-        </div>
+        <div onClick={clickExit} id="exit"></div>
     </div>
-    <div onClick={clickExit} id="exit"></div>
-</div> 
+};
 
 export default HealthQuizAdultPopUp

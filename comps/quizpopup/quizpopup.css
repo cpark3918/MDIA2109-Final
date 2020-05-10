@@ -5,9 +5,9 @@
     top: -450px;
     margin: 0;
     z-index: 800; */
-    position: absolute;
-    top: -400px;
-    left: 50%;
+    position: relative;
+    top: -300px;
+    left: 56.5%;
     margin-top: -100px;
     margin-left: -200px;
     z-index: 500;
@@ -25,7 +25,7 @@
     background-color: #F3F2EF;
     border: 15px solid #B0D0D3;
     border-radius: 5px;
-    width: 320px;
+    width: 280px;
     /* position: absolute;
     top: -450px; */
     /* top: 0;
@@ -33,7 +33,7 @@
     /* top: 42%;
     left: 50%;
     transform: translate(-50%, -45%); */
-    /* z-index: 800; */
+    z-index: 500;
 }
 
 .quizpopup_contain h1 {
