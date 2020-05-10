@@ -37,12 +37,6 @@ function clickMaintenance() {
 }
 
 
-useEffect(() => {
-    setTimeout(() => {
-        document.querySelector("#page").style.left = "0%";
-    }, 50);
-}, []);
-
 const HealthQuizResults = ({ backgroundColor }) => {
 
     var text = "";
@@ -59,6 +53,12 @@ const HealthQuizResults = ({ backgroundColor }) => {
     } else {
         text = "0/3"
     }
+
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector("#page").style.left = "0%";
+        }, 50);
+    }, []);
 
     return <div
         style={{ backgroundColor: backgroundColor }}
