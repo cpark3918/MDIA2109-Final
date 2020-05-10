@@ -5,9 +5,11 @@ import './medical_adult.css';
 import InfoPanel from '../../comps/infopanel';
 import Health from '../health';
 
+import BackDrop from '../../comps/backdrop';
+
 function clickQuiz() {
     if (true) {
-    Router.push("/healthquizpopup");
+    Router.push("/healthquizadultpopup");
     }
 }
 
@@ -16,7 +18,8 @@ const medicalgif = require('../../animations/medical.gif');
 const MedicalAdult = ({backgroundColor}) => {
     return <div style={{ backgroundColor: backgroundColor }}>
         <div className="defaultscreen">
-            <div className="transparencyScreen">
+            <BackDrop />
+            {/* <div className="transparencyScreen"> */}
                 <div className="medical_page">
                     <Health />
                 </div>
@@ -26,7 +29,7 @@ const MedicalAdult = ({backgroundColor}) => {
 After the first booster shot, the dog needs to be vaccinated for Rabies every 3 years."/></Link>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
     </div>
 };
 

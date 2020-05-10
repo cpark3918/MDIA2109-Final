@@ -9,6 +9,7 @@
     position: absolute;
     top: 10px;
     /* opacity: 1; */
+    z-index: 300;
 }
 
 body, html {

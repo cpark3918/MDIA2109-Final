@@ -6,6 +6,8 @@ import InfoPanel from '../../comps/infopanel';
 import LogoSmall from '../../comps/logo_small';
 import './socializinginfoadult.css';
 
+import BackDrop from '../../comps/backdrop';
+
 const socializinggif = require('../../animations/socializing.gif');
 
 function clickQuiz() {
@@ -18,7 +20,8 @@ const SocializingInfoAdult = ({ backgroundColor}) => <div
     style={{ backgroundColor: backgroundColor }}
     className="socializinginfo">
     <div className="defaultscreen">
-    <div className="transparencyScreen">
+        <BackDrop />
+    {/* <div className="transparencyScreen"> */}
         {/* <div className="socializing-info_logo">
             <LogoSmall />
         </div> */}
@@ -36,7 +39,7 @@ const SocializingInfoAdult = ({ backgroundColor}) => <div
            other dogs and people in a safe and controlled environment." /></Link>
         </div>
         </div>
-    </div>
+    {/* </div> */}
 </div>
 
 export default SocializingInfoAdult;
