@@ -15,4 +15,7 @@
     top: 0;
 }
 
-
+.commandinfoPanel {
+    opacity: 0;
+    transition: opacity 0.5s;
+}

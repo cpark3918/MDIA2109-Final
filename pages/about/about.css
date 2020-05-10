@@ -5,6 +5,8 @@
     align-items: center;
     /* background-color: #F3F2EF; */
     min-height: 853px;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .dog_image {

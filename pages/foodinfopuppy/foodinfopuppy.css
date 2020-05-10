@@ -13,3 +13,8 @@
     position: fixed;
     top: 0;
 }
+
+.foodinfoPanel {
+    opacity: 0;
+    transition: opacity 0.5s;
+}

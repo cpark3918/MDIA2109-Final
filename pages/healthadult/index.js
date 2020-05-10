@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './healthadult.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
@@ -32,6 +32,8 @@ const vaccinesImg = require('../../cardIcons/vaccines.png');
 
 const HealthAdult = ({ backgroundColor }) => {
 
+    // const [pageleft, setLeft] = useState("100%");
+
     useEffect(() => {
         setTimeout(() => {
             document.querySelector("#page").style.left = "0%";
@@ -46,7 +48,7 @@ const HealthAdult = ({ backgroundColor }) => {
                 <LogoSmall />
             </div>
             <Menu />
-            <div id="page">
+            <div id="page" >
                 <div className="health_pagetitle">
                     <PageTitle marginBottom="55px" text="Health" />
                 </div>

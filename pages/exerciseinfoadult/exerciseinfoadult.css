@@ -23,10 +23,15 @@
 } */
 
 
-.transparencyScreen {
+/* .transparencyScreen {
     background-color: rgba(97, 97, 97, 0.5);
     width: 100%;
     height: 812px;
     position: fixed;
     top: 0;
+} */
+
+.exerciseinfoPanel {
+    opacity: 0;
+    transition: opacity 0.5s;
 }

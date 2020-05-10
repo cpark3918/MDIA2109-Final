@@ -1,5 +1,5 @@
 import Router from 'next/router';
-import React from 'react';
+import React, {useEffect} from 'react';
 import './about.css';
 import PanelTitle from '../../comps/paneltitle';
 import BackToPrev from '../../comps/backtoprev';
@@ -14,6 +14,13 @@ function backToHome() {
 }
 
 const About = () => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector(".aboutpage").style.opacity = "1";
+        }, 100);
+    }, []);
+
     return <div className="defaultscreen">
         <div className="aboutpage">
             <PageTitle text="About us" marginTop={0}/>
