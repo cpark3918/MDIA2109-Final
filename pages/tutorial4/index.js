@@ -15,6 +15,13 @@ function nextTutorial() {
     }, 600)
 }
 
+function prevTutorial() {
+    document.querySelector("#page").style.left = "100%";
+    setTimeout(function () {
+        Router.push("/tutorial1");
+    }, 600)
+}
+
 const Tutorial04 = () => {
 
     useEffect(() => {
@@ -44,7 +51,7 @@ const Tutorial04 = () => {
                 <div className="progress_box">
                     <div className="progress_inactive"></div>
                     <div className="progress_inactive"></div>
-                    <div className="progress_inactive"></div>
+                    <div className="progress_inactive" onClick={nextTutorial}></div>
                     <div className="progress_active"></div>
                     <div className="progress_inactive" onClick={nextTutorial}></div>
                 </div>

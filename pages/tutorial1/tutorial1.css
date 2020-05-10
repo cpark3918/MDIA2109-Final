@@ -53,7 +53,7 @@ p {
 .progress_box {
     display: inline-flex;
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     /* margin-bottom: -75px; */
 }
 
