@@ -1,6 +1,6 @@
 import Router from 'next/router';
 import React, { useEffect } from 'react';
-import './healthquizadult_q3.css';
+import './healthquizsenior_q3.css';
 import LogoSmall from '../../comps/logo_small';
 import CustomButton from '../../comps/custombutton';
 import PageTitle from '../../comps/pagetitle';
@@ -14,7 +14,7 @@ console.log(data);
 function clickAnswer() {
     document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
-        Router.push("/healthquizadult_results");
+        Router.push("/healthquizsenior_results");
     }, 600)
 }
 
@@ -24,7 +24,7 @@ function clickRight() {
     })
     document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
-        Router.push("/healthquizadult_results");
+        Router.push("/healthquizsenior_results");
     }, 600)
 }
 
@@ -47,19 +47,19 @@ const HealthQuizQ3 = ({ backgroundColor }) => {
             </div>
             <div id="page">
                 <div className="health_question">
-                    <PanelTitle text="Approximately how much do" />
-                    <PanelTitle marginTop="-5px" marginBottom="-5px" text="routine vet visits cost" />
-                    <PanelTitle text="at this life stage? (per year)" />
+                    <PanelTitle text="What is an example of" />
+                    <PanelTitle marginTop="-5px" marginBottom="-5px" text="a common sign of a" />
+                    <PanelTitle text="heart disease?" />
                 </div>
                 <div className="health_answers1">
-                    <div onClick={clickRight} className="health_answer">
-                        <CustomButton fontSize="30px" color="#B7CfD2" text="$700-1,500" />
+                    <div onClick={clickAnswer} className="health_answer">
+                        <CustomButton fontSize="30px" color="#B7CfD2" text="Blood in urine" />
                     </div>
-                    <div onClick={clickAnswer}className="health_answer">
-                        <CustomButton fontSize="30px" color="#Ef9B89" text="$1,500-2,500" />
+                    <div onClick={clickRight}className="health_answer">
+                        <CustomButton fontSize="30px" color="#Ef9B89" text="Coughing" />
                     </div>
                     <div onClick={clickAnswer}  className="health_answer">
-                        <CustomButton fontSize="30px" color="#B7D4A0" text="$2500+" />
+                        <CustomButton fontSize="30px" color="#B7D4A0" text="Poor hair coat" />
                     </div>
                 </div>
             </div>

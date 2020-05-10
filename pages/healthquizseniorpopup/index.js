@@ -16,7 +16,7 @@ function clickStartQuiz() {
         score:0
     })
     if (true) {
-    Router.push("/healthquizadult_q1");
+    Router.push("/healthquizsenior_q1");
     }
 }
 
@@ -35,7 +35,7 @@ const HealthQuizSeniorPopUp = ({ backgroundColor }) => <div
         </div>
         {/* <BackDrop /> */}
         <div  onClick={clickStartQuiz} className="qpopup">
-            <Link href="/healthquizadult_q1"><QuizPopUp /></Link>
+            <Link href="/healthquizsenior_q1"><QuizPopUp /></Link>
         </div>
     </div>
     <div onClick={clickExit} id="exit"></div>

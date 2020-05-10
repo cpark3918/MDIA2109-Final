@@ -24,7 +24,7 @@ function clickRight() {
     })
     document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
-        Router.push("/healthquizadult_q2");
+        Router.push("/healthquizadult_q3");
     }, 600)
 }
 
