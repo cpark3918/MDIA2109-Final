@@ -12,9 +12,10 @@
     width: 40px;
     height: 40px;
     /* border: 1px solid black; */
-    z-index: 100;
+    z-index: 500;
 }
 
 .qpopup {
-    z-index: 500;
+    opacity: 0;
+    transition: opacity 0.5s;
 }

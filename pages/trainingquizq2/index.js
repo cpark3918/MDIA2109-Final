@@ -15,7 +15,7 @@ import { data, ChangeData } from '../../data';
 console.log(data);
 
 function clickAnswer() {
-    document.querySelector("page").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/trainingquizq3");
     }, 600)
@@ -25,7 +25,7 @@ function clickRight() {
     ChangeData({
         score: data.score + 1
     })
-    document.querySelector("page").style.left = "-100%";
+    document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
         Router.push("/trainingquizq3");
     }, 600)
@@ -53,7 +53,7 @@ const TrainingQuizQ2 = ({ backgroundColor }) => {
             <LogoSmall />
             <Menu />
             <div className="trainingquiz_pagetitle">
-                <PageTitle text="Training Quiz" />
+                <PageTitle text="Training Quiz" marginTop={100}/>
             </div>
             <div id="page">
                 <div className="training_question1">

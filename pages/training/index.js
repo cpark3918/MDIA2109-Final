@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 import './training.css';
 import LogoSmall from '../../comps/logo_small';
 import PanelTitle from '../../comps/paneltitle';
@@ -30,7 +30,9 @@ function clickBack() {
 const commandsImg = require('../../cardIcons/commands.png');
 const socializingImg = require('../../cardIcons/socializing.png');
 
-const Training = ({ backgroundColor }) => {
+
+const Training = ({ backgroundColor, zindex }) => {
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -39,7 +41,7 @@ const Training = ({ backgroundColor }) => {
     }, []);
 
     return <div
-        style={{ backgroundColor: backgroundColor }}
+        style={{ backgroundColor: backgroundColor, zIndex: zindex}}
         className="training">
         <div className="defaultscreen">
             <LogoSmall />

@@ -1,14 +1,5 @@
-/* .qpopup {
-    position: absolute;
-    top: 120px;
-    left: 40px;
-    transform: scale(0.8);
-} */
-
-
-
 #exit {
-    position: absolute;
+    position: relative;
     left: 25px;
     top: 225px;
     width: 40px;

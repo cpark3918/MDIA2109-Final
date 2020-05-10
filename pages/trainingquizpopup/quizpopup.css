@@ -5,16 +5,18 @@
     transform: scale(0.8);
 } */
 
-.qpopup {
-    transform: scale(0.8);
-}
 
 #exit {
-    position: absolute;
+    position: relative;
     left: 25px;
     top: 225px;
     width: 40px;
     height: 40px;
     /* border: 1px solid black; */
-    z-index: 100;
+    z-index: 500;
+}
+
+.qpopup {
+    opacity: 0;
+    transition: opacity 0.5s;
 }

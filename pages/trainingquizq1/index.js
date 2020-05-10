@@ -45,7 +45,7 @@ const TrainingQuizQ1 = ({ backgroundColor }) => {
             <LogoSmall />
             <Menu />
             <div className="trainingquiz_pagetitle">
-                <PageTitle text="Training Quiz" />
+                <PageTitle text="Training Quiz" marginTop={100}/>
             </div>
             <div id="page">
                 <div className="training_question1">
