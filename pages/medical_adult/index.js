@@ -16,6 +16,13 @@ function clickQuiz() {
 const medicalgif = require('../../animations/medical.gif');
 
 const MedicalAdult = ({backgroundColor}) => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector(".medical_infopanel").style.opacity = "1";
+        }, 100);
+    }, []);
+
     return <div style={{ backgroundColor: backgroundColor }}>
         <div className="defaultscreen">
             <BackDrop />
@@ -23,7 +30,7 @@ const MedicalAdult = ({backgroundColor}) => {
                 <div className="medical_page">
                     <Health />
                 </div>
-                <div onClick={clickQuiz} className="medical_infopanel_adult">
+                <div onClick={clickQuiz} className="medical_infopanel">
                 <Link href="/healthquizpopup"><InfoPanel img={medicalgif} title="Medical Care" color="#EF9B89" info="Booster shots for DHLPPC and rabies have to be administered after 12 months because the substances of the vaccination do not stay in your dog's body for a lifetime. This is to increase immunity against the antigen of rabies / other diseases.
 
 After the first booster shot, the dog needs to be vaccinated for Rabies every 3 years."/></Link>

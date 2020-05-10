@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, {useEffect} from 'react';
 import './checkups_adult.css';
 import InfoPanel from '../../comps/infopanel';
 import Health from '../health';
@@ -16,6 +16,13 @@ function clickExit() {
 const checkupsgif = require('../../animations/vet.gif');
 
 const CheckupsAdult = ({backgroundColor}) => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector(".checkups_infopanel").style.opacity = "1";
+        }, 100);
+    }, []);
+
     return <div style={{ backgroundColor: backgroundColor }} id="mainappinfoscreen">
         <div className="defaultscreen">
             <BackDrop />

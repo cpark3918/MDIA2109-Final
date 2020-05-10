@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Training from '../training';
 import InfoPanel from '../../comps/infopanel';
 import LogoSmall from '../../comps/logo_small';
@@ -16,20 +16,29 @@ function clickExit() {
 
 const commandsgif = require('../../animations/commands.gif');
 
-const CommandInfoSenior = ({ backgroundColor }) => <div
-    style={{ backgroundColor: backgroundColor }}
-    className="commandinfo">
-    <div className="defaultscreen">
-        <BackDrop />
-        {/* <div className="transparencyScreen"> */}
-        {/* <div className="command-info_logo">
+const CommandInfoSenior = ({ backgroundColor }) => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector(".commandinfoPanel").style.opacity = "1";
+        }, 100);
+    }, []);
+
+
+    return <div
+        style={{ backgroundColor: backgroundColor }}
+        className="commandinfo">
+        <div className="defaultscreen">
+            <BackDrop />
+            {/* <div className="transparencyScreen"> */}
+            {/* <div className="command-info_logo">
             <LogoSmall />
         </div> */}
-        <div className="command-info_page">
-            <Training />
-        </div>
-        <div onClick={clickExit} className="commandinfoPanel">
-            <Link href="/trainingsenior"><InfoPanel img={commandsgif} info="Most people
+            <div className="command-info_page">
+                <Training />
+            </div>
+            <div onClick={clickExit} className="commandinfoPanel">
+                <Link href="/trainingsenior"><InfoPanel img={commandsgif} info="Most people
          associate training with puppies, but the reality is that dogs 
          are able to learn at any age.
          Senior dogs may be experiencing blindness, deafness, joint pains,
@@ -38,9 +47,10 @@ const CommandInfoSenior = ({ backgroundColor }) => <div
             reiforcement when training them. Using treats is a good way to
              motivate them but make sure you choose treats that are nutritious
               with age-related benefits. " /></Link>
+            </div>
         </div>
+        {/* </div> */}
     </div>
-    {/* </div> */}
-</div>
+};
 
 export default CommandInfoSenior

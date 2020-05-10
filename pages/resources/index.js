@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './resources.css';
 import LogoSmall from '../../comps/logo_small';
 import Menu from '../../comps/menu';
@@ -6,6 +6,13 @@ import PageTitle from '../../comps/pagetitle';
 import PanelTitle from '../../comps/paneltitle';
 
 const Resources = () => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector(".resources").style.opacity = "1";
+        }, 100);
+    }, []);
+
     return <div className="defaultscreen">
         <div className="resources">
             <LogoSmall />

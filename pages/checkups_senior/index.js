@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './checkups_senior.css';
 import InfoPanel from '../../comps/infopanel';
 import Health from '../health';
@@ -16,6 +16,13 @@ function clickExit() {
 const checkupsgif = require('../../animations/vet.gif');
 
 const CheckupsSenior = ({backgroundColor}) => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector(".checkups_infopanel").style.opacity = "1";
+        }, 100);
+    }, []);
+
     return <div style={{ backgroundColor: backgroundColor }} >
         <div className="defaultscreen">
             <BackDrop />
