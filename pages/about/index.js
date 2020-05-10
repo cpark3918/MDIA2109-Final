@@ -27,7 +27,7 @@ const About = () => {
         <div className="aboutpage">
             <LogoSmall />
             <div>
-                <PageTitle text="About us" marginTop={0} />
+                <PageTitle text="About us" marginTop={100} />
             </div>
             <div id="about_menu">
                 <Menu />
