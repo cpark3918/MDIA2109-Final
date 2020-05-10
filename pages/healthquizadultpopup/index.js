@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Router from 'next/router';
-import React from 'react';
+import React, {useEffect} from 'react';
 import './quizpopup.css';
 import Health from '../health';
 import QuizPopUp from '../../comps/quizpopup';
@@ -52,4 +52,4 @@ const HealthQuizAdultPopUp = ({ backgroundColor }) => {
     </div>
 };
 
-export default HealthQuizAdultPopUp
+export default HealthQuizAdultPopUp;
