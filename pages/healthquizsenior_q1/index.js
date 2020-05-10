@@ -1,6 +1,6 @@
 import Router from 'next/router';
 import React, { useEffect } from 'react';
-import './healthquizadult_q3.css';
+import './healthquizsenior_q1.css';
 import LogoSmall from '../../comps/logo_small';
 import CustomButton from '../../comps/custombutton';
 import PageTitle from '../../comps/pagetitle';
@@ -14,7 +14,7 @@ console.log(data);
 function clickAnswer() {
     document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
-        Router.push("/healthquizadult_results");
+        Router.push("/healthquizsenior_q2");
     }, 600)
 }
 
@@ -24,11 +24,11 @@ function clickRight() {
     })
     document.querySelector("#page").style.left = "-100%";
     setTimeout(function () {
-        Router.push("/healthquizadult_results");
+        Router.push("/healthquizsenior_q2");
     }, 600)
 }
 
-const HealthQuizQ3 = ({ backgroundColor }) => {
+const HealthQuizQ1 = ({ backgroundColor }) => {
 
     useEffect(() => {
         setTimeout(() => {
@@ -47,19 +47,19 @@ const HealthQuizQ3 = ({ backgroundColor }) => {
             </div>
             <div id="page">
                 <div className="health_question">
-                    <PanelTitle text="Approximately how much do" />
-                    <PanelTitle marginTop="-5px" marginBottom="-5px" text="routine vet visits cost" />
-                    <PanelTitle text="at this life stage? (per year)" />
+                    <PanelTitle text="How often should you" />
+                    <PanelTitle marginTop="-5px" marginBottom="-5px" text="schedule your vet visits" />
+                    <PanelTitle text="for a senior dog?" />
                 </div>
                 <div className="health_answers1">
-                    <div onClick={clickRight} className="health_answer">
-                        <CustomButton fontSize="30px" color="#B7CfD2" text="$700-1,500" />
+                    <div onClick={clickAnswer} className="health_answer">
+                        <CustomButton fontSize="30px" color="#B7CfD2" text="Every year" />
                     </div>
-                    <div onClick={clickAnswer}className="health_answer">
-                        <CustomButton fontSize="30px" color="#Ef9B89" text="$1,500-2,500" />
+                    <div onClick={clickRight}className="health_answer">
+                        <CustomButton fontSize="30px" color="#Ef9B89" text="Every 6 months" />
                     </div>
                     <div onClick={clickAnswer}  className="health_answer">
-                        <CustomButton fontSize="30px" color="#B7D4A0" text="$2500+" />
+                        <CustomButton fontSize="30px" color="#B7D4A0" text="It doesn't matter" />
                     </div>
                 </div>
             </div>
@@ -67,4 +67,4 @@ const HealthQuizQ3 = ({ backgroundColor }) => {
     </div >
 }
 
-export default HealthQuizQ3;
+export default HealthQuizQ1;
