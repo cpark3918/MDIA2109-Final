@@ -39,7 +39,7 @@ function clickSenior() {
 
 const puppyImg = require('../../cardIcons/puppy.png');
 const adultImg = require('../../cardIcons/adult.png');
-const seniorImg = require('../../cardIcons/adult.png');
+const seniorImg = require('../../cardIcons/senior.png');
 
 const LifeStages = ({ backgroundColor }) => {
 
