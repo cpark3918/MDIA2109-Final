@@ -14,3 +14,7 @@
     /* border: 1px solid black; */
     z-index: 100;
 }
+
+.qpopup {
+    z-index: 500;
+}

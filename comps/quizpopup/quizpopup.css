@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Manrope:wght@300&display=swap');
 
+#quizpopup {
+    /* position: fixed;
+    top: -450px;
+    margin: 0;
+    z-index: 800; */
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    z-index: 500;
+}
+
+#blockColorblindContent {
+    display: none;
+}
 
 .quizpopup_contain {
     display: flex;
@@ -9,13 +25,15 @@
     background-color: #F3F2EF;
     border: 15px solid #B0D0D3;
     border-radius: 5px;
-    width: 80%;
-    position: absolute;
-    top: -450px;
+    width: 320px;
+    /* position: absolute;
+    top: -450px; */
+    /* top: 0;
+    left: 0; */
     /* top: 42%;
     left: 50%;
     transform: translate(-50%, -45%); */
-    z-index: 200;
+    /* z-index: 800; */
 }
 
 .quizpopup_contain h1 {

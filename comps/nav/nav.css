@@ -8,7 +8,7 @@
     /* height: 853px; */
     height: 100%;
     background-color: #EF9B89;
-    z-index: 200;
+    z-index: 500;
     box-shadow: 1px 0px 7px rgba(0,0,0, 0.5);
     transform: translateX(-100%);
     transition: transform 0.5s ease-out;
