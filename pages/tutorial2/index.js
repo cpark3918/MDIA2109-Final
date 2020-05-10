@@ -14,6 +14,13 @@ function nextTutorial() {
     }, 600)
 }
 
+function prevTutorial() {
+    document.querySelector("#page").style.left = "100%";
+    setTimeout(function () {
+        Router.push("/tutorial1");
+    }, 600)
+}
+
 const Tutorial02 = () => {
 
     useEffect(() => {
@@ -39,8 +46,8 @@ const Tutorial02 = () => {
                     </div>
                     <p>Choose between the given categories</p>
                 </div>
-                <div id="page" className="progress_box">
-                    <div className="progress_inactive"></div>
+                <div className="progress_box">
+                    <div className="progress_inactive" onClick={prevTutorial}></div>
                     <div className="progress_active"></div>
                     <div className="progress_inactive" onClick={nextTutorial}></div>
                     <div className="progress_inactive"></div>
