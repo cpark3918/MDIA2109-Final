@@ -25,12 +25,10 @@ const About = () => {
 
     return <div className="defaultscreen">
         <div className="aboutpage">
+            <Menu />
             <LogoSmall />
             <div>
                 <PageTitle text="About us" marginTop={100} />
-            </div>
-            <div id="about_menu">
-                <Menu />
             </div>
             <img className="dog_image" src={DogImg1} />
             <PanelTitle fontSize={50} text="Adopt + Dog" marginTop="60px" color="#EF9B89" />
