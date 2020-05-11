@@ -24,9 +24,9 @@ const About = () => {
     }, []);
 
     return <div className="defaultscreen">
+        <Menu />
+        <LogoSmall />
         <div className="aboutpage">
-            <Menu />
-            <LogoSmall />
             <div>
                 <PageTitle text="About us" marginTop={100} />
             </div>
